@@ -1,0 +1,3 @@
+/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir
+/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/edit_cache.dir
+/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/rebuild_cache.dir
