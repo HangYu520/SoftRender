@@ -1,5 +1,4 @@
-#include <preheader.h> // 预编译头文件
-#include <typedef.h> // 自定义的一些数据类型
+#include "engine.h"
 
 static ARG parse_args(int argc, char** argv) // * 解析命令行参数
 {
@@ -13,9 +12,9 @@ static ARG parse_args(int argc, char** argv) // * 解析命令行参数
             if (strcmp(argv[i], "-o") == 0 || strcmp(argv[i], "--output") == 0)
                 args.output_img_file = argv[++i];
             else if(strcmp(argv[i], "-w") == 0 || strcmp(argv[i], "--width") == 0)
-                args.width = static_cast<stbi__uint32>(atoi(argv[++i]));
+                args.width = atoi(argv[++i]);
             else if(strcmp(argv[i], "-h") == 0 || strcmp(argv[i], "--height") == 0)
-                args.height = static_cast<stbi__uint32>(atoi(argv[++i]));
+                args.height = atoi(argv[++i]);
             else if(strcmp(argv[i], "-c") == 0 || strcmp(argv[i], "--channel") == 0)
                 args.channel = static_cast<Image::Channel>(atoi(argv[++i]));
         }
@@ -35,10 +34,11 @@ int main(int argc, char** argv) // * 主函数
     Image img(args.width, args.height, args.channel); // 创建图像对象
     
     // * 绘制图像内容
-    img.setColor(0, 0, Image::BLUE);
-    img.setColor(args.width - 1, 0, Image::GREEN);
-    img.setColor(0, args.height - 1, Image::RED);
-    img.setColor(args.width - 1, args.height - 1, Image::WHITE);
+    Image::Pixel A = {7, 3}, B = {12, 37}, C = {62, 53};
+    Engine::getInstance()->line(img, A, B, Image::BLUE);
+    Engine::getInstance()->line(img, C, B, Image::GREEN);
+    Engine::getInstance()->line(img, C, A, Image::YELLOW);
+    Engine::getInstance()->line(img, A, C, Image::RED);
     
     img.save(args.output_img_file); // 保存图像
 }

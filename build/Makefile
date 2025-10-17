@@ -168,6 +168,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/engine.o: src/engine.cpp.o
+.PHONY : src/engine.o
+
+# target to build an object file
+src/engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/engine.cpp.o
+.PHONY : src/engine.cpp.o
+
+src/engine.i: src/engine.cpp.i
+.PHONY : src/engine.i
+
+# target to preprocess a source file
+src/engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/engine.cpp.i
+.PHONY : src/engine.cpp.i
+
+src/engine.s: src/engine.cpp.s
+.PHONY : src/engine.s
+
+# target to generate assembly for a file
+src/engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/engine.cpp.s
+.PHONY : src/engine.cpp.s
+
+src/stb_image_impl.o: src/stb_image_impl.cpp.o
+.PHONY : src/stb_image_impl.o
+
+# target to build an object file
+src/stb_image_impl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o
+.PHONY : src/stb_image_impl.cpp.o
+
+src/stb_image_impl.i: src/stb_image_impl.cpp.i
+.PHONY : src/stb_image_impl.i
+
+# target to preprocess a source file
+src/stb_image_impl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.i
+.PHONY : src/stb_image_impl.cpp.i
+
+src/stb_image_impl.s: src/stb_image_impl.cpp.s
+.PHONY : src/stb_image_impl.s
+
+# target to generate assembly for a file
+src/stb_image_impl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.s
+.PHONY : src/stb_image_impl.cpp.s
+
+src/typedef.o: src/typedef.cpp.o
+.PHONY : src/typedef.o
+
+# target to build an object file
+src/typedef.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/typedef.cpp.o
+.PHONY : src/typedef.cpp.o
+
+src/typedef.i: src/typedef.cpp.i
+.PHONY : src/typedef.i
+
+# target to preprocess a source file
+src/typedef.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/typedef.cpp.i
+.PHONY : src/typedef.cpp.i
+
+src/typedef.s: src/typedef.cpp.s
+.PHONY : src/typedef.s
+
+# target to generate assembly for a file
+src/typedef.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/typedef.cpp.s
+.PHONY : src/typedef.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -183,6 +255,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/engine.o"
+	@echo "... src/engine.i"
+	@echo "... src/engine.s"
+	@echo "... src/stb_image_impl.o"
+	@echo "... src/stb_image_impl.i"
+	@echo "... src/stb_image_impl.s"
+	@echo "... src/typedef.o"
+	@echo "... src/typedef.i"
+	@echo "... src/typedef.s"
 .PHONY : help
 
 

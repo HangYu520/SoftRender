@@ -103,18 +103,72 @@ CMakeFiles/SoftRender.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/main.cpp -o CMakeFiles/SoftRender.dir/main.cpp.s
 
+CMakeFiles/SoftRender.dir/src/engine.cpp.o: CMakeFiles/SoftRender.dir/flags.make
+CMakeFiles/SoftRender.dir/src/engine.cpp.o: /Users/hangyu/Documents/GitHub/SoftRender/src/engine.cpp
+CMakeFiles/SoftRender.dir/src/engine.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx
+CMakeFiles/SoftRender.dir/src/engine.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
+CMakeFiles/SoftRender.dir/src/engine.cpp.o: CMakeFiles/SoftRender.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SoftRender.dir/src/engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -MD -MT CMakeFiles/SoftRender.dir/src/engine.cpp.o -MF CMakeFiles/SoftRender.dir/src/engine.cpp.o.d -o CMakeFiles/SoftRender.dir/src/engine.cpp.o -c /Users/hangyu/Documents/GitHub/SoftRender/src/engine.cpp
+
+CMakeFiles/SoftRender.dir/src/engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SoftRender.dir/src/engine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -E /Users/hangyu/Documents/GitHub/SoftRender/src/engine.cpp > CMakeFiles/SoftRender.dir/src/engine.cpp.i
+
+CMakeFiles/SoftRender.dir/src/engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/src/engine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/src/engine.cpp -o CMakeFiles/SoftRender.dir/src/engine.cpp.s
+
+CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o: CMakeFiles/SoftRender.dir/flags.make
+CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o: /Users/hangyu/Documents/GitHub/SoftRender/src/stb_image_impl.cpp
+CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx
+CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
+CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o: CMakeFiles/SoftRender.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -MD -MT CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o -MF CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o.d -o CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o -c /Users/hangyu/Documents/GitHub/SoftRender/src/stb_image_impl.cpp
+
+CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -E /Users/hangyu/Documents/GitHub/SoftRender/src/stb_image_impl.cpp > CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.i
+
+CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/src/stb_image_impl.cpp -o CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.s
+
+CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/flags.make
+CMakeFiles/SoftRender.dir/src/typedef.cpp.o: /Users/hangyu/Documents/GitHub/SoftRender/src/typedef.cpp
+CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx
+CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
+CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SoftRender.dir/src/typedef.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -MD -MT CMakeFiles/SoftRender.dir/src/typedef.cpp.o -MF CMakeFiles/SoftRender.dir/src/typedef.cpp.o.d -o CMakeFiles/SoftRender.dir/src/typedef.cpp.o -c /Users/hangyu/Documents/GitHub/SoftRender/src/typedef.cpp
+
+CMakeFiles/SoftRender.dir/src/typedef.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SoftRender.dir/src/typedef.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -E /Users/hangyu/Documents/GitHub/SoftRender/src/typedef.cpp > CMakeFiles/SoftRender.dir/src/typedef.cpp.i
+
+CMakeFiles/SoftRender.dir/src/typedef.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/src/typedef.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/src/typedef.cpp -o CMakeFiles/SoftRender.dir/src/typedef.cpp.s
+
 # Object files for target SoftRender
 SoftRender_OBJECTS = \
-"CMakeFiles/SoftRender.dir/main.cpp.o"
+"CMakeFiles/SoftRender.dir/main.cpp.o" \
+"CMakeFiles/SoftRender.dir/src/engine.cpp.o" \
+"CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o" \
+"CMakeFiles/SoftRender.dir/src/typedef.cpp.o"
 
 # External object files for target SoftRender
 SoftRender_EXTERNAL_OBJECTS =
 
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/main.cpp.o
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/src/engine.cpp.o
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/src/typedef.cpp.o
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/build.make
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SoftRender.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

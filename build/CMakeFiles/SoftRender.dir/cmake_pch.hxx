@@ -2,5 +2,5 @@
 
 #pragma clang system_header
 #ifdef __cplusplus
-#include "/Users/hangyu/Documents/GitHub/SoftRender/src/preheader.h"
+#include "/Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h"
 #endif // __cplusplus
