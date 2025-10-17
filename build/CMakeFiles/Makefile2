@@ -85,12 +85,12 @@ clean: CMakeFiles/SoftRender.dir/clean
 CMakeFiles/SoftRender.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=1,2 "Built target SoftRender"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=1,2,3 "Built target SoftRender"
 .PHONY : CMakeFiles/SoftRender.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SoftRender.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SoftRender.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles 0
 .PHONY : CMakeFiles/SoftRender.dir/rule
@@ -102,7 +102,7 @@ SoftRender: CMakeFiles/SoftRender.dir/rule
 # codegen rule for target.
 CMakeFiles/SoftRender.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=1,2 "Finished codegen for target SoftRender"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target SoftRender"
 .PHONY : CMakeFiles/SoftRender.dir/codegen
 
 # clean rule for target.

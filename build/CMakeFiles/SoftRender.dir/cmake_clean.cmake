@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender"
   "/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender.pdb"
+  "CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch"
+  "CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch.d"
   "CMakeFiles/SoftRender.dir/main.cpp.o"
   "CMakeFiles/SoftRender.dir/main.cpp.o.d"
 )

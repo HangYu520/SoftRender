@@ -1,23 +1,9 @@
-#define STB_IMAGE_IMPLEMENTATION // 图片的处理和输出采用 stb_image 库
-#include "external/stb/stb_image.h"
-#define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "external/stb/stb_image_write.h"
-#include "external/spdlog/spdlog.h" // 日志打印采用 spdlog 库
-#include "src/typedef.h" // 自定义的一些数据类型
-
-struct ARG // * 命令行参数
-{
-    const char* output_img_file; // 输出文件路径
-    stbi__uint32 width, height; // 图像宽高
-    Image::Channel channel; // 图像通道数
-};
+#include <preheader.h> // 预编译头文件
+#include <typedef.h> // 自定义的一些数据类型
 
 static ARG parse_args(int argc, char** argv) // * 解析命令行参数
 {
-    // 定义命令行参数的默认值
-    const char* arg_output_img_file = "output.png";
-    stbi__uint32 arg_width = 64, arg_height = 64;
-    Image::Channel arg_channel = Image::Channel::RGB;
+    ARG args;
     
     // 解析命令行参数
     if (argc > 1)
@@ -25,17 +11,17 @@ static ARG parse_args(int argc, char** argv) // * 解析命令行参数
         for (size_t i = 1; i < argc; i++)
         {
             if (strcmp(argv[i], "-o") == 0 || strcmp(argv[i], "--output") == 0)
-                arg_output_img_file = argv[++i];
+                args.output_img_file = argv[++i];
             else if(strcmp(argv[i], "-w") == 0 || strcmp(argv[i], "--width") == 0)
-                arg_width = static_cast<stbi__uint32>(atoi(argv[++i]));
+                args.width = static_cast<stbi__uint32>(atoi(argv[++i]));
             else if(strcmp(argv[i], "-h") == 0 || strcmp(argv[i], "--height") == 0)
-                arg_height = static_cast<stbi__uint32>(atoi(argv[++i]));
+                args.height = static_cast<stbi__uint32>(atoi(argv[++i]));
             else if(strcmp(argv[i], "-c") == 0 || strcmp(argv[i], "--channel") == 0)
-                arg_channel = static_cast<Image::Channel>(atoi(argv[++i]));
+                args.channel = static_cast<Image::Channel>(atoi(argv[++i]));
         }
     }
 
-    return { arg_output_img_file, arg_width, arg_height, arg_channel };
+    return args;
 }
 
 int main(int argc, char** argv) // * 主函数

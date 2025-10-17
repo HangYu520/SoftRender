@@ -55,3 +55,10 @@ const Image::Color Image::GREEN = {0, 255, 0};
 const Image::Color Image::BLUE  = {0, 0, 255};
 const Image::Color Image::WHITE = {255, 255, 255};
 const Image::Color Image::BLACK = {0, 0, 0};
+
+struct ARG // * 命令行参数
+{
+    const char* output_img_file = "output.png"; // 输出文件路径
+    stbi__uint32 width = 64, height = 64; // 图像宽高
+    Image::Channel channel = Image::Channel::RGB; // 图像通道数
+};

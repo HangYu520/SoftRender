@@ -4,9 +4,13 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external
+CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external -I/Users/hangyu/Documents/GitHub/SoftRender/src
 
 CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64
 
 CXX_FLAGS = -g -std=gnu++20 -arch arm64
+
+# PCH options: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch_OPTIONS = -Winvalid-pch;-Xclang;-emit-pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx;-x;c++-header
+
+# PCH options: CMakeFiles/SoftRender.dir/main.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
 

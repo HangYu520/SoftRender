@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx" "CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch" "gcc" "CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch.d"
+  "/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx" "CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch" "gcc" "CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch.d"
   "/Users/hangyu/Documents/GitHub/SoftRender/main.cpp" "CMakeFiles/SoftRender.dir/main.cpp.o" "gcc" "CMakeFiles/SoftRender.dir/main.cpp.o.d"
+  "/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx" "CMakeFiles/SoftRender.dir/main.cpp.o" "gcc" "CMakeFiles/SoftRender.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
