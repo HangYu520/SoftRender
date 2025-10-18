@@ -1,7 +1,5 @@
 #include "engine.h"
 #include "timer.h"
-#include <cstdlib>
-#include <ctime>
 
 static ARG parse_args(int argc, char** argv) // * 解析命令行参数
 {
