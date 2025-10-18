@@ -10,7 +10,7 @@ void Engine::line
 {
     // 起点和终点的 x, y
     int xStart = start.x,  yStart = start.y;
-    int xEnd = end.x,        yEnd = end.y;
+    int xEnd   = end.x,      yEnd = end.y;
     
     // * 判断是否陡峭
     bool steep  = std::abs(yEnd - yStart) > std::abs(xEnd - xStart); 
