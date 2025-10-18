@@ -7,8 +7,8 @@
             "program": "${fileDirname}/bin/SoftRender",
             "args": [
                 "-o", "doc/output.png",
-                "-w", "64", 
-                "-h", "64"
+                "-w", "800", 
+                "-h", "800"
             ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

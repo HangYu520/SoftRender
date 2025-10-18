@@ -18,7 +18,7 @@ public:
     const Image::Pixel& start, // 起点坐标 
     const Image::Pixel& end, // 终点坐标
     const Image::Color& color // 颜色
-    ); // 画线函数
+    ); // 画起点和终点之间的直线
 
 private:
     Engine() {}; // 私有构造函数，防止实例化

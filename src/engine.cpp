@@ -8,32 +8,63 @@ void Engine::line
     const Image::Color& color // 颜色
 )
 {
-    auto _start = start; // 局部变量，允许修改
-    auto _end   = end;
+    // 起点和终点的 x, y
+    int xStart = start.x,  yStart = start.y;
+    int xEnd = end.x,        yEnd = end.y;
     
-    if (_start.x > _end.x)
-    {
-        // 确保从左到右绘制
-        std::swap(_start.x, _end.x);
-        std::swap(_start.y, _end.y);
-    }
-
-    bool steep  = _end.y - _start.y > _end.x - _start.x; // 判断是否陡峭
+    // * 判断是否陡峭
+    bool steep  = std::abs(yEnd - yStart) > std::abs(xEnd - xStart); 
     if (steep)
     {
         // 如果陡峭，交换 x 和 y 坐标
-        std::swap(_start.x, _start.y);
-        std::swap(_end.x, _end.y);
+        std::swap(xStart, yStart);
+        std::swap(xEnd, yEnd);
     }
 
-    for (uint32_t x = _start.x; x <= _end.x; ++x)
+    // * 确保从左到右绘制
+    if (xStart > xEnd)
     {
-        float t = (x - _start.x) / static_cast<float>(_end.x - _start.x); // 比例
-        uint32_t y = _start.y + t * (_end.y - _start.y); // 计算 y 坐标
+        std::swap(xStart, xEnd);
+        std::swap(yStart, yEnd);
+    }
+
+    float error = 0; // 跟当前位置的垂直偏差值，用以累计小数部分
+    int ierror = 0; // 使用整数避免浮点数运算, ierror = error * 2 * (xEnd - xStart)
+    uint32_t y = yStart;
+    
+    for (uint32_t x = xStart; x <= xEnd; ++x)
+    {
+        #if 0
+        // * 方法A: 按比例计算 y 坐标
+        float t = (x - xStart) / static_cast<float>(xEnd - xStart); // 比例
+        uint32_t y = yStart + t * (yEnd - yStart); // 计算 y 坐标
+        #endif
         
         if (steep)
             image.setColor(Image::Pixel(y, x), color);
         else
             image.setColor(Image::Pixel(x, y), color);
+
+        // y += dy; // 增量更新 y 坐标, 与按比例计算等价
+        
+        #if 0
+        // * 方法B: 避免浮点数四舍五入
+        float dy = std::abs(yEnd - yStart) / static_cast<float>(xEnd - xStart); // 斜率绝对值
+        error += dy; // 累计偏差
+        if (error > 0.5f)
+        {
+            y += yEnd > yStart ? 1 : -1; // 根据斜率方向更新 y 坐标
+            error -= 1.0f; // 减去移动后位置的偏差
+        }
+        #endif
+
+        // * 方法C: Brensenham 算法
+        ierror += 2 * std::abs(yEnd - yStart); // 避免浮点数运算
+        if (ierror > xEnd - xStart)
+        {
+            y += yEnd > yStart ? 1 : -1;
+            ierror -= 2 * (xEnd - xStart);
+        }
     }
+    
 }

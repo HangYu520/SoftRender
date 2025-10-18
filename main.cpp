@@ -1,4 +1,7 @@
 #include "engine.h"
+#include "timer.h"
+#include <cstdlib>
+#include <ctime>
 
 static ARG parse_args(int argc, char** argv) // * 解析命令行参数
 {
@@ -34,11 +37,8 @@ int main(int argc, char** argv) // * 主函数
     Image img(args.width, args.height, args.channel); // 创建图像对象
     
     // * 绘制图像内容
-    Image::Pixel A = {7, 3}, B = {12, 37}, C = {62, 53};
-    Engine::getInstance()->line(img, A, B, Image::BLUE);
-    Engine::getInstance()->line(img, C, B, Image::GREEN);
-    Engine::getInstance()->line(img, C, A, Image::YELLOW);
-    Engine::getInstance()->line(img, A, C, Image::RED);
+    Image::Pixel start(0, 0), end(args.width / 2, args.height - 1);
+    Engine::getInstance()->line(img, end, start, Image::WHITE); // 画对角线
     
     img.save(args.output_img_file); // 保存图像
 }

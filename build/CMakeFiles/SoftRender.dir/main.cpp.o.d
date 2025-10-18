@@ -992,7 +992,6 @@ CMakeFiles/SoftRender.dir/main.cpp.o: \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/circular_q.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/log_msg_buffer.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/log_msg.h \
@@ -1036,4 +1035,5 @@ CMakeFiles/SoftRender.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Users/hangyu/Documents/GitHub/SoftRender/main.cpp \
   /Users/hangyu/Documents/GitHub/SoftRender/include/engine.h \
-  /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h
+  /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/include/timer.h
