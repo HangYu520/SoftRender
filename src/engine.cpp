@@ -6,7 +6,7 @@ void Engine::line(Image& image, const Image::Pixel& start, const Image::Pixel& e
     int xStart = start.x,  yStart = start.y;
     int xEnd   = end.x,      yEnd = end.y;
     
-    // * 判断是否陡峭
+    // TODO : 1. 判断是否陡峭
     bool steep  = std::abs(yEnd - yStart) > std::abs(xEnd - xStart); 
     if (steep)
     {
@@ -15,7 +15,7 @@ void Engine::line(Image& image, const Image::Pixel& start, const Image::Pixel& e
         std::swap(xEnd, yEnd);
     }
 
-    // * 确保从左到右绘制
+    // TODO : 2. 确保从左到右绘制
     if (xStart > xEnd)
     {
         std::swap(xStart, xEnd);
@@ -52,7 +52,7 @@ void Engine::line(Image& image, const Image::Pixel& start, const Image::Pixel& e
         }
         #endif
 
-        // * 方法C: Brensenham 算法
+        // TODO : 3. 方法C: Brensenham 算法
         ierror += 2 * std::abs(yEnd - yStart); // 避免浮点数运算
         if (ierror > xEnd - xStart)
         {
