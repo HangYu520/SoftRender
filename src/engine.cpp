@@ -1,12 +1,6 @@
 #include "engine.h"
 #include "preheader.h"
-void Engine::line
-(
-    Image& image, // 图像对象
-    const Image::Pixel& start, // 起点坐标 
-    const Image::Pixel& end, // 终点坐标
-    const Image::Color& color // 颜色
-)
+void Engine::line(Image& image, const Image::Pixel& start, const Image::Pixel& end, const Image::Color& color)
 {
     // 起点和终点的 x, y
     int xStart = start.x,  yStart = start.y;
@@ -67,4 +61,45 @@ void Engine::line
         }
     }
     
+}
+
+void Engine::wireframe(Image& image, Model& model, const Image::Color& color) // 画 3D 模型的线框
+{
+    // TODO : 1. 平移和缩放模型到视口范围内
+    auto [min_pos, max_pos] = model.getBoundingBox(); // 获取模型包围盒
+    model.translate(-min_pos.x, -min_pos.y, -min_pos.z); // 平移模型到原点附近
+
+    float model_width  =   max_pos.x - min_pos.x;
+    float model_height =   max_pos.y - min_pos.y;
+    if (model_width > model_height)
+    {
+        float scale = (image.width - 1) / model_width;
+        model.resize(scale, scale, scale); // 按比例缩放模型
+    }
+    else
+    {
+        float scale = (image.height - 1) / model_height;
+        model.resize(scale, scale, scale); // 按比例缩放模型
+    }
+    
+    // TODO : 2. 投影到 2D 平面 (简单正交投影)
+    auto& attrib = model.getAttrib(); // 投影时直接忽略 z 坐标
+    auto trifaces_lst = model.getTrifaces();
+
+    // TODO : 3. 绘制线框
+    for (auto& trifaces : trifaces_lst)
+    { 
+        for (const auto& triface : trifaces)
+        {
+            auto [v0, v1, v2] = triface.Get(attrib);
+            // 提取顶点位置
+            Image::Pixel p0 = {static_cast<uint32_t>(v0._position.x), image.height - static_cast<uint32_t>(v0._position.y)};
+            Image::Pixel p1 = {static_cast<uint32_t>(v1._position.x), image.height - static_cast<uint32_t>(v1._position.y)};
+            Image::Pixel p2 = {static_cast<uint32_t>(v2._position.x), image.height - static_cast<uint32_t>(v2._position.y)};
+            // 画三角形的三条边
+            line(image, p0, p1, color);
+            line(image, p1, p2, color);
+            line(image, p2, p0, color);
+        }
+    }
 }

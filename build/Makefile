@@ -192,29 +192,29 @@ src/engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/engine.cpp.s
 .PHONY : src/engine.cpp.s
 
-src/stb_image_impl.o: src/stb_image_impl.cpp.o
-.PHONY : src/stb_image_impl.o
+src/external_impl.o: src/external_impl.cpp.o
+.PHONY : src/external_impl.o
 
 # target to build an object file
-src/stb_image_impl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o
-.PHONY : src/stb_image_impl.cpp.o
+src/external_impl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
+.PHONY : src/external_impl.cpp.o
 
-src/stb_image_impl.i: src/stb_image_impl.cpp.i
-.PHONY : src/stb_image_impl.i
+src/external_impl.i: src/external_impl.cpp.i
+.PHONY : src/external_impl.i
 
 # target to preprocess a source file
-src/stb_image_impl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.i
-.PHONY : src/stb_image_impl.cpp.i
+src/external_impl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/external_impl.cpp.i
+.PHONY : src/external_impl.cpp.i
 
-src/stb_image_impl.s: src/stb_image_impl.cpp.s
-.PHONY : src/stb_image_impl.s
+src/external_impl.s: src/external_impl.cpp.s
+.PHONY : src/external_impl.s
 
 # target to generate assembly for a file
-src/stb_image_impl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.s
-.PHONY : src/stb_image_impl.cpp.s
+src/external_impl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/external_impl.cpp.s
+.PHONY : src/external_impl.cpp.s
 
 src/typedef.o: src/typedef.cpp.o
 .PHONY : src/typedef.o
@@ -258,9 +258,9 @@ help:
 	@echo "... src/engine.o"
 	@echo "... src/engine.i"
 	@echo "... src/engine.s"
-	@echo "... src/stb_image_impl.o"
-	@echo "... src/stb_image_impl.i"
-	@echo "... src/stb_image_impl.s"
+	@echo "... src/external_impl.o"
+	@echo "... src/external_impl.i"
+	@echo "... src/external_impl.s"
 	@echo "... src/typedef.o"
 	@echo "... src/typedef.i"
 	@echo "... src/typedef.s"

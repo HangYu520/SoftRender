@@ -4,11 +4,11 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external -I/Users/hangyu/Documents/GitHub/SoftRender/include
+CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external -I/Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader -I/Users/hangyu/Documents/GitHub/SoftRender/include
 
-CXX_FLAGSarm64 = -O3 -DNDEBUG -std=gnu++20 -arch arm64
+CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20 -arch arm64
+CXX_FLAGS = -g -std=gnu++20 -arch arm64
 
 # PCH options: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch_OPTIONS = -Winvalid-pch;-Xclang;-emit-pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx;-x;c++-header
 
@@ -16,7 +16,7 @@ CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20 -arch arm64
 
 # PCH options: CMakeFiles/SoftRender.dir/src/engine.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
 
-# PCH options: CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
+# PCH options: CMakeFiles/SoftRender.dir/src/external_impl.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
 
 # PCH options: CMakeFiles/SoftRender.dir/src/typedef.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
 

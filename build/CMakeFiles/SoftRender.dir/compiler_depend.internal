@@ -13,6 +13,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h
@@ -1037,6 +1038,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/version.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image_write.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader/tiny_obj_loader.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h
 
 CMakeFiles/SoftRender.dir/main.cpp.o
@@ -1051,6 +1053,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h
@@ -2073,6 +2076,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/version.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image_write.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader/tiny_obj_loader.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/engine.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/timer.h
@@ -2091,6 +2095,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h
@@ -3113,12 +3118,13 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/version.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image_write.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader/tiny_obj_loader.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/engine.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h
  /Users/hangyu/Documents/GitHub/SoftRender/src/engine.cpp
 
-CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o
+CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h
@@ -3130,6 +3136,7 @@ CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h
@@ -3491,6 +3498,22 @@ CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/container_adaptor.h
@@ -3906,10 +3929,13 @@ CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream
@@ -3928,6 +3954,7 @@ CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -4153,8 +4180,9 @@ CMakeFiles/SoftRender.dir/src/stb_image_impl.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/version.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image_write.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader/tiny_obj_loader.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h
- /Users/hangyu/Documents/GitHub/SoftRender/src/stb_image_impl.cpp
+ /Users/hangyu/Documents/GitHub/SoftRender/src/external_impl.cpp
 
 CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
@@ -4168,6 +4196,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h
@@ -5190,6 +5219,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/version.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image_write.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader/tiny_obj_loader.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h
  /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h
  /Users/hangyu/Documents/GitHub/SoftRender/src/typedef.cpp

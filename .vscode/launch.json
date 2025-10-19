@@ -6,6 +6,7 @@
             "request": "launch",
             "program": "${fileDirname}/bin/SoftRender",
             "args": [
+                "-m", "asset/teapot.obj",
                 "-o", "doc/output.png",
                 "-w", "800", 
                 "-h", "800"
