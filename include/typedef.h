@@ -29,19 +29,20 @@ struct Image
     struct Color // 颜色结构体
     {
         unsigned char R, G, B;
+        static Color randColor(); // 生成随机颜色
     };
     struct Pixel // 像素结构体
     {
-        uint32_t x, y;
+        int x, y;
     };   
     
     // 预定义颜色
-    static const Color RED;
-    static const Color GREEN;
-    static const Color BLUE;
-    static const Color WHITE;
-    static const Color BLACK;
-    static const Color YELLOW;
+    static const Color  RED;
+    static const Color  GREEN;
+    static const Color  BLUE;
+    static const Color  WHITE;
+    static const Color  BLACK;
+    static const Color  YELLOW;
 
     // 成员变量
     stbi_uc* image_buffer; // 图像数据
@@ -59,6 +60,13 @@ struct Image
     * ------------------------------------------
     */
     void setColor(const Pixel& pixel, const Color& color);
+
+    /*
+    * ------------------------------------------
+    * 上下反转图像（垂直翻转）
+    * ------------------------------------------
+    */
+    void flipVertical();
 
     /*
     * ------------------------------------------

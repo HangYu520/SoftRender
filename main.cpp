@@ -55,9 +55,10 @@ int main(int argc, char** argv)
 
     // TODO : 在此处添加绘制代码
     {
-        Timer timer("Render Wireframe"); // 计时器开始
-        Engine::getInstance()->wireframe(image, model, Image::WHITE); // 绘制模型线框
+        Timer timer("Render Model"); // 计时器开始
+        Engine::getInstance()->render(image, model); // 绘制模型
     }
     
+    image.flipVertical(); // 垂直翻转图像, 让 y 轴向上为正方向
     image.save(args.output_img_file); // 保存图像
 }

@@ -3,7 +3,7 @@
 
 /*
 * ------------------------------------------
-* 软渲染绘制算法引擎(类GPU)，单例类(禁止复制，构造)
+* 软渲染绘制算法引擎，单例类(禁止复制，构造)
 * ------------------------------------------
 */
 class Engine
@@ -39,6 +39,19 @@ public:
 
     /*
     * ------------------------------------------
+    * 画三角形 (边界框算法/扫描线算法)
+    * ------------------------------------------
+    * /inType: Image& image 图像对象
+    * /inType: const Image::Pixel& p1 顶点1坐标
+    * /inType: const Image::Pixel& p2 顶点2坐标
+    * /inType: const Image::Pixel& p3 顶点3坐标
+    * /inType: const Image::Color& color 颜色
+    * ------------------------------------------
+    */
+    void triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3, const Image::Color& color); // 画三角形
+
+    /*
+    * ------------------------------------------
     * 画 3D 模型的线框
     * ------------------------------------------
     * /inType: Image& image 图像对象
@@ -47,6 +60,16 @@ public:
     * ------------------------------------------
     */
     void wireframe(Image& image, Model& model, const Image::Color& color); // 画 3D 模型的线框
+
+    /*
+    * ------------------------------------------
+    * 渲染 3D 模型到图像
+    * ------------------------------------------
+    * /inType: Image& image 图像对象
+    * /inType: Model& model 3D 模型对象
+    * ------------------------------------------
+    */
+    void render(Image& image, Model& model); // 渲染 3D 模型到图像
 
 private:
     Engine() {}; // 私有构造函数，防止实例化

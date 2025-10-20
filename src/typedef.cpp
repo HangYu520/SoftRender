@@ -5,6 +5,16 @@
 * 1. 图像结构体 (封装 stb_image)
 * -----------------------------
 */
+Image::Color Image::Color::randColor() // 生成随机颜色
+{
+    static thread_local std::mt19937 gen(std::random_device{}());
+    static std::uniform_int_distribution<int> dis(0, 255);
+    return {
+        static_cast<unsigned char>(dis(gen)),
+        static_cast<unsigned char>(dis(gen)),
+        static_cast<unsigned char>(dis(gen))};
+};
+
 Image::Image(uint32_t w, uint32_t h, Channel c)
         : width(w), height(h), channel(c)
 {
@@ -18,6 +28,23 @@ void Image::setColor(const Pixel& pixel, const Color& color)
     pixel_buffer[0] = color.R;
     pixel_buffer[1] = color.G;
     pixel_buffer[2] = color.B;
+}
+
+void Image::flipVertical() {
+    const size_t bytesPerRow = width * static_cast<size_t>(channel);
+    stbi_uc* tempRow = new stbi_uc[bytesPerRow];
+    
+    for (uint32_t i = 0; i < height / 2; ++i) {
+        const size_t topOffset = i * bytesPerRow;
+        const size_t bottomOffset = (height - 1 - i) * bytesPerRow;
+        
+        // 交换上下行数据
+        memcpy(tempRow, image_buffer + topOffset, bytesPerRow);
+        memcpy(image_buffer + topOffset, image_buffer + bottomOffset, bytesPerRow);
+        memcpy(image_buffer + bottomOffset, tempRow, bytesPerRow);
+    }
+    
+    delete[] tempRow;
 }
 
 void Image::save(const char* filename)
@@ -197,7 +224,6 @@ void Model::loadFrom(const std::string& filename) // 从文件加载模型
 
     logShapes(); // 打印模型形状信息
 }
-
 
 Model::bounding_box_t Model::getBoundingBox() const // 获取模型的边界框
 {
