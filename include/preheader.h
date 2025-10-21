@@ -13,6 +13,7 @@
 #include <string>
 #include <chrono>
 #include <vector>
+#include <array>
 #include <tuple>
 #include <limits>
 #include <random>

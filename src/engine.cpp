@@ -64,6 +64,29 @@ void Engine::line(Image& image, const Image::Pixel& start, const Image::Pixel& e
     
 }
 
+float Engine::signedTriangleArea(const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3)
+{
+    // 计算有向三角形面积, 正值表示朝向内，负值表示朝向外
+    return 0.5f * ((p2.y - p1.y)*(p2.x + p1.x) + (p3.y - p2.y)*(p3.x + p2.x) + (p1.y - p3.y)*(p1.x + p3.x));
+}
+
+BarycentricCoord Engine::getBarycentricCoord(const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3, const Image::Pixel& p)
+{
+    // 计算三角形的带符号面积
+    float area_total = signedTriangleArea(p1, p2, p3);
+    float area_u     = signedTriangleArea(p, p2, p3);
+    float area_v     = signedTriangleArea(p1, p, p3);
+    float area_w     = signedTriangleArea(p1, p2, p);
+
+    // 计算重心坐标
+    BarycentricCoord barycentric;
+    barycentric.u = area_u / area_total;
+    barycentric.v = area_v / area_total;
+    barycentric.w = area_w / area_total;
+
+    return barycentric;
+}
+
 #if defined(SCANLINE)
 void Engine::triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3, const Image::Color& color) // 画三角形
 {
@@ -112,7 +135,7 @@ void Engine::triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& 
     {
         for (int x = min_x; x <= max_x; ++x)
         {
-            // TODO : 2. 判断像素是否在三角形内
+            // TODO : 3. 判断像素是否在三角形内
             Image::Pixel p = {x, y};
             int cross1 = (p2.x - p1.x) * (p.y - p1.y) - (p2.y - p1.y) * (p.x - p1.x); // (p1,p2) X (p1, p)
             int cross2 = (p3.x - p2.x) * (p.y - p2.y) - (p3.y - p2.y) * (p.x - p2.x); // (p2,p3) X (p2, p)
@@ -126,6 +149,42 @@ void Engine::triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& 
     }
 }
 #endif
+
+void Engine::triangle(Image& image, const std::array<Image::PixelWColor, 3>& Trianlge) // 画指定顶点颜色的三角形
+{
+    // 获取三角形顶点和颜色
+    Image::Pixel p1 = Trianlge[0].first; Image::Color c1 = Trianlge[0].second;
+    Image::Pixel p2 = Trianlge[1].first; Image::Color c2 = Trianlge[1].second;
+    Image::Pixel p3 = Trianlge[2].first; Image::Color c3 = Trianlge[2].second;
+
+    // TODO : 1. 计算边界框
+    int min_x = std::min({p1.x, p2.x, p3.x});
+    int max_x = std::max({p1.x, p2.x, p3.x});
+    int min_y = std::min({p1.y, p2.y, p3.y});
+    int max_y = std::max({p1.y, p2.y, p3.y});
+
+    // TODO : 2. 遍历边界框内的像素
+    for (int y = min_y; y <= max_y; ++y)
+    {
+        for (int x = min_x; x <= max_x; ++x)
+        {
+            // TODO : 3. 计算像素的重心坐标
+            Image::Pixel p = {x, y};
+            auto barycentric = getBarycentricCoord(p1, p2, p3, p);
+            float u = barycentric.u; 
+            float v = barycentric.v; 
+            float w = barycentric.w;
+            if (u >= 0 && v >= 0 && w >= 0) // 说明在三角形内
+            {
+                // TODO : 4. 插值颜色
+                float R = u * c1.R + v * c2.R + w * c3.R;
+                float G = u * c1.G + v * c2.G + w * c3.G;
+                float B = u * c1.B + v * c2.B + w * c3.B;
+                image.setColor(p, Image::Color{static_cast<unsigned char>(R), static_cast<unsigned char>(G), static_cast<unsigned char>(B)});
+            }
+        }
+    }
+}
 
 // ! wireframe 还需要完善
 void Engine::wireframe(Image& image, Model& model, const Image::Color& color) // 画 3D 模型的线框
@@ -203,8 +262,10 @@ void Engine::render(Image& image, Model& model) // 渲染 3D 模型到图像
             Image::Pixel p0 = {static_cast<int>(v0._position.x), static_cast<int>(v0._position.y)};
             Image::Pixel p1 = {static_cast<int>(v1._position.x), static_cast<int>(v1._position.y)};
             Image::Pixel p2 = {static_cast<int>(v2._position.x), static_cast<int>(v2._position.y)};
+            if (signedTriangleArea(p0, p1, p2) < 0) continue; // ! 简单的背面剔除
             // 画三角形的面
-            triangle(image, p0, p1, p2, Image::Color::randColor());
+            auto color = Image::Color::randColor();
+            triangle(image, {Image::PixelWColor{p0, color}, Image::PixelWColor{p1, color}, Image::PixelWColor{p2, color}});
         }
     }
 }

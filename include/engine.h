@@ -39,6 +39,31 @@ public:
 
     /*
     * ------------------------------------------
+    * 计算有向三角形面积
+    * ------------------------------------------
+    * /inType: const Image::Pixel& p1 顶点1坐标
+    * /inType: const Image::Pixel& p2 顶点2坐标
+    * /inType: const Image::Pixel& p3 顶点3坐标
+    * /outType: float 有向面积
+    * ------------------------------------------
+    */
+    float signedTriangleArea(const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3);
+
+    /*
+    * ------------------------------------------
+    * 计算重心坐标
+    * ------------------------------------------
+    * /inType: const Image::Pixel& p1 顶点1坐标
+    * /inType: const Image::Pixel& p2 顶点2坐标
+    * /inType: const Image::Pixel& p3 顶点3坐标
+    * /inType: const Image::Pixel& p 待计算点坐标
+    * /outType: BarycentricCoord 重心坐标
+    * ------------------------------------------
+    */
+    BarycentricCoord getBarycentricCoord(const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3, const Image::Pixel& p);
+
+    /*
+    * ------------------------------------------
     * 画三角形 (边界框算法/扫描线算法)
     * ------------------------------------------
     * /inType: Image& image 图像对象
@@ -49,6 +74,16 @@ public:
     * ------------------------------------------
     */
     void triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3, const Image::Color& color); // 画三角形
+
+    /*
+    * ------------------------------------------
+    * 画三角形 (顶点颜色插值)
+    * ------------------------------------------
+    * /inType: Image& image 图像对象
+    * /inType: const std::array<Image::PixelWColor, 3>& Trianlge 三角形顶点及颜色
+    * ------------------------------------------
+    */
+    void triangle(Image& image, const std::array<Image::PixelWColor, 3>& Trianlge); // 画指定顶点颜色的三角形
 
     /*
     * ------------------------------------------

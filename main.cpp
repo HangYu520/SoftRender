@@ -55,8 +55,8 @@ int main(int argc, char** argv)
 
     // TODO : 在此处添加绘制代码
     {
-        Timer timer("Render Model"); // 计时器开始
-        Engine::getInstance()->render(image, model); // 绘制模型
+        Timer timer("Render"); // 计时器开始
+        Engine::getInstance()->render(image, model); // 渲染 3D 模型到图像
     }
     
     image.flipVertical(); // 垂直翻转图像, 让 y 轴向上为正方向

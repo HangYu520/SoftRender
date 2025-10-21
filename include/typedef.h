@@ -8,6 +8,7 @@
 * 1. 图像结构体 (封装 stb_image)
 * 2. 3D 模型类 (封装 tinyobjloader)
 * 3. 命令行参数结构体
+* 4. 重心坐标结构体
 * -----------------------------
 */
 
@@ -34,7 +35,9 @@ struct Image
     struct Pixel // 像素结构体
     {
         int x, y;
-    };   
+    }; 
+
+    using PixelWColor = std::pair<Pixel, Color>; // 带颜色的像素类型定义
     
     // 预定义颜色
     static const Color  RED;
@@ -241,4 +244,16 @@ struct ARG // * 命令行参数
     Image::Channel channel       =  Image::Channel::RGB; // 图像通道数
 
     void log() const; // 打印命令行参数
+};
+
+/*
+* -------------------
+* 4. 重心坐标结构体
+* -------------------
+*/
+struct BarycentricCoord // * 重心坐标 u + v + w = 1
+{
+    float u; // 重心坐标 u
+    float v; // 重心坐标 v
+    float w; // 重心坐标 w
 };
