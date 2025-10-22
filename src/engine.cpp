@@ -293,7 +293,6 @@ void Engine::triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& 
     }
 }
 #else
-
 void Engine::triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3, const Image::Color& color) // 画三角形
 {
     // TODO : 1. 计算边界框

@@ -39,6 +39,17 @@ public:
 
     /*
     * ------------------------------------------
+    * 画 3D 模型的线框
+    * ------------------------------------------
+    * /inType: Image& image 图像对象
+    * /inType: Model& model 3D 模型对象
+    * /inType: const Image::Color& color 颜色
+    * ------------------------------------------
+    */
+    void wireframe(Image& image, Model& model, const Image::Color& color); // 画 3D 模型的线框
+
+    /*
+    * ------------------------------------------
     * 计算有向三角形面积
     * ------------------------------------------
     * /inType: const Image::Pixel& p1 顶点1坐标
@@ -71,17 +82,6 @@ public:
     * ------------------------------------------
     */
     void triangle(Image& image, const std::array<Image::PixelwAttrib, 3>& Trianlge); // 画指定顶点属性的三角形
-
-    /*
-    * ------------------------------------------
-    * 画 3D 模型的线框
-    * ------------------------------------------
-    * /inType: Image& image 图像对象
-    * /inType: Model& model 3D 模型对象
-    * /inType: const Image::Color& color 颜色
-    * ------------------------------------------
-    */
-    void wireframe(Image& image, Model& model, const Image::Color& color); // 画 3D 模型的线框
 
     /*
     * ------------------------------------------
