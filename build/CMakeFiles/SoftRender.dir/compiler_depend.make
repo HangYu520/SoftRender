@@ -817,6 +817,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch: CMakeFiles/SoftRender.dir/cmake_pch
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cfloat \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
@@ -839,10 +840,12 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch: CMakeFiles/SoftRender.dir/cmake_pch
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
@@ -889,6 +892,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch: CMakeFiles/SoftRender.dir/cmake_pch
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h \
@@ -1044,12 +1048,362 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch: CMakeFiles/SoftRender.dir/cmake_pch
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_vectorize.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_exponential.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_fixes.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_vectorize.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_matrix.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_vectorize.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_decl.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_int_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_uint_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/simd/platform.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_fixes.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_vectorize.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_integer.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_packing.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/fwd.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/glm.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_int_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_uint_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/glm.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_int_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_uint_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/glm.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/integer.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/packing.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h \
@@ -1908,6 +2262,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cfloat \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
@@ -1930,10 +2285,12 @@ CMakeFiles/SoftRender.dir/main.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
@@ -1980,6 +2337,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h \
@@ -2133,12 +2491,207 @@ CMakeFiles/SoftRender.dir/main.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/simd/platform.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_fixes.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_integer.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_packing.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_matrix.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_exponential.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_vectorize.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_decl.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_int_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_uint_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/fwd.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/glm.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/integer.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/packing.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h \
@@ -2180,6 +2733,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx \
   /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image_write.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader/tiny_obj_loader.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/engine.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/include/glm_test.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/timer.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h \
@@ -3001,6 +3555,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cfloat \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
@@ -3023,10 +3578,12 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
@@ -3073,6 +3630,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h \
@@ -3226,12 +3784,207 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/simd/platform.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_fixes.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_integer.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_packing.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_matrix.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_exponential.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_vectorize.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_decl.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_int_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_uint_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/fwd.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/glm.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/integer.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/packing.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h \
@@ -4109,6 +4862,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o: CMakeFiles/SoftRender.dir/cma
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cfloat \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
@@ -4132,6 +4886,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o: CMakeFiles/SoftRender.dir/cma
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
@@ -4185,6 +4940,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o: CMakeFiles/SoftRender.dir/cma
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h \
@@ -4339,12 +5095,207 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o: CMakeFiles/SoftRender.dir/cma
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/simd/platform.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_fixes.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_integer.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_packing.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_matrix.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_exponential.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_vectorize.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_decl.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_int_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_uint_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/fwd.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/glm.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/integer.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/packing.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h \
@@ -5204,6 +6155,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cfloat \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
@@ -5226,10 +6178,12 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
@@ -5276,6 +6230,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h \
@@ -5429,12 +6384,207 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/simd/platform.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_fixes.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_integer.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_packing.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_matrix.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_exponential.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_vectorize.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_decl.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_int_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_uint_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/fwd.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/glm.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1_sized.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/vec1.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.inl \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/integer.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/packing.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h \
   /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h \
@@ -5482,8 +6632,6 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 
 /Users/hangyu/Documents/GitHub/SoftRender/src/typedef.cpp:
 
-/Users/hangyu/Documents/GitHub/SoftRender/src/external_impl.cpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h:
@@ -5498,17 +6646,15 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
-
 /Users/hangyu/Documents/GitHub/SoftRender/main.cpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/include/timer.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/include/glm_test.h:
+
 /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image_write.h:
-
-/Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/tweakme.h:
 
@@ -5534,8 +6680,6 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/synchronous_factory.h:
 
-/Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/registry-inl.h:
-
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/periodic_worker.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/periodic_worker-inl.h:
@@ -5557,6 +6701,216 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/packing.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/integer.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/transform.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/string_cast.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/vec1.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/quaternion.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_transform.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_clip_space.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1_sized.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1_sized.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float1.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool1.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint1.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int1.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_constants.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_float.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/glm.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/fwd.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_trigonometric.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_packing.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4_sized.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3_sized.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4_sized.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3_sized.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/src/external_impl.cpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x2.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/registry-inl.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int4.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_int_sized.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x4.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x4.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/stb/stb_image.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat2x2.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_matrix.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x4.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x2.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x2.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4_precision.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_geometric.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_common.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_relational.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/exponential.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec3.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/qualifier.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_vector_relational.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/common.hpp:
 
 CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
@@ -5584,6 +6938,10 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_string.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.inl:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/___wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale.h:
@@ -5598,7 +6956,11 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/select.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/epsilon.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/qos.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_fixes.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/fcntl.h:
 
@@ -5611,6 +6973,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_useconds_t.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h:
 
@@ -5642,6 +7006,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_nlink_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_key_t.h:
@@ -5658,9 +7024,13 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_id_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_gid_t.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
@@ -5669,6 +7039,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_setsize.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_set.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_def.h:
 
@@ -5679,6 +7051,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_clock_t.h:
 
@@ -5692,7 +7066,11 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_relational.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/simd/platform.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
@@ -5716,7 +7094,13 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_ptrcheck.h:
 
@@ -5728,7 +7112,11 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/float.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h:
 
@@ -5796,6 +7184,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h:
@@ -5818,6 +7208,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/concepts:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_float.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/compare:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath:
@@ -5827,6 +7219,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cfloat:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h:
 
@@ -5866,6 +7260,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/underlying_type.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_transform.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/strip_signature.h:
@@ -5893,6 +7289,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/invoke.h:
 
@@ -5922,9 +7320,13 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x4_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_equality_comparable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/setup.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h:
 
@@ -5936,7 +7338,11 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_execution_policy.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_quat.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h:
 
@@ -5959,6 +7365,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_always_bitcastable.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/compatibility.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_allocator.h:
 
@@ -5988,7 +7396,13 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x3.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_relational.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/datasizeof.h:
 
@@ -5999,6 +7413,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/addressof.h:
 
@@ -6015,6 +7431,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/aligned_union.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/rotate_copy.h:
 
@@ -6040,6 +7458,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_exponential.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/exception.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h:
@@ -6054,6 +7474,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/make_tuple_types.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/find_index.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree:
@@ -6067,6 +7489,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_fill.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double3.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h:
 
@@ -6122,17 +7546,25 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_first_of.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/matrix_transform.hpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/compute_vector_decl.hpp:
+
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/promote.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h:
 
@@ -6157,6 +7589,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/has_virtual_destructor.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constant_evaluated.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool3_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
 
@@ -6208,6 +7642,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/cauchy_distribution.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x3.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_count.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h:
@@ -6223,6 +7659,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/saturation_arithmetic.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double4x2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h:
 
@@ -6243,6 +7681,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:
 
@@ -6302,7 +7742,11 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/has_unique_object_representation.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float4_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/remainder.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/logarithms.h:
 
@@ -6325,6 +7769,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/segmented_iterator.h:
 
@@ -6368,6 +7814,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/registry.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/functional.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/insert_iterator.h:
@@ -6385,6 +7833,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/distance.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x4_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
 
@@ -6460,6 +7910,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x4_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:
@@ -6492,13 +7944,19 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support/pthread.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat3x4.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x4_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/ranges_operations.h:
 
@@ -6512,6 +7970,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/advance.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/write_escaped.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h:
@@ -6522,7 +7982,11 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/indic_conjunct_break_table.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double3x3.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_tuple.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double1.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/formatter.h:
 
@@ -6570,6 +8034,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/extended_grapheme_cluster_table.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float2x3_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/escaped_output_table.h:
@@ -6586,6 +8052,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x2_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/seed_seq.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h:
@@ -6600,9 +8068,13 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/compare_three_way_result.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_trigonometric.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_float3_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__configuration/compiler.h:
 
@@ -6633,6 +8105,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/parser_std_format_spec.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint2_sized.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_endian.h:
 
@@ -6665,6 +8139,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/semiregular.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/in_place.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h:
 
@@ -6713,6 +8189,10 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/sys_info.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/ignore.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_double4.hpp:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/float.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
 
@@ -6806,6 +8286,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_set_intersection.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/bit_ceil.h:
@@ -6834,6 +8316,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/check_memory_order.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/erase_if_container.h:
@@ -6849,6 +8333,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_ref.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x3.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month_weekday.h:
 
@@ -6866,7 +8352,11 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_constructible.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sift_down.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/type_ptr.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler:
 
@@ -6885,6 +8375,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_integer.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream:
 
@@ -6913,6 +8405,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shift_right.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_final.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_vectorize.hpp:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h:
 
@@ -6972,6 +8466,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_function.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h:
@@ -6996,6 +8492,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/os.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/exponential_distribution.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month.h:
@@ -7010,9 +8508,13 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool4.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x4.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_partition_copy.h:
 
@@ -7076,11 +8578,13 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_partition.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/trigonometric.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_for_each_n.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ino_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy.h:
 
@@ -7146,6 +8650,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_const.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/scalar_uint_sized.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:
@@ -7159,6 +8665,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/random_device.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_reduce.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h:
 
@@ -7228,6 +8736,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/destruct_n.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_projection.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min_max_result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/sanitizers.h:
@@ -7250,6 +8760,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/gamma.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_binary_search.h:
@@ -7269,6 +8781,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_adjacent_find.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec4.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique.h:
 
@@ -7305,6 +8819,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x2.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h:
 
@@ -7362,6 +8878,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/make_projected.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/geometric.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/rel_ops.h:
@@ -7369,6 +8887,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/merge.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float4x3.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list:
 
@@ -7488,6 +9008,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_int2_sized.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/fcntl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_lock_free.h:
@@ -7528,11 +9050,15 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_difference.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_bool2_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/streambuf:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/mem_fn.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/binary_search.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_common.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
 
@@ -7553,6 +9079,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/maybe_const.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_equal.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_half.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h:
 
@@ -7580,13 +9108,19 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_transform.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat3x4.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/error_functions.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_double.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h:
 
@@ -7599,6 +9133,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_xlocale.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h:
 
@@ -7632,6 +9168,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/dependent_type.h:
@@ -7645,6 +9183,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/swap_allocator.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_double2x3.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_bool.h:
 
@@ -7664,9 +9204,13 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_segment_if.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/mat4x3.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivial.h:
 
@@ -7698,6 +9242,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
 
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/vector_uint4.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/in_in_result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
@@ -7707,6 +9253,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_set_union.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/prev_permutation.h:
+
+/Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat4x3.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h:
 

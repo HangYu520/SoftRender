@@ -34,7 +34,7 @@ static ARG parse_args(int argc, char** argv)
 
     return args;
 }
-
+#include "glm_test.h"
 /*
 * ------------------------------------------
 * 主函数入口
@@ -42,6 +42,8 @@ static ARG parse_args(int argc, char** argv)
 */
 int main(int argc, char** argv)
 {
+    test_glm();
+#if 0
     ARG args = parse_args(argc, argv);
     args.log(); // 打印命令行参数
 
@@ -75,4 +77,5 @@ int main(int argc, char** argv)
         image.flipVertical(); // 垂直翻转图像, 让 y 轴向上为正方向
         image.save(args.output_img_file); // 保存图像
     }
+#endif
 }
