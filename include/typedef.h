@@ -84,6 +84,12 @@ struct Image
     * ------------------------------------------
     */
     void save(const char* filename); // 写入图像文件
+
+    ~Image()
+    {
+        if (image_buffer)
+            delete[] image_buffer; // 释放图像内存
+    }
 };
 
 /*

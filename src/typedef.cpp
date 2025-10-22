@@ -50,7 +50,7 @@ void Image::flipVertical() {
 void Image::save(const char* filename)
 {
     bool is_saved = stbi_write_png(filename, width, height, channel, image_buffer, width * channel); // 写入图像文件
-    // stbi_write_png() 会自动释放图像数据
+    image_buffer = nullptr; // stbi_write_png() 会自动释放图像数据
     if (is_saved)
         spdlog::info("Image saved to {}", filename);
     else
