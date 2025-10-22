@@ -59,6 +59,20 @@ int main(int argc, char** argv)
         Engine::getInstance()->render(image, model); // 渲染 3D 模型到图像
     }
     
-    image.flipVertical(); // 垂直翻转图像, 让 y 轴向上为正方向
-    image.save(args.output_img_file); // 保存图像
+    {
+        Timer timer("Save Image");
+        Image depth_image = Image(args.width, args.height, Image::Channel::RGB);
+        Engine::getInstance()->getDepthImage(depth_image);
+        depth_image.flipVertical();
+        std::string depth_path = args.output_img_file;
+        size_t last_slash = depth_path.find_last_of("/\\");
+        if (last_slash != std::string::npos) {
+            depth_path = depth_path.substr(0, last_slash + 1) + "depth.png";
+        } else {
+            depth_path = "depth.png"; // 无目录时使用当前目录
+        }
+        depth_image.save(depth_path.c_str()); // 保存深度图像
+        image.flipVertical(); // 垂直翻转图像, 让 y 轴向上为正方向
+        image.save(args.output_img_file); // 保存图像
+    }
 }

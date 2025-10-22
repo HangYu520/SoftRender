@@ -64,6 +64,48 @@ void Engine::line(Image& image, const Image::Pixel& start, const Image::Pixel& e
     
 }
 
+// ! wireframe 还需要完善
+void Engine::wireframe(Image& image, Model& model, const Image::Color& color) // 画 3D 模型的线框
+{
+    // TODO : 1. 平移和缩放模型到视口范围内
+    auto [min_pos, max_pos] = model.getBoundingBox(); // 获取模型包围盒
+    model.translate(-min_pos.x, -min_pos.y, -max_pos.z); // 平移模型到原点附近
+
+    float model_width  =   max_pos.x - min_pos.x;
+    float model_height =   max_pos.y - min_pos.y;
+    if (model_width > model_height)
+    {
+        float scale = (image.width - 1) / model_width;
+        model.resize(scale, scale, scale); // 按比例缩放模型
+    }
+    else
+    {
+        float scale = (image.height - 1) / model_height;
+        model.resize(scale, scale, scale); // 按比例缩放模型
+    }
+    
+    // TODO : 2. 投影到 2D 平面 (简单正交投影)
+    auto& attrib = model.getAttrib(); // 投影时直接忽略 z 坐标
+    auto trifaces_lst = model.getTrifaces();
+
+    // TODO : 3. 绘制线框
+    for (auto& trifaces : trifaces_lst)
+    { 
+        for (const auto& triface : trifaces)
+        {
+            auto [v0, v1, v2] = triface.Get(attrib);
+            // 提取顶点位置
+            Image::Pixel p0 = {static_cast<int>(v0._position.x), static_cast<int>(v0._position.y)};
+            Image::Pixel p1 = {static_cast<int>(v1._position.x), static_cast<int>(v1._position.y)};
+            Image::Pixel p2 = {static_cast<int>(v2._position.x), static_cast<int>(v2._position.y)};
+            // 画三角形的三条边
+            line(image, p0, p1, color);
+            line(image, p1, p2, color);
+            line(image, p2, p0, color);
+        }
+    }
+}
+
 float Engine::signedTriangleArea(const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3)
 {
     // 计算有向三角形面积, 正值表示朝向内，负值表示朝向外
@@ -82,7 +124,146 @@ BarycentricCoord Engine::getBarycentricCoord(const Image::Pixel& p1, const Image
     return {area_u / area_total, area_v / area_total, area_w / area_total};
 }
 
+void Engine::triangle(Image& image, const std::array<Image::PixelwAttrib, 3>& Trianlge) // 画指定顶点属性的三角形
+{
+    // 获取三角形顶点和属性
+    Image::Pixel p1 = Trianlge[0].pixel; Image::Color c1 = Trianlge[0].color; float z1 = Trianlge[0].z;
+    Image::Pixel p2 = Trianlge[1].pixel; Image::Color c2 = Trianlge[1].color; float z2 = Trianlge[1].z;
+    Image::Pixel p3 = Trianlge[2].pixel; Image::Color c3 = Trianlge[2].color; float z3 = Trianlge[2].z;
+
+    // TODO : 1. 计算边界框
+    int min_x = std::min({p1.x, p2.x, p3.x});
+    int max_x = std::max({p1.x, p2.x, p3.x});
+    int min_y = std::min({p1.y, p2.y, p3.y});
+    int max_y = std::max({p1.y, p2.y, p3.y});
+
+    // TODO : 2. 遍历边界框内的像素
+    for (int y = min_y; y <= max_y; ++y)
+    {
+        for (int x = min_x; x <= max_x; ++x)
+        {
+            // TODO : 3. 计算像素的重心坐标
+            Image::Pixel p = {x, y};
+            auto barycentric = getBarycentricCoord(p1, p2, p3, p);
+            float u = barycentric.u; 
+            float v = barycentric.v; 
+            float w = barycentric.w;
+            if (u >= 0 && v >= 0 && w >= 0) // 说明在三角形内
+            {
+                // TODO : 4. 插值深度
+                float z = u * z1 + v * z2 + w * z3;
+                if (m_zBuffer && z < m_zBuffer[x + y * image.width]) // ! 相机在正 z 轴方向，观察向量 (0, 0, -1)
+                    continue; // 深度测试未通过，跳过该像素
+                
+                // TODO : 5. 插值颜色
+                float R = u * c1.R + v * c2.R + w * c3.R;
+                float G = u * c1.G + v * c2.G + w * c3.G;
+                float B = u * c1.B + v * c2.B + w * c3.B;
+                image.setColor(p, Image::Color{static_cast<unsigned char>(R), static_cast<unsigned char>(G), static_cast<unsigned char>(B)});
+
+                if (m_zBuffer)
+                    m_zBuffer[x + y * image.width] = z; // 更新深度缓冲区
+            }
+        }
+    }
+}
+
+// ! render 函数还需要完善
+void Engine::render(Image& image, Model& model) // 渲染 3D 模型到图像
+{
+    // TODO : 1. 平移和缩放模型到视口范围内
+    auto [min_pos, max_pos] = model.getBoundingBox(); // 获取模型包围盒
+    model.translate(-min_pos.x, -min_pos.y, -max_pos.z); // 平移模型到原点附近
+
+    float scale;
+    float model_width  =   max_pos.x - min_pos.x;
+    float model_height =   max_pos.y - min_pos.y;
+    
+    if (model_width > model_height)
+    {
+        scale = (image.width - 1) / model_width;
+        model.resize(scale, scale, scale); // 按比例缩放模型
+    }
+    else
+    {
+        scale = (image.height - 1) / model_height;
+        model.resize(scale, scale, scale); // 按比例缩放模型
+    }
+    
+    // TODO : 2. 投影到 2D 平面 (简单正交投影)
+    auto& attrib = model.getAttrib(); // 投影时直接忽略 z 坐标
+    auto trifaces_lst = model.getTrifaces();
+
+    // TODO : 3. 绘制模型
+    // ! 相机在 z 轴正方向，观察向量 (0, 0, -1)
+    if (m_zBuffer) delete[] m_zBuffer; // 释放旧深度缓冲区
+    m_zBufferSize = image.width * image.height;
+    m_zBuffer = new float[m_zBufferSize]; // 初始化深度缓冲区
+    std::fill(m_zBuffer, m_zBuffer + m_zBufferSize, -2);
+    
+    for (auto& trifaces : trifaces_lst)
+    { 
+        for (const auto& triface : trifaces)
+        {
+            auto [v0, v1, v2] = triface.Get(attrib);
+            // 提取顶点位置
+            Image::Pixel p0 = {static_cast<int>(v0._position.x), static_cast<int>(v0._position.y)};
+            Image::Pixel p1 = {static_cast<int>(v1._position.x), static_cast<int>(v1._position.y)};
+            Image::Pixel p2 = {static_cast<int>(v2._position.x), static_cast<int>(v2._position.y)};
+            // 提取顶点深度
+            float z0 = v0._position.z / scale;
+            float z1 = v1._position.z / scale;
+            float z2 = v2._position.z / scale;
+            // 画三角形的面
+            Image::Color color = Image::Color::randColor();
+            triangle(image, {Image::PixelwAttrib{p0, color, z0}, Image::PixelwAttrib{p1, color, z1}, Image::PixelwAttrib{p2, color, z2}});
+        }
+    }
+}
+
+void Engine::getDepthImage(Image& image) // 获取深度图
+{
+    if (!m_zBuffer)
+    {
+        spdlog::error("Can not get the depth image as zBuffer is null !");
+        exit(1);
+    }
+
+    if (image.channel != Image::Channel::RGB)
+    {
+        spdlog::error("The depth image channel is not RGB !");
+        exit(1);
+    }
+    
+    auto width = image.width;
+    auto height = image.height;
+    
+    if (width * height != m_zBufferSize)
+    {
+        spdlog::error("The depth image's width * height is not equal to zBuffer size !");
+        exit(1);
+    }
+    // ! 相机在 z 轴正方向，观察向量 (0, 0, -1)
+    // 找到最大和最小深度
+    float max_z = *std::max_element(m_zBuffer, m_zBuffer + m_zBufferSize);
+    float min_z = *std::min_element(m_zBuffer, m_zBuffer + m_zBufferSize);
+
+    // 生成深度图
+    for (int y = 0; y < height; ++y)
+    {
+        for (int x = 0; x < width; ++x)
+        {
+            float z = m_zBuffer[x + y * width];
+            
+            unsigned char GRAY = static_cast<unsigned char>(255 * (z - min_z) / (max_z - min_z));
+
+            image.setColor(Image::Pixel{x, y}, Image::Color{GRAY, GRAY, GRAY});
+        }
+    }
+}
+
 #if defined(SCANLINE)
+//! 古早的三角形填充算法，建议使用上面的带属性插值的版本
 void Engine::triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3, const Image::Color& color) // 画三角形
 {
     // TODO : 1. 排序顶点按 y 坐标从小到大
@@ -144,122 +325,3 @@ void Engine::triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& 
     }
 }
 #endif
-
-void Engine::triangle(Image& image, const std::array<Image::PixelWColor, 3>& Trianlge) // 画指定顶点颜色的三角形
-{
-    // 获取三角形顶点和颜色
-    Image::Pixel p1 = Trianlge[0].first; Image::Color c1 = Trianlge[0].second;
-    Image::Pixel p2 = Trianlge[1].first; Image::Color c2 = Trianlge[1].second;
-    Image::Pixel p3 = Trianlge[2].first; Image::Color c3 = Trianlge[2].second;
-
-    // TODO : 1. 计算边界框
-    int min_x = std::min({p1.x, p2.x, p3.x});
-    int max_x = std::max({p1.x, p2.x, p3.x});
-    int min_y = std::min({p1.y, p2.y, p3.y});
-    int max_y = std::max({p1.y, p2.y, p3.y});
-
-    // TODO : 2. 遍历边界框内的像素
-    for (int y = min_y; y <= max_y; ++y)
-    {
-        for (int x = min_x; x <= max_x; ++x)
-        {
-            // TODO : 3. 计算像素的重心坐标
-            Image::Pixel p = {x, y};
-            auto barycentric = getBarycentricCoord(p1, p2, p3, p);
-            float u = barycentric.u; 
-            float v = barycentric.v; 
-            float w = barycentric.w;
-            if (u >= 0 && v >= 0 && w >= 0) // 说明在三角形内
-            {
-                // TODO : 4. 插值颜色
-                float R = u * c1.R + v * c2.R + w * c3.R;
-                float G = u * c1.G + v * c2.G + w * c3.G;
-                float B = u * c1.B + v * c2.B + w * c3.B;
-                image.setColor(p, Image::Color{static_cast<unsigned char>(R), static_cast<unsigned char>(G), static_cast<unsigned char>(B)});
-            }
-        }
-    }
-}
-
-// ! wireframe 还需要完善
-void Engine::wireframe(Image& image, Model& model, const Image::Color& color) // 画 3D 模型的线框
-{
-    // TODO : 1. 平移和缩放模型到视口范围内
-    auto [min_pos, max_pos] = model.getBoundingBox(); // 获取模型包围盒
-    model.translate(-min_pos.x, -min_pos.y, -min_pos.z); // 平移模型到原点附近
-
-    float model_width  =   max_pos.x - min_pos.x;
-    float model_height =   max_pos.y - min_pos.y;
-    if (model_width > model_height)
-    {
-        float scale = (image.width - 1) / model_width;
-        model.resize(scale, scale, scale); // 按比例缩放模型
-    }
-    else
-    {
-        float scale = (image.height - 1) / model_height;
-        model.resize(scale, scale, scale); // 按比例缩放模型
-    }
-    
-    // TODO : 2. 投影到 2D 平面 (简单正交投影)
-    auto& attrib = model.getAttrib(); // 投影时直接忽略 z 坐标
-    auto trifaces_lst = model.getTrifaces();
-
-    // TODO : 3. 绘制线框
-    for (auto& trifaces : trifaces_lst)
-    { 
-        for (const auto& triface : trifaces)
-        {
-            auto [v0, v1, v2] = triface.Get(attrib);
-            // 提取顶点位置
-            Image::Pixel p0 = {static_cast<int>(v0._position.x), static_cast<int>(v0._position.y)};
-            Image::Pixel p1 = {static_cast<int>(v1._position.x), static_cast<int>(v1._position.y)};
-            Image::Pixel p2 = {static_cast<int>(v2._position.x), static_cast<int>(v2._position.y)};
-            // 画三角形的三条边
-            line(image, p0, p1, color);
-            line(image, p1, p2, color);
-            line(image, p2, p0, color);
-        }
-    }
-}
-
-// ! render 函数还需要完善
-void Engine::render(Image& image, Model& model) // 渲染 3D 模型到图像
-{
-    // TODO : 1. 平移和缩放模型到视口范围内
-    auto [min_pos, max_pos] = model.getBoundingBox(); // 获取模型包围盒
-    model.translate(-min_pos.x, -min_pos.y, -min_pos.z); // 平移模型到原点附近
-
-    float model_width  =   max_pos.x - min_pos.x;
-    float model_height =   max_pos.y - min_pos.y;
-    if (model_width > model_height)
-    {
-        float scale = (image.width - 1) / model_width;
-        model.resize(scale, scale, scale); // 按比例缩放模型
-    }
-    else
-    {
-        float scale = (image.height - 1) / model_height;
-        model.resize(scale, scale, scale); // 按比例缩放模型
-    }
-    
-    // TODO : 2. 投影到 2D 平面 (简单正交投影)
-    auto& attrib = model.getAttrib(); // 投影时直接忽略 z 坐标
-    auto trifaces_lst = model.getTrifaces();
-
-    // TODO : 3. 绘制模型
-    for (auto& trifaces : trifaces_lst)
-    { 
-        for (const auto& triface : trifaces)
-        {
-            auto [v0, v1, v2] = triface.Get(attrib);
-            // 提取顶点位置
-            Image::Pixel p0 = {static_cast<int>(v0._position.x), static_cast<int>(v0._position.y)};
-            Image::Pixel p1 = {static_cast<int>(v1._position.x), static_cast<int>(v1._position.y)};
-            Image::Pixel p2 = {static_cast<int>(v2._position.x), static_cast<int>(v2._position.y)};
-            if (signedTriangleArea(p0, p1, p2) < 0) continue; // ! 简单的背面剔除
-            // 画三角形的面
-            triangle(image, p0, p1, p2, Image::Color::randColor());
-        }
-    }
-}

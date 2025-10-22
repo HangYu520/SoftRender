@@ -37,7 +37,12 @@ struct Image
         int x, y;
     }; 
 
-    using PixelWColor = std::pair<Pixel, Color>; // 带颜色的像素类型定义
+    struct PixelwAttrib // 带属性的像素结构体
+    {
+        Pixel pixel; // 像素坐标
+        Color color; // 颜色值
+        float z; // 深度值
+    };
     
     // 预定义颜色
     static const Color  RED;
