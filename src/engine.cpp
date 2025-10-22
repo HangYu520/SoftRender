@@ -195,11 +195,10 @@ void Engine::render(Image& image, Model& model) // 渲染 3D 模型到图像
     auto trifaces_lst = model.getTrifaces();
 
     // TODO : 3. 绘制模型
-    // ! 相机在 z 轴正方向，观察向量 (0, 0, -1)
     if (m_zBuffer) delete[] m_zBuffer; // 释放旧深度缓冲区
     m_zBufferSize = image.width * image.height;
     m_zBuffer = new float[m_zBufferSize]; // 初始化深度缓冲区
-    std::fill(m_zBuffer, m_zBuffer + m_zBufferSize, -2);
+    std::fill(m_zBuffer, m_zBuffer + m_zBufferSize, -2); // ! 相机在 z 轴正方向，观察向量 (0, 0, -1)
     
     for (auto& trifaces : trifaces_lst)
     { 
@@ -229,9 +228,9 @@ void Engine::getDepthImage(Image& image) // 获取深度图
         exit(1);
     }
 
-    if (image.channel != Image::Channel::RGB)
+    if (image.channel != Image::Channel::GRAY)
     {
-        spdlog::error("The depth image channel is not RGB !");
+        spdlog::error("Can not get the depth image as image channel is not gray !");
         exit(1);
     }
     
@@ -243,22 +242,19 @@ void Engine::getDepthImage(Image& image) // 获取深度图
         spdlog::error("The depth image's width * height is not equal to zBuffer size !");
         exit(1);
     }
-    // ! 相机在 z 轴正方向，观察向量 (0, 0, -1)
+    
     // 找到最大和最小深度
     float max_z = *std::max_element(m_zBuffer, m_zBuffer + m_zBufferSize);
     float min_z = *std::min_element(m_zBuffer, m_zBuffer + m_zBufferSize);
 
     // 生成深度图
-    for (int y = 0; y < height; ++y)
+    for (int i = 0; i < m_zBufferSize; ++i)
     {
-        for (int x = 0; x < width; ++x)
-        {
-            float z = m_zBuffer[x + y * width];
+        float z = m_zBuffer[i];
             
-            unsigned char GRAY = static_cast<unsigned char>(255 * (z - min_z) / (max_z - min_z));
+        unsigned char GRAY = static_cast<unsigned char>(255 * (z - min_z) / (max_z - min_z)); // ! 相机在 z 轴正方向，观察向量 (0, 0, -1)
 
-            image.setColor(Image::Pixel{x, y}, Image::Color{GRAY, GRAY, GRAY});
-        }
+        image.image_buffer[i] = GRAY;
     }
 }
 

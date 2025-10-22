@@ -61,7 +61,7 @@ int main(int argc, char** argv)
     
     {
         Timer timer("Save Image");
-        Image depth_image = Image(args.width, args.height, Image::Channel::RGB);
+        Image depth_image = Image(args.width, args.height, Image::Channel::GRAY);
         Engine::getInstance()->getDepthImage(depth_image);
         depth_image.flipVertical();
         std::string depth_path = args.output_img_file;
