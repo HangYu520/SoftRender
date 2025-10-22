@@ -79,12 +79,7 @@ BarycentricCoord Engine::getBarycentricCoord(const Image::Pixel& p1, const Image
     float area_w     = signedTriangleArea(p1, p2, p);
 
     // 计算重心坐标
-    BarycentricCoord barycentric;
-    barycentric.u = area_u / area_total;
-    barycentric.v = area_v / area_total;
-    barycentric.w = area_w / area_total;
-
-    return barycentric;
+    return {area_u / area_total, area_v / area_total, area_w / area_total};
 }
 
 #if defined(SCANLINE)
@@ -264,8 +259,7 @@ void Engine::render(Image& image, Model& model) // 渲染 3D 模型到图像
             Image::Pixel p2 = {static_cast<int>(v2._position.x), static_cast<int>(v2._position.y)};
             if (signedTriangleArea(p0, p1, p2) < 0) continue; // ! 简单的背面剔除
             // 画三角形的面
-            auto color = Image::Color::randColor();
-            triangle(image, {Image::PixelWColor{p0, color}, Image::PixelWColor{p1, color}, Image::PixelWColor{p2, color}});
+            triangle(image, p0, p1, p2, Image::Color::randColor());
         }
     }
 }
