@@ -15,6 +15,7 @@
 #include <spdlog/spdlog.h> // 日志打印采用 spdlog 库
 #include <cmath>
 #include <iostream>
+#include <fstream>
 #include <iomanip> // 提供 std::setprecision 功能
 #include <memory>
 #include <utility>

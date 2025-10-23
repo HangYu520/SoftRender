@@ -64,41 +64,32 @@ void Engine::line(Image& image, const Image::Pixel& start, const Image::Pixel& e
     
 }
 
-// ! wireframe 还需要完善
 void Engine::wireframe(Image& image, Model& model, const Image::Color& color) // 画 3D 模型的线框
 {
-    // TODO : 1. 平移和缩放模型到视口范围内
-    auto [min_pos, max_pos] = model.getBoundingBox(); // 获取模型包围盒
-    model.translate(-min_pos.x, -min_pos.y, -max_pos.z); // 平移模型到原点附近
+    // TODO : 1. 获取模型矩阵、投影矩阵和视图矩阵
+    glm::mat4 M = getModelMatrix();
+    glm::mat4 V = getViewMatrix();
+    glm::mat4 P = getProjectMatrix();
 
-    float model_width  =   max_pos.x - min_pos.x;
-    float model_height =   max_pos.y - min_pos.y;
-    if (model_width > model_height)
-    {
-        float scale = (image.width - 1) / model_width;
-        model.resize(scale, scale, scale); // 按比例缩放模型
-    }
-    else
-    {
-        float scale = (image.height - 1) / model_height;
-        model.resize(scale, scale, scale); // 按比例缩放模型
-    }
-    
-    // TODO : 2. 投影到 2D 平面 (简单正交投影)
-    auto& attrib = model.getAttrib(); // 投影时直接忽略 z 坐标
+    auto& attrib = model.getAttrib();
     auto trifaces_lst = model.getTrifaces();
 
-    // TODO : 3. 绘制线框
+    // TODO : 2. 绘制模型
     for (auto& trifaces : trifaces_lst)
     { 
         for (const auto& triface : trifaces)
         {
             auto [v0, v1, v2] = triface.Get(attrib);
-            // 提取顶点位置
-            Image::Pixel p0 = {static_cast<int>(v0._position.x), static_cast<int>(v0._position.y)};
-            Image::Pixel p1 = {static_cast<int>(v1._position.x), static_cast<int>(v1._position.y)};
-            Image::Pixel p2 = {static_cast<int>(v2._position.x), static_cast<int>(v2._position.y)};
-            // 画三角形的三条边
+            // 顶点位置变换和投影
+            auto pos0 = P * V * M * glm::vec4{v0._position.x, v0._position.y, v0._position.z, 1.0f};
+            auto pos1 = P * V * M * glm::vec4{v1._position.x, v1._position.y, v1._position.z, 1.0f};
+            auto pos2 = P * V * M * glm::vec4{v2._position.x, v2._position.y, v2._position.z, 1.0f};
+            // TODO ： 裁剪视锥外的点
+            // 视口变换 : 转换到屏幕坐标 
+            Image::Pixel p0 = {static_cast<int>((pos0.x / pos0.w + 1)*image.width/2), static_cast<int>((pos0.y / pos0.w + 1)*image.height/2)};
+            Image::Pixel p1 = {static_cast<int>((pos1.x / pos1.w + 1)*image.width/2), static_cast<int>((pos1.y / pos1.w + 1)*image.height/2)};
+            Image::Pixel p2 = {static_cast<int>((pos2.x / pos2.w + 1)*image.width/2), static_cast<int>((pos2.y / pos2.w + 1)*image.height/2)};
+            // 画线
             line(image, p0, p1, color);
             line(image, p1, p2, color);
             line(image, p2, p0, color);
@@ -152,7 +143,7 @@ void Engine::triangle(Image& image, const std::array<Image::PixelwAttrib, 3>& Tr
             {
                 // TODO : 4. 插值深度
                 float z = u * z1 + v * z2 + w * z3;
-                if (m_zBuffer && z < m_zBuffer[x + y * image.width]) // ! 相机在正 z 轴方向，观察向量 (0, 0, -1)
+                if (m_zBuffer && z < m_zBuffer[x + y * image.width])
                     continue; // 深度测试未通过，跳过该像素
                 
                 // TODO : 5. 插值颜色
@@ -171,53 +162,61 @@ void Engine::triangle(Image& image, const std::array<Image::PixelwAttrib, 3>& Tr
 // ! render 函数还需要完善
 void Engine::render(Image& image, Model& model) // 渲染 3D 模型到图像
 {
-    // TODO : 1. 平移和缩放模型到视口范围内
-    auto [min_pos, max_pos] = model.getBoundingBox(); // 获取模型包围盒
-    model.translate(-min_pos.x, -min_pos.y, -max_pos.z); // 平移模型到原点附近
+    // TODO : 1. 获取模型矩阵、投影矩阵和视图矩阵
+    glm::mat4 M = getModelMatrix();
+    glm::mat4 V = getViewMatrix();
+    glm::mat4 P = getProjectMatrix();
 
-    float scale;
-    float model_width  =   max_pos.x - min_pos.x;
-    float model_height =   max_pos.y - min_pos.y;
-    
-    if (model_width > model_height)
-    {
-        scale = (image.width - 1) / model_width;
-        model.resize(scale, scale, scale); // 按比例缩放模型
-    }
-    else
-    {
-        scale = (image.height - 1) / model_height;
-        model.resize(scale, scale, scale); // 按比例缩放模型
-    }
-    
-    // TODO : 2. 投影到 2D 平面 (简单正交投影)
-    auto& attrib = model.getAttrib(); // 投影时直接忽略 z 坐标
+    auto& attrib = model.getAttrib();
     auto trifaces_lst = model.getTrifaces();
 
-    // TODO : 3. 绘制模型
+    // TODO : 2. 绘制模型
     if (m_zBuffer) delete[] m_zBuffer; // 释放旧深度缓冲区
     m_zBufferSize = image.width * image.height;
     m_zBuffer = new float[m_zBufferSize]; // 初始化深度缓冲区
-    std::fill(m_zBuffer, m_zBuffer + m_zBufferSize, -2); // ! 相机在 z 轴正方向，观察向量 (0, 0, -1)
+    std::fill(m_zBuffer, m_zBuffer + m_zBufferSize, -2.0f);
     
     for (auto& trifaces : trifaces_lst)
     { 
         for (const auto& triface : trifaces)
         {
             auto [v0, v1, v2] = triface.Get(attrib);
-            // 提取顶点位置
-            Image::Pixel p0 = {static_cast<int>(v0._position.x), static_cast<int>(v0._position.y)};
-            Image::Pixel p1 = {static_cast<int>(v1._position.x), static_cast<int>(v1._position.y)};
-            Image::Pixel p2 = {static_cast<int>(v2._position.x), static_cast<int>(v2._position.y)};
+            // 顶点位置变换和投影
+            auto pos0 = P * V * M * glm::vec4{v0._position.x, v0._position.y, v0._position.z, 1.0f};
+            auto pos1 = P * V * M * glm::vec4{v1._position.x, v1._position.y, v1._position.z, 1.0f};
+            auto pos2 = P * V * M * glm::vec4{v2._position.x, v2._position.y, v2._position.z, 1.0f};
+            // TODO ： 裁剪视锥外的面
+            // 视口变换 : 转换到屏幕坐标 
+            Image::Pixel p0 = {static_cast<int>((pos0.x / pos0.w + 1)*image.width/2), static_cast<int>((pos0.y / pos0.w + 1)*image.height/2)};
+            Image::Pixel p1 = {static_cast<int>((pos1.x / pos1.w + 1)*image.width/2), static_cast<int>((pos1.y / pos1.w + 1)*image.height/2)};
+            Image::Pixel p2 = {static_cast<int>((pos2.x / pos2.w + 1)*image.width/2), static_cast<int>((pos2.y / pos2.w + 1)*image.height/2)};
             // 提取顶点深度
-            float z0 = v0._position.z / scale;
-            float z1 = v1._position.z / scale;
-            float z2 = v2._position.z / scale;
+            float z0 = v0._position.z;
+            float z1 = v0._position.z;
+            float z2 = v0._position.z;
             // 画三角形的面
             Image::Color color = Image::Color::randColor();
             triangle(image, {Image::PixelwAttrib{p0, color, z0}, Image::PixelwAttrib{p1, color, z1}, Image::PixelwAttrib{p2, color, z2}});
         }
     }
+}
+
+void Engine::centerModel(Model& model) 
+{
+    // 1. 获取模型包围盒
+    auto [min_pos, max_pos] = model.getBoundingBox();
+    
+    // 2. 计算模型尺寸
+    float model_width  = max_pos.x - min_pos.x;
+    float model_height = max_pos.y - min_pos.y;
+    float model_depth  = max_pos.z - min_pos.z;
+    
+    // 3. 中心化
+    m_transConfig.mConfig.translate = glm::vec3(
+        - (min_pos.x + model_width/2.0f),
+        - (min_pos.y + model_height/2.0f),
+        - model_depth/2.0f
+    );
 }
 
 void Engine::getDepthImage(Image& image) // 获取深度图
@@ -252,10 +251,41 @@ void Engine::getDepthImage(Image& image) // 获取深度图
     {
         float z = m_zBuffer[i];
             
-        unsigned char GRAY = static_cast<unsigned char>(255 * (z - min_z) / (max_z - min_z)); // ! 相机在 z 轴正方向，观察向量 (0, 0, -1)
+        unsigned char GRAY = static_cast<unsigned char>(255 * (z - min_z) / (max_z - min_z));
 
         image.image_buffer[i] = GRAY;
     }
+}
+
+glm::mat4 Engine::getModelMatrix() // 获取模型矩阵
+{
+    TransConfig::M config = m_transConfig.mConfig;
+    glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), config.scale);
+    glm::mat4 translateMatrix = glm::translate(glm::mat4(1.0f), config.translate);
+
+    float angle = glm::radians(config.rotateAngle); // 转换为弧度
+    auto axis = config.rotateAxis;
+    glm::mat4 rotateMatrix = glm::rotate(glm::mat4(1.0f), angle, axis);
+
+    auto model = translateMatrix * rotateMatrix * scaleMatrix;
+
+    return model;
+}
+
+glm::mat4 Engine::getViewMatrix() // 获取视图矩阵
+{
+    TransConfig::V config = m_transConfig.vConfig;
+    glm::mat4 view = glm::lookAt(config.cameraPos, config.cameraTarget, config.cameraUp);
+
+    return view;
+}
+
+glm::mat4 Engine::getProjectMatrix() // 获取投影矩阵
+{
+    TransConfig::P config = m_transConfig.pConfig;
+    glm::mat4 projection = glm::perspective(glm::radians(config.fov), config.aspect, config.near, config.far);
+
+    return projection;
 }
 
 #if defined(SCANLINE)

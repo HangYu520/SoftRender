@@ -297,6 +297,32 @@ std::vector<Model::Trifaces>  Model::getTrifaces()
     return trifaces_list;
 }
 
+void Model::saveOBJ(const char* filename, const std::vector<attrib_t::position>& vertices, const Trifaces& trifaces)
+{
+    if (vertices.empty())
+    {
+        spdlog::error("Model::saveOBJ(): no vertices");
+        exit(1);
+    }
+    std::ofstream obj_file(filename, std::ios::out);
+    if (!obj_file.is_open())
+    {
+        spdlog::error("Model::saveOBJ(): failed to open file {}", filename);
+        exit(1);
+    }
+    for (size_t i = 0; i < vertices.size(); i++)
+    {
+        obj_file << "v " << vertices[i].x << " " << vertices[i].y << " " << vertices[i].z << std::endl;
+    }
+    for (auto &face : trifaces)
+    {
+        obj_file << "f " << (face.vertex[0].vertex_index + 1) << " " 
+             << (face.vertex[1].vertex_index + 1) << " " 
+             << (face.vertex[2].vertex_index + 1) << std::endl;
+    }
+    obj_file.close();
+}
+
 void Model::logShapes() const // 打印模型形状信息
 {
     for (size_t i = 0; i < shapes.size(); i++)

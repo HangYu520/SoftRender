@@ -34,7 +34,7 @@ static ARG parse_args(int argc, char** argv)
 
     return args;
 }
-#include "glm_test.h"
+
 /*
 * ------------------------------------------
 * 主函数入口
@@ -56,6 +56,8 @@ int main(int argc, char** argv)
     // TODO : 在此处添加绘制代码
     {
         Timer timer("Render"); // 计时器开始
+        Engine::getInstance()->centerModel(model);
+        Engine::getInstance()->getTrans().mConfig.rotateAngle = 30.0f;
         Engine::getInstance()->render(image, model); // 渲染 3D 模型到图像
     }
     

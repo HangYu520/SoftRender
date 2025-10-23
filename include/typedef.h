@@ -9,6 +9,7 @@
 * 2. 3D 模型类 (封装 tinyobjloader)
 * 3. 命令行参数结构体
 * 4. 重心坐标结构体
+* 5. 矩阵变换配置结构体
 * -----------------------------
 */
 
@@ -237,6 +238,9 @@ public:
     // 获取所有形状中的三角形面列表
     std::vector<Trifaces>  getTrifaces(); 
 
+    // 保存 OBJ 文件
+    void saveOBJ(const char* filename, const std::vector<attrib_t::position>& vertices, const Trifaces& trifaces);
+
     // 打印模型形状信息
     void logShapes() const; 
 };
@@ -267,4 +271,43 @@ struct BarycentricCoord // * 重心坐标 u + v + w = 1
     float u; // 重心坐标 u
     float v; // 重心坐标 v
     float w; // 重心坐标 w
+};
+
+/*
+* -------------------
+* 5. 矩阵变换配置结构体
+* -------------------
+*/
+struct TransConfig
+{
+    struct ModelTransform // * 模型变换结构体
+    { 
+        glm::vec3 translate; // 模型平移
+        glm::vec3 scale; // 模型缩放
+        glm::vec3 rotateAxis; // 模型旋转轴
+        float rotateAngle; // 模型旋转角度
+    };
+
+    struct ViewTransform // * 视图变换结构体
+    {
+        glm::vec3 cameraPos; // 相机位置
+        glm::vec3 cameraTarget; // 摄像机目标位置
+        glm::vec3 cameraUp; // 摄像机上方向
+    };
+
+    struct ProjectTransform // * 投影变换结构体
+    {
+        float fov; // 视场角
+        float aspect; // 宽高比
+        float near; // near
+        float far; // far
+    };
+
+    using M = ModelTransform;
+    using V = ViewTransform;
+    using P = ProjectTransform;
+
+    M mConfig = { glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 1.0f, 0.0f), 0.0f };
+    V vConfig = { glm::vec3(0.0f, 0.0f, 2.0f), glm::vec3(0.0f, 0.0f, -1.0f), glm::vec3(0.0f, 1.0f, 0.0f) };
+    P pConfig = { 45.0f, 1.0f, 0.1f, 100.0f};
 };
