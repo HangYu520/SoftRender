@@ -66,33 +66,31 @@ void Engine::line(Image& image, const Image::Pixel& start, const Image::Pixel& e
 
 void Engine::wireframe(Image& image, Model& model, const Image::Color& color) // 画 3D 模型的线框
 {
-    // TODO : 1. 获取模型矩阵、投影矩阵和视图矩阵
-    glm::mat4 M = getModelMatrix();
-    glm::mat4 V = getViewMatrix();
-    glm::mat4 P = getProjectMatrix();
-
     auto& attrib = model.getAttrib();
     auto trifaces_lst = model.getTrifaces();
 
-    // TODO : 2. 绘制模型
     for (auto& trifaces : trifaces_lst)
     { 
         for (const auto& triface : trifaces)
         {
             auto [v0, v1, v2] = triface.Get(attrib);
-            // 顶点位置变换和投影
-            auto pos0 = P * V * M * glm::vec4{v0._position.x, v0._position.y, v0._position.z, 1.0f};
-            auto pos1 = P * V * M * glm::vec4{v1._position.x, v1._position.y, v1._position.z, 1.0f};
-            auto pos2 = P * V * M * glm::vec4{v2._position.x, v2._position.y, v2._position.z, 1.0f};
-            // TODO ： 裁剪视锥外的点
-            // 视口变换 : 转换到屏幕坐标 
-            Image::Pixel p0 = {static_cast<int>((pos0.x / pos0.w + 1)*image.width/2), static_cast<int>((pos0.y / pos0.w + 1)*image.height/2)};
-            Image::Pixel p1 = {static_cast<int>((pos1.x / pos1.w + 1)*image.width/2), static_cast<int>((pos1.y / pos1.w + 1)*image.height/2)};
-            Image::Pixel p2 = {static_cast<int>((pos2.x / pos2.w + 1)*image.width/2), static_cast<int>((pos2.y / pos2.w + 1)*image.height/2)};
-            // 画线
-            line(image, p0, p1, color);
-            line(image, p1, p2, color);
-            line(image, p2, p0, color);
+            // TODO : 1. 位置变换, 视图变换和投影
+            auto [pos0, pos1, pos2] = MVPTrans(v0, v1, v2);
+            // TODO : 2. 裁剪视锥外的面
+            std::vector<glm::vec4> clippedVertices = clipTriangle(pos0, pos1, pos2);
+            if (clippedVertices.empty()) continue;
+            for (int i = 0; i < clippedVertices.size() - 3 + 1; i++) // 裁剪完三角形的个数 : 0 or 1 or 2
+            {
+                glm::vec4 vec0 = clippedVertices[i+0];
+                glm::vec4 vec1 = clippedVertices[i+1];
+                glm::vec4 vec2 = clippedVertices[i+2];
+                // TODO : 3. 透视除法和视口变换, 转换到屏幕坐标 
+                auto [p0, p1, p2] = ViewportTrans(image, vec0, vec1, vec2);
+                // TODO ; 4. 画线
+                line(image, p0, p1, color);
+                line(image, p1, p2, color);
+                line(image, p2, p0, color);
+            }
         }
     }
 }
@@ -162,15 +160,10 @@ void Engine::triangle(Image& image, const std::array<Image::PixelwAttrib, 3>& Tr
 // ! render 函数还需要完善
 void Engine::render(Image& image, Model& model) // 渲染 3D 模型到图像
 {
-    // TODO : 1. 获取模型矩阵、投影矩阵和视图矩阵
-    glm::mat4 M = getModelMatrix();
-    glm::mat4 V = getViewMatrix();
-    glm::mat4 P = getProjectMatrix();
-
     auto& attrib = model.getAttrib();
     auto trifaces_lst = model.getTrifaces();
 
-    // TODO : 2. 绘制模型
+    // TODO : 1. 初始化深度缓冲区
     if (m_zBuffer) delete[] m_zBuffer; // 释放旧深度缓冲区
     m_zBufferSize = image.width * image.height;
     m_zBuffer = new float[m_zBufferSize]; // 初始化深度缓冲区
@@ -181,22 +174,24 @@ void Engine::render(Image& image, Model& model) // 渲染 3D 模型到图像
         for (const auto& triface : trifaces)
         {
             auto [v0, v1, v2] = triface.Get(attrib);
-            // 顶点位置变换和投影
-            auto pos0 = P * V * M * glm::vec4{v0._position.x, v0._position.y, v0._position.z, 1.0f};
-            auto pos1 = P * V * M * glm::vec4{v1._position.x, v1._position.y, v1._position.z, 1.0f};
-            auto pos2 = P * V * M * glm::vec4{v2._position.x, v2._position.y, v2._position.z, 1.0f};
-            // TODO ： 裁剪视锥外的面
-            // 视口变换 : 转换到屏幕坐标 
-            Image::Pixel p0 = {static_cast<int>((pos0.x / pos0.w + 1)*image.width/2), static_cast<int>((pos0.y / pos0.w + 1)*image.height/2)};
-            Image::Pixel p1 = {static_cast<int>((pos1.x / pos1.w + 1)*image.width/2), static_cast<int>((pos1.y / pos1.w + 1)*image.height/2)};
-            Image::Pixel p2 = {static_cast<int>((pos2.x / pos2.w + 1)*image.width/2), static_cast<int>((pos2.y / pos2.w + 1)*image.height/2)};
-            // 提取顶点深度
-            float z0 = v0._position.z;
-            float z1 = v0._position.z;
-            float z2 = v0._position.z;
-            // 画三角形的面
-            Image::Color color = Image::Color::randColor();
-            triangle(image, {Image::PixelwAttrib{p0, color, z0}, Image::PixelwAttrib{p1, color, z1}, Image::PixelwAttrib{p2, color, z2}});
+            // TODO : 2. 位置变换, 视图变换和投影
+            auto [pos0, pos1, pos2] = MVPTrans(v0, v1, v2);
+            // TODO : 3. 裁剪视锥外的面
+            std::vector<glm::vec4> clippedVertices = clipTriangle(pos0, pos1, pos2);
+            if (clippedVertices.empty()) continue;
+            for (int i = 0; i < clippedVertices.size() - 3 + 1; i++) // 裁剪完三角形的个数 : 0 or 1 or 2
+            {
+                glm::vec4 vec0 = clippedVertices[i+0];
+                glm::vec4 vec1 = clippedVertices[i+1];
+                glm::vec4 vec2 = clippedVertices[i+2];
+                // TODO : 4. 透视除法和视口变换, 转换到屏幕坐标 
+                auto [p0, p1, p2] = ViewportTrans(image, vec0, vec1, vec2);
+                // 提取顶点深度, 变换后的 w 存储着视图变换后的深度 : - z
+                float z0 = -vec0.w, z1 = -vec1.w, z2 = -vec2.w;
+                // TODO : 5. 画三角形的面
+                Image::Color color = Image::WHITE;
+                triangle(image, {Image::PixelwAttrib{p0, color, z0}, Image::PixelwAttrib{p1, color, z1}, Image::PixelwAttrib{p2, color, z2}});
+            }
         }
     }
 }
@@ -210,12 +205,16 @@ void Engine::centerModel(Model& model)
     float model_width  = max_pos.x - min_pos.x;
     float model_height = max_pos.y - min_pos.y;
     float model_depth  = max_pos.z - min_pos.z;
+
+    // 3. 缩放
+    float scale = 1.0f / std::max({model_width, model_height, model_depth});
+    m_transConfig.mConfig.scale = glm::vec3(scale, scale, scale);
     
-    // 3. 中心化
+    // 4. 中心化
     m_transConfig.mConfig.translate = glm::vec3(
-        - (min_pos.x + model_width/2.0f),
-        - (min_pos.y + model_height/2.0f),
-        - model_depth/2.0f
+        - scale * (min_pos.x + model_width/2.0f),
+        - scale * (min_pos.y + model_height/2.0f),
+        - scale * model_depth/2.0f
     );
 }
 
@@ -286,6 +285,99 @@ glm::mat4 Engine::getProjectMatrix() // 获取投影矩阵
     glm::mat4 projection = glm::perspective(glm::radians(config.fov), config.aspect, config.near, config.far);
 
     return projection;
+}
+
+std::tuple<glm::vec4, glm::vec4, glm::vec4> Engine::MVPTrans(const Model::attrib_t& v0, const Model::attrib_t& v1, const Model::attrib_t& v2)
+{
+    glm::mat4 M = getModelMatrix();
+    glm::mat4 V = getViewMatrix();
+    glm::mat4 P = getProjectMatrix();
+
+    glm::vec4 pos0 = P * V * M * glm::vec4{v0._position.x, v0._position.y, v0._position.z, 1.0f};
+    glm::vec4 pos1 = P * V * M * glm::vec4{v1._position.x, v1._position.y, v1._position.z, 1.0f};
+    glm::vec4 pos2 = P * V * M * glm::vec4{v2._position.x, v2._position.y, v2._position.z, 1.0f};
+
+    return std::make_tuple(pos0, pos1, pos2);
+}
+
+std::tuple<Image::Pixel, Image::Pixel, Image::Pixel> Engine::ViewportTrans(const Image& image, const glm::vec4& pos0, const glm::vec4& pos1, const glm::vec4& pos2)
+{
+    Image::Pixel p0 = {static_cast<int>((pos0.x / pos0.w + 1)*image.width/2), static_cast<int>((pos0.y / pos0.w + 1)*image.height/2)};
+    Image::Pixel p1 = {static_cast<int>((pos1.x / pos1.w + 1)*image.width/2), static_cast<int>((pos1.y / pos1.w + 1)*image.height/2)};
+    Image::Pixel p2 = {static_cast<int>((pos2.x / pos2.w + 1)*image.width/2), static_cast<int>((pos2.y / pos2.w + 1)*image.height/2)};
+    
+    return std::make_tuple(p0, p1, p2);
+}
+
+bool Engine::isInside(const glm::vec4& plane, const glm::vec4& pos) // 判断点是否在平面内侧
+{
+    return plane.x * pos.x + plane.y * pos.y + plane.z * pos.z + plane.w * pos.w >= 0.0f;
+}
+
+glm::vec4 Engine::interSect(const glm::vec4& plane, const glm::vec4& pos0, const glm::vec4& pos1) // 获取平面和线段相交的点
+{
+    float d0 = plane.x * pos0.x + plane.y * pos0.y + plane.z * pos0.z + plane.w * pos0.w;
+    float d1 = plane.x * pos1.x + plane.y * pos1.y + plane.z * pos1.z + plane.w * pos1.w;
+    float weight = d0 / (d0 - d1);
+
+    return glm::lerp(pos0, pos1, weight);
+}
+
+std::vector<glm::vec4> Engine::clipTriangle(const glm::vec4& pos0, const glm::vec4& pos1, const glm::vec4& pos2)
+{
+    std::vector<glm::vec4> clipped = {pos0, pos1, pos2};
+
+    bool allInside = true;
+    for (int i = 0; i < 3; ++i)
+    {
+        bool outside = clipped[i].x > clipped[i].w || clipped[i].y > clipped[i].w || clipped[i].z > clipped[i].w;
+        outside = outside || clipped[i].x < -clipped[i].w || clipped[i].y < -clipped[i].w || clipped[i].z < -clipped[i].w;
+        if (outside)
+        {
+            allInside = false;
+            break;
+        }
+    }
+    if (allInside)
+        return clipped; // 全部在内侧, 无需裁剪, 直接返回
+
+    const std::vector<glm::vec4> Planes =  // 需要裁剪的平面方程
+    {   //near
+        glm::vec4(0,0,1,1),
+        //far
+        glm::vec4(0,0,-1,1),
+        //left
+        glm::vec4(1,0,0,1),
+        //right
+        glm::vec4(-1,0,0,1),
+        //top 
+        glm::vec4(0,-1,0,1),
+        //bottom
+        glm::vec4(0,1,0,1)
+    };
+    
+    // 逐边裁剪
+    for (auto& plane: Planes)
+    {
+        std::vector<glm::vec4> input(clipped);
+        clipped.clear();
+        for (int j = 0; j < input.size(); j++)
+        {
+            glm::vec4 pos0 = input[j];
+            glm::vec4 pos1 = input[(j + input.size() - 1) % input.size()];
+            if (isInside(plane, pos0))
+            {
+                if (!isInside(plane, pos1))
+                    clipped.push_back(interSect(plane, pos0, pos1));
+                clipped.push_back(pos0);
+            }
+            else if (isInside(plane, pos1))
+            {
+                clipped.push_back(interSect(plane, pos1, pos0));
+            }
+        }
+    }
+    return clipped;
 }
 
 #if defined(SCANLINE)

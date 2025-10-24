@@ -32,8 +32,18 @@ public:
         auto end = std::chrono::steady_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
         if (!name.empty()) 
-            spdlog::info("Timer [{}] elapsed: {} ms", name, duration);
+        {
+            if (duration > 1000)
+                spdlog::info("Timer [{}] elapsed: {} s", name, duration / 1000.0);
+            else
+                spdlog::info("Timer [{}] elapsed: {} ms", name, duration);
+        }
         else
-            spdlog::info("Timer elapsed: {} ms", duration);
+        {
+            if (duration > 1000)
+                spdlog::info("Timer elapsed: {} s", duration / 1000.0);
+            else
+                spdlog::info("Timer elapsed: {} ms", duration);
+        }
     }
 };

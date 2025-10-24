@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external -I/Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader -I/Users/hangyu/Documents/GitHub/SoftRender/include
+CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external -I/Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader -I/Users/hangyu/Documents/GitHub/SoftRender/include -I/opt/homebrew/Cellar/sfml/3.0.2/include -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64
 

@@ -167,6 +167,9 @@ SoftRender_EXTERNAL_OBJECTS =
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/src/typedef.cpp.o
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/build.make
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: /opt/homebrew/lib/libsfml-graphics.3.0.2.dylib
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: /opt/homebrew/lib/libsfml-window.3.0.2.dylib
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: /opt/homebrew/lib/libsfml-system.3.0.2.dylib
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SoftRender.dir/link.txt --verbose=$(VERBOSE)

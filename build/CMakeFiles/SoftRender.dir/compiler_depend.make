@@ -2772,7 +2772,85 @@ CMakeFiles/SoftRender.dir/main.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx \
   /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/timer.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h \
-  /Users/hangyu/Documents/GitHub/SoftRender/main.cpp
+  /Users/hangyu/Documents/GitHub/SoftRender/main.cpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Config.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/BlendMode.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/CircleShape.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Color.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Color.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/ConvexShape.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/CoordinateType.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Drawable.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Export.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Font.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Glsl.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Glsl.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Glyph.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Image.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/PrimitiveType.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Rect.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Rect.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RectangleShape.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RenderStates.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RenderTarget.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RenderTexture.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RenderWindow.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Shader.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Shape.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Sprite.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/StencilMode.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Text.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Texture.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Transform.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Transform.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Transformable.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Vertex.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/VertexArray.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/VertexBuffer.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/View.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Angle.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Angle.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Clock.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Err.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Exception.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Export.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/FileInputStream.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/InputStream.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/MemoryInputStream.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Sleep.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/String.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/String.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Time.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Time.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Utf.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Utf.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Vector2.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Vector2.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Vector3.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Vector3.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Clipboard.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Context.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/ContextSettings.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Cursor.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Event.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Event.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Export.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/GlResource.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Joystick.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Keyboard.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Mouse.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Sensor.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Touch.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/VideoMode.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Vulkan.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Window.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/WindowBase.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/WindowBase.inl \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/WindowEnums.hpp \
+  /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/WindowHandle.hpp
 
 CMakeFiles/SoftRender.dir/src/engine.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -6703,9 +6781,77 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 
 /Users/hangyu/Documents/GitHub/SoftRender/src/typedef.cpp:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/WindowEnums.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/WindowBase.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Window.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Vulkan.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Sensor.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Keyboard.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Joystick.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Event.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/ContextSettings.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Clipboard.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Utf.inl:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Utf.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Time.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/InputStream.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/FileInputStream.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Export.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Angle.inl:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Vertex.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Sprite.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Shader.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Rect.inl:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Rect.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/MemoryInputStream.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/PrimitiveType.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Glsl.inl:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Glsl.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Font.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Export.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Drawable.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/ConvexShape.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Color.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/BlendMode.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Config.hpp:
+
 /Users/hangyu/Documents/GitHub/SoftRender/main.cpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/include/timer.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Exception.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h:
 
@@ -6713,9 +6859,13 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/tweakme.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/String.inl:
+
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/spdlog.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/spdlog-inl.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/View.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/sinks/sink-inl.h:
 
@@ -6724,6 +6874,8 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/pattern_formatter.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/pattern_formatter-inl.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RenderWindow.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/logger.h:
 
@@ -6736,6 +6888,8 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/synchronous_factory.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/periodic_worker.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Image.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/periodic_worker-inl.h:
 
@@ -6752,6 +6906,8 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/console_globals.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Err.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h:
 
@@ -6831,6 +6987,8 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_geometric.hpp:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/VertexArray.hpp:
+
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/glm.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/fwd.hpp:
@@ -6881,6 +7039,8 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec2.inl:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window.hpp:
+
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp:
@@ -6906,6 +7066,10 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x3_precision.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x2.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Touch.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/String.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/dual_quaternion.hpp:
 
@@ -6940,6 +7104,8 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x2.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/matrix.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Clock.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_vec1.inl:
 
@@ -7001,6 +7167,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/qos.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Event.inl:
+
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/_fixes.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/fcntl.h:
@@ -7057,6 +7225,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Transform.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ino64_t.h:
@@ -7084,6 +7254,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_errno_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Glyph.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h:
 
@@ -7505,6 +7677,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/make_tuple_types.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Transform.hpp:
+
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtc/constants.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/find_index.h:
@@ -7591,6 +7765,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/promote.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Export.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/type_mat2x4.inl:
@@ -7649,6 +7825,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/student_t_distribution.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/GlResource.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/shuffle_order_engine.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/log2.h:
@@ -7701,6 +7879,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Vector3.hpp:
+
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/matrix_float3x4_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:
@@ -7741,6 +7921,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/builtin_new_allocator.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RenderTexture.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/auto_ptr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/assume_aligned.h:
@@ -7754,6 +7936,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/trigonometric_functions.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Shape.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/rounding_functions.h:
 
@@ -7985,6 +8169,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/advance.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Vector2.inl:
+
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/gtx/euler_angles.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/write_escaped.h:
@@ -8032,6 +8218,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_context.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/VideoMode.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter.h:
 
@@ -8113,6 +8301,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/logarithms.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Cursor.hpp:
+
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/detail/func_integer.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream:
@@ -8128,6 +8318,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/in_fun_result.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Color.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_init.h:
 
@@ -8146,6 +8338,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temp_value.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Angle.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/compare_three_way_result.h:
 
@@ -8166,6 +8360,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/parser_std_format_spec.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/inverse_hyperbolic_functions.h:
 
@@ -8242,6 +8438,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/extreme_value_distribution.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/derived_from.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_scalar.h:
 
@@ -8429,7 +8627,13 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Texture.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_base.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Time.inl:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/CircleShape.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h:
 
@@ -8635,6 +8839,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Sleep.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/signal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/arm/_structs.h:
@@ -8705,6 +8911,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/WindowBase.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_is_sorted.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_identity.h:
@@ -8755,6 +8963,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_is_partitioned.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Text.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_null_pointer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
@@ -8797,6 +9007,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_end.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/StencilMode.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_fill_n.h:
@@ -8812,6 +9024,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min_max_result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/sanitizers.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Mouse.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/circular_q.h:
 
@@ -8973,7 +9187,11 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/raw_storage_iterator.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/Context.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Window/WindowHandle.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h:
 
@@ -9109,6 +9327,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique_copy.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RenderTarget.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_count_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h:
@@ -9162,6 +9382,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/alloca.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/maybe_const.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/VertexBuffer.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_equal.h:
 
@@ -9219,6 +9441,10 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_xlocale.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/Transformable.hpp:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RectangleShape.hpp:
+
 /Users/hangyu/Documents/GitHub/SoftRender/external/glm/ext/quaternion_common.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h:
@@ -9234,6 +9460,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/in_found_result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_unique.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Vector2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_partial_sort_copy.h:
 
@@ -9260,6 +9488,8 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/dependent_type.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Vector3.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/ranges_uninitialized_algorithms.h:
 
@@ -9293,7 +9523,11 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h:
 
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/RenderStates.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h:
+
+/opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/CoordinateType.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional:
 

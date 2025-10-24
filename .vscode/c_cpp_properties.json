@@ -3,7 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/opt/homebrew/Cellar/sfml/3.0.2/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",

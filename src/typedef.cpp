@@ -28,6 +28,7 @@ void Image::setColor(const Pixel& pixel, const Color& color)
     pixel_buffer[0] = color.R;
     pixel_buffer[1] = color.G;
     pixel_buffer[2] = color.B;
+    pixel_buffer[3] = 255; // 透明度
 }
 
 void Image::flipVertical() {

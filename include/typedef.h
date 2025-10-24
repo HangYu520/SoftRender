@@ -86,6 +86,16 @@ struct Image
     */
     void save(const char* filename); // 写入图像文件
 
+    void init() // 初始化图像内存
+    {
+        image_buffer = new stbi_uc[width * height * channel];
+    }
+
+    void clear() // 清空图像内存
+    {
+        memset(image_buffer, 0, width * height * channel);
+    }
+
     ~Image()
     {
         if (image_buffer)
@@ -256,7 +266,7 @@ struct ARG // * 命令行参数
     const char* output_img_file  =  "output.png"; // 输出图像文件路径
     uint32_t width               =  800; // 图像宽
     uint32_t height              =  800; // 图像宽
-    Image::Channel channel       =  Image::Channel::RGB; // 图像通道数
+    Image::Channel channel       =  Image::Channel::RGBA; // 图像通道数
 
     void log() const; // 打印命令行参数
 };
@@ -308,6 +318,6 @@ struct TransConfig
     using P = ProjectTransform;
 
     M mConfig = { glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 1.0f, 0.0f), 0.0f };
-    V vConfig = { glm::vec3(0.0f, 0.0f, 2.0f), glm::vec3(0.0f, 0.0f, -1.0f), glm::vec3(0.0f, 1.0f, 0.0f) };
+    V vConfig = { glm::vec3(0.0f, 0.0f, 1.0f), glm::vec3(0.0f, 0.0f, -1.0f), glm::vec3(0.0f, 1.0f, 0.0f) };
     P pConfig = { 45.0f, 1.0f, 0.1f, 100.0f};
 };
