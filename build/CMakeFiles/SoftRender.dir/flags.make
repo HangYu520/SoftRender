@@ -18,5 +18,7 @@ CXX_FLAGS = -g -std=gnu++20 -arch arm64
 
 # PCH options: CMakeFiles/SoftRender.dir/src/external_impl.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
 
+# PCH options: CMakeFiles/SoftRender.dir/src/shader.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
+
 # PCH options: CMakeFiles/SoftRender.dir/src/typedef.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
 

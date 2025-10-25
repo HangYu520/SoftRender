@@ -66,30 +66,40 @@ void Engine::line(Image& image, const Image::Pixel& start, const Image::Pixel& e
 
 void Engine::wireframe(Image& image, Model& model, const Image::Color& color) // 画 3D 模型的线框
 {
+    // 获取模型的原始数据
     auto& attrib = model.getAttrib();
     auto trifaces_lst = model.getTrifaces();
-
+    auto M = getModelMatrix(), V = getViewMatrix(), P = getProjectMatrix();
+    
+    // * 开启渲染流程
     for (auto& trifaces : trifaces_lst)
     { 
-        for (const auto& triface : trifaces)
+        for (const auto& triface : trifaces) // 遍历三角形
         {
-            auto [v0, v1, v2] = triface.Get(attrib);
-            // TODO : 1. 位置变换, 视图变换和投影
-            auto [pos0, pos1, pos2] = MVPTrans(v0, v1, v2);
-            // TODO : 2. 裁剪视锥外的面
-            std::vector<glm::vec4> clippedVertices = clipTriangle(pos0, pos1, pos2);
-            if (clippedVertices.empty()) continue;
-            for (int i = 0; i < clippedVertices.size() - 3 + 1; i++) // 裁剪完三角形的个数 : 0 or 1 or 2
+            // * 获取顶点的原始数据
+            auto [rawVertex0, rawVertex1, rawVertex2] = triface.Get(attrib);
+            // * 投影矩阵变换三角形
+            glm::vec4 clipPos0 = P * V * M * glm::vec4(rawVertex0._position.x, rawVertex0._position.y, rawVertex0._position.z, 1.0f);
+            glm::vec4 clipPos1 = P * V * M * glm::vec4(rawVertex1._position.x, rawVertex1._position.y, rawVertex1._position.z, 1.0f);
+            glm::vec4 clipPos2 = P * V * M * glm::vec4(rawVertex2._position.x, rawVertex2._position.y, rawVertex2._position.z, 1.0f);
+            V2F vertex0 = {glm::vec4(0, 0, 0, 0), clipPos0, glm::vec3(0, 0, 0)};
+            V2F vertex1 = {glm::vec4(0, 0, 0, 0), clipPos1, glm::vec3(0, 0, 0)};
+            V2F vertex2 = {glm::vec4(0, 0, 0, 0), clipPos2, glm::vec3(0, 0, 0)};
+            // * 对顶点数据进行裁剪
+            std::vector<V2F> clippedVertices = clipTriangle(vertex0, vertex1, vertex2);
+            if (clippedVertices.empty()) continue; // 若丢弃三角形, 则跳过该三角形
+            for (int i = 0; i < clippedVertices.size() - 3 + 1; i++) // 裁剪完三角形的个数 : 1 or 2, 顶点个数: 3 or 4
             {
-                glm::vec4 vec0 = clippedVertices[i+0];
-                glm::vec4 vec1 = clippedVertices[i+1];
-                glm::vec4 vec2 = clippedVertices[i+2];
-                // TODO : 3. 透视除法和视口变换, 转换到屏幕坐标 
-                auto [p0, p1, p2] = ViewportTrans(image, vec0, vec1, vec2);
-                // TODO ; 4. 画线
-                line(image, p0, p1, color);
-                line(image, p1, p2, color);
-                line(image, p2, p0, color);
+                // 获取裁剪后的顶点
+                V2F v0 = clippedVertices[i+0];
+                V2F v1 = clippedVertices[i+1];
+                V2F v2 = clippedVertices[i+2];
+                auto ndc = NDC({v0, v1, v2});
+                auto screen = viewport(image, ndc);
+                // * 画三角形的线框
+                line(image, screen[0], screen[1], color);
+                line(image, screen[1], screen[2], color);
+                line(image, screen[2], screen[0], color);
             }
         }
     }
@@ -113,84 +123,79 @@ BarycentricCoord Engine::getBarycentricCoord(const Image::Pixel& p1, const Image
     return {area_u / area_total, area_v / area_total, area_w / area_total};
 }
 
-void Engine::triangle(Image& image, const std::array<Image::PixelwAttrib, 3>& Trianlge) // 画指定顶点属性的三角形
+void Engine::rasterize(Image& image, Shader* shader) // 光栅化画三角形
 {
-    // 获取三角形顶点和属性
-    Image::Pixel p1 = Trianlge[0].pixel; Image::Color c1 = Trianlge[0].color; float z1 = Trianlge[0].z;
-    Image::Pixel p2 = Trianlge[1].pixel; Image::Color c2 = Trianlge[1].color; float z2 = Trianlge[1].z;
-    Image::Pixel p3 = Trianlge[2].pixel; Image::Color c3 = Trianlge[2].color; float z3 = Trianlge[2].z;
+    // TODO : 1. 透视除法得到 NDC 坐标
+    auto Triangle = shader->getTriangle();
+    auto ndc = NDC(Triangle);
+    // TODO : 2. 视口变换得到屏幕坐标
+    auto screen = viewport(image, ndc);
+    // TODO : 3. 计算边界框
+    int min_x = std::min({screen[0].x, screen[1].x, screen[2].x});
+    int max_x = std::max({screen[0].x, screen[1].x, screen[2].x});
+    int min_y = std::min({screen[0].y, screen[1].y, screen[2].y});
+    int max_y = std::max({screen[0].y, screen[1].y, screen[2].y});
 
-    // TODO : 1. 计算边界框
-    int min_x = std::min({p1.x, p2.x, p3.x});
-    int max_x = std::max({p1.x, p2.x, p3.x});
-    int min_y = std::min({p1.y, p2.y, p3.y});
-    int max_y = std::max({p1.y, p2.y, p3.y});
-
-    // TODO : 2. 遍历边界框内的像素
+    // * 遍历边界框内的像素
     for (int y = min_y; y <= max_y; ++y)
     {
         for (int x = min_x; x <= max_x; ++x)
         {
-            // TODO : 3. 计算像素的重心坐标
+            // TODO : 4. 计算像素的重心坐标
             Image::Pixel p = {x, y};
-            auto barycentric = getBarycentricCoord(p1, p2, p3, p);
+            auto barycentric = getBarycentricCoord(screen[0], screen[1], screen[2], p);
             float u = barycentric.u; 
             float v = barycentric.v; 
             float w = barycentric.w;
             if (u >= 0 && v >= 0 && w >= 0) // 说明在三角形内
             {
-                // TODO : 4. 插值深度
-                float z = u * z1 + v * z2 + w * z3;
+                // TODO : 5. 插值深度构造片元
+                float z = -1 * (u * Triangle[0].clipPosition.w + v * Triangle[1].clipPosition.w + w * Triangle[2].clipPosition.w);
                 if (m_zBuffer && z < m_zBuffer[x + y * image.width])
                     continue; // 深度测试未通过，跳过该像素
-                
-                // TODO : 5. 插值颜色
-                float R = u * c1.R + v * c2.R + w * c3.R;
-                float G = u * c1.G + v * c2.G + w * c3.G;
-                float B = u * c1.B + v * c2.B + w * c3.B;
-                image.setColor(p, Image::Color{static_cast<unsigned char>(R), static_cast<unsigned char>(G), static_cast<unsigned char>(B)});
-
+                Fragment fragment = {Image::Pixel(x, y), z, barycentric};
+                // TODO : 6. 调用片元着色器
+                auto [isDiscard, color] = shader->fragmentShader(fragment);
+                if (!isDiscard)
+                    image.setColor(p, color);
+                // 更新深度缓冲区
                 if (m_zBuffer)
-                    m_zBuffer[x + y * image.width] = z; // 更新深度缓冲区
+                    m_zBuffer[x + y * image.width] = z; 
             }
         }
     }
 }
 
-// ! render 函数还需要完善
-void Engine::render(Image& image, Model& model) // 渲染 3D 模型到图像
+void Engine::render(Image& image, Model& model, Shader* shader) // 渲染 3D 模型的流程 (类 GPU 管线)
 {
+    // 获取模型的原始数据
     auto& attrib = model.getAttrib();
     auto trifaces_lst = model.getTrifaces();
-
-    // TODO : 1. 初始化深度缓冲区
-    if (m_zBuffer) delete[] m_zBuffer; // 释放旧深度缓冲区
-    m_zBufferSize = image.width * image.height;
-    m_zBuffer = new float[m_zBufferSize]; // 初始化深度缓冲区
-    std::fill(m_zBuffer, m_zBuffer + m_zBufferSize, -2.0f);
+    shader->setMVP(getModelMatrix(), getViewMatrix(), getProjectMatrix()); // 设置 MVP 矩阵
     
+    // * 开启渲染流程
     for (auto& trifaces : trifaces_lst)
     { 
-        for (const auto& triface : trifaces)
+        for (const auto& triface : trifaces) // 遍历三角形
         {
-            auto [v0, v1, v2] = triface.Get(attrib);
-            // TODO : 2. 位置变换, 视图变换和投影
-            auto [pos0, pos1, pos2] = MVPTrans(v0, v1, v2);
-            // TODO : 3. 裁剪视锥外的面
-            std::vector<glm::vec4> clippedVertices = clipTriangle(pos0, pos1, pos2);
-            if (clippedVertices.empty()) continue;
-            for (int i = 0; i < clippedVertices.size() - 3 + 1; i++) // 裁剪完三角形的个数 : 0 or 1 or 2
+            // TODO : 1. 获取顶点的原始数据
+            auto [rawVertex0, rawVertex1, rawVertex2] = triface.Get(attrib);
+            // TODO : 2. 调用顶点着色器
+            V2F vertex0 = shader->vertexShader(rawVertex0);
+            V2F vertex1 = shader->vertexShader(rawVertex1);
+            V2F vertex2 = shader->vertexShader(rawVertex2);
+            // TODO : 3. 对顶点着色器返回的顶点数据进行裁剪
+            std::vector<V2F> clippedVertices = clipTriangle(vertex0, vertex1, vertex2);
+            if (clippedVertices.empty()) continue; // 若丢弃三角形, 则跳过该三角形
+            for (int i = 0; i < clippedVertices.size() - 3 + 1; i++) // 裁剪完三角形的个数 : 1 or 2, 顶点个数: 3 or 4
             {
-                glm::vec4 vec0 = clippedVertices[i+0];
-                glm::vec4 vec1 = clippedVertices[i+1];
-                glm::vec4 vec2 = clippedVertices[i+2];
-                // TODO : 4. 透视除法和视口变换, 转换到屏幕坐标 
-                auto [p0, p1, p2] = ViewportTrans(image, vec0, vec1, vec2);
-                // 提取顶点深度, 变换后的 w 存储着视图变换后的深度 : - z
-                float z0 = -vec0.w, z1 = -vec1.w, z2 = -vec2.w;
-                // TODO : 5. 画三角形的面
-                Image::Color color = Image::WHITE;
-                triangle(image, {Image::PixelwAttrib{p0, color, z0}, Image::PixelwAttrib{p1, color, z1}, Image::PixelwAttrib{p2, color, z2}});
+                // 获取裁剪后的顶点
+                V2F v0 = clippedVertices[i+0];
+                V2F v1 = clippedVertices[i+1];
+                V2F v2 = clippedVertices[i+2];
+                // TODO : 4. 光栅化三角形
+                shader->updateTriangle({v0, v1, v2});
+                rasterize(image, shader);
             }
         }
     }
@@ -287,26 +292,13 @@ glm::mat4 Engine::getProjectMatrix() // 获取投影矩阵
     return projection;
 }
 
-std::tuple<glm::vec4, glm::vec4, glm::vec4> Engine::MVPTrans(const Model::attrib_t& v0, const Model::attrib_t& v1, const Model::attrib_t& v2)
+std::array<Image::Pixel, 3> Engine::viewport(const Image& image, const std::array<glm::vec3, 3>& ndc)
 {
-    glm::mat4 M = getModelMatrix();
-    glm::mat4 V = getViewMatrix();
-    glm::mat4 P = getProjectMatrix();
+    Image::Pixel pixel0 = {static_cast<int>((ndc[0].x + 1) * image.width / 2), static_cast<int>((ndc[0].y + 1) * image.height / 2)};
+    Image::Pixel pixel1 = {static_cast<int>((ndc[1].x + 1) * image.width / 2), static_cast<int>((ndc[1].y + 1) * image.height / 2)};
+    Image::Pixel pixel2 = {static_cast<int>((ndc[2].x + 1) * image.width / 2), static_cast<int>((ndc[2].y + 1) * image.height / 2)};
 
-    glm::vec4 pos0 = P * V * M * glm::vec4{v0._position.x, v0._position.y, v0._position.z, 1.0f};
-    glm::vec4 pos1 = P * V * M * glm::vec4{v1._position.x, v1._position.y, v1._position.z, 1.0f};
-    glm::vec4 pos2 = P * V * M * glm::vec4{v2._position.x, v2._position.y, v2._position.z, 1.0f};
-
-    return std::make_tuple(pos0, pos1, pos2);
-}
-
-std::tuple<Image::Pixel, Image::Pixel, Image::Pixel> Engine::ViewportTrans(const Image& image, const glm::vec4& pos0, const glm::vec4& pos1, const glm::vec4& pos2)
-{
-    Image::Pixel p0 = {static_cast<int>((pos0.x / pos0.w + 1)*image.width/2), static_cast<int>((pos0.y / pos0.w + 1)*image.height/2)};
-    Image::Pixel p1 = {static_cast<int>((pos1.x / pos1.w + 1)*image.width/2), static_cast<int>((pos1.y / pos1.w + 1)*image.height/2)};
-    Image::Pixel p2 = {static_cast<int>((pos2.x / pos2.w + 1)*image.width/2), static_cast<int>((pos2.y / pos2.w + 1)*image.height/2)};
-    
-    return std::make_tuple(p0, p1, p2);
+    return {pixel0, pixel1, pixel2};
 }
 
 bool Engine::isInside(const glm::vec4& plane, const glm::vec4& pos) // 判断点是否在平面内侧
@@ -314,31 +306,33 @@ bool Engine::isInside(const glm::vec4& plane, const glm::vec4& pos) // 判断点
     return plane.x * pos.x + plane.y * pos.y + plane.z * pos.z + plane.w * pos.w >= 0.0f;
 }
 
-glm::vec4 Engine::interSect(const glm::vec4& plane, const glm::vec4& pos0, const glm::vec4& pos1) // 获取平面和线段相交的点
+bool Engine::allInside(const std::vector<V2F>& vertices)
 {
-    float d0 = plane.x * pos0.x + plane.y * pos0.y + plane.z * pos0.z + plane.w * pos0.w;
-    float d1 = plane.x * pos1.x + plane.y * pos1.y + plane.z * pos1.z + plane.w * pos1.w;
-    float weight = d0 / (d0 - d1);
-
-    return glm::lerp(pos0, pos1, weight);
+    bool allInside = true;
+    for (auto& vertex : vertices)
+    {
+        bool outside = vertex.clipPosition.x > vertex.clipPosition.w || vertex.clipPosition.y > vertex.clipPosition.w || vertex.clipPosition.z > vertex.clipPosition.w;
+        outside = outside || vertex.clipPosition.x < -vertex.clipPosition.w || vertex.clipPosition.y < -vertex.clipPosition.w || vertex.clipPosition.z < -vertex.clipPosition.w;
+        if (outside)
+            return false;
+    }
+    return allInside;
 }
 
-std::vector<glm::vec4> Engine::clipTriangle(const glm::vec4& pos0, const glm::vec4& pos1, const glm::vec4& pos2)
+V2F Engine::interSect(const glm::vec4& plane, const V2F& vertex0, const V2F& vertex1) // 获取平面和线段相交的点
 {
-    std::vector<glm::vec4> clipped = {pos0, pos1, pos2};
+    float d0 = plane.x * vertex0.clipPosition.x + plane.y * vertex0.clipPosition.y + plane.z * vertex0.clipPosition.z + plane.w * vertex0.clipPosition.w;
+    float d1 = plane.x * vertex1.clipPosition.x + plane.y * vertex1.clipPosition.y + plane.z * vertex1.clipPosition.z + plane.w * vertex1.clipPosition.w;
+    float weight = d0 / (d0 - d1);
 
-    bool allInside = true;
-    for (int i = 0; i < 3; ++i)
-    {
-        bool outside = clipped[i].x > clipped[i].w || clipped[i].y > clipped[i].w || clipped[i].z > clipped[i].w;
-        outside = outside || clipped[i].x < -clipped[i].w || clipped[i].y < -clipped[i].w || clipped[i].z < -clipped[i].w;
-        if (outside)
-        {
-            allInside = false;
-            break;
-        }
-    }
-    if (allInside)
+    return lerp(vertex0, vertex1, weight);
+}
+
+std::vector<V2F> Engine::clipTriangle(const V2F& vertex0, const V2F& vertex1, const V2F& vertex2)
+{
+    std::vector<V2F> clipped = {vertex0, vertex1, vertex2};
+
+    if (allInside(clipped))
         return clipped; // 全部在内侧, 无需裁剪, 直接返回
 
     const std::vector<glm::vec4> Planes =  // 需要裁剪的平面方程
@@ -359,29 +353,53 @@ std::vector<glm::vec4> Engine::clipTriangle(const glm::vec4& pos0, const glm::ve
     // 逐边裁剪
     for (auto& plane: Planes)
     {
-        std::vector<glm::vec4> input(clipped);
+        std::vector<V2F> input(clipped);
         clipped.clear();
         for (int j = 0; j < input.size(); j++)
         {
-            glm::vec4 pos0 = input[j];
-            glm::vec4 pos1 = input[(j + input.size() - 1) % input.size()];
-            if (isInside(plane, pos0))
+            V2F v0 = input[j];
+            V2F v1 = input[(j + input.size() - 1) % input.size()];
+            if (isInside(plane, v0.clipPosition))
             {
-                if (!isInside(plane, pos1))
-                    clipped.push_back(interSect(plane, pos0, pos1));
-                clipped.push_back(pos0);
+                if (!isInside(plane, v1.clipPosition))
+                    clipped.push_back(interSect(plane, v0, v1));
+                clipped.push_back(v0);
             }
-            else if (isInside(plane, pos1))
+            else if (isInside(plane, v1.clipPosition))
             {
-                clipped.push_back(interSect(plane, pos1, pos0));
+                clipped.push_back(interSect(plane, v1, v0));
             }
         }
     }
     return clipped;
 }
 
+std::array<glm::vec3, 3> Engine::NDC(const std::array<V2F, 3>& Triangle)
+{
+    // 裁剪坐标转 NDC : x/w, y/w, z/w
+    glm::vec3 ndc0 = {
+        Triangle[0].clipPosition.x / Triangle[0].clipPosition.w,
+        Triangle[0].clipPosition.y / Triangle[0].clipPosition.w,
+        Triangle[0].clipPosition.z / Triangle[0].clipPosition.w
+    };
+
+    glm::vec3 ndc1 = {
+        Triangle[1].clipPosition.x / Triangle[1].clipPosition.w,
+        Triangle[1].clipPosition.y / Triangle[1].clipPosition.w,
+        Triangle[1].clipPosition.z / Triangle[1].clipPosition.w
+    };
+
+    glm::vec3 ndc2 = {
+        Triangle[2].clipPosition.x / Triangle[2].clipPosition.w,
+        Triangle[2].clipPosition.y / Triangle[2].clipPosition.w,
+        Triangle[2].clipPosition.z / Triangle[2].clipPosition.w
+    };
+
+    return {ndc0, ndc1, ndc2};
+}
+
 #if defined(SCANLINE)
-//! 古早的三角形填充算法，建议使用上面的带属性插值的版本
+//! 古早的三角形填充算法
 void Engine::triangle(Image& image, const Image::Pixel& p1, const Image::Pixel& p2, const Image::Pixel& p3, const Image::Color& color) // 画三角形
 {
     // TODO : 1. 排序顶点按 y 坐标从小到大

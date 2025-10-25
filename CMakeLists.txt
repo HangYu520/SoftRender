@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.11)
 
 project(SoftRender)
 
-option(DEFAULT_DEBUG "Set Debug as default build type" OFF)
+option(DEFAULT_DEBUG "Set Debug as default build type" ON)
 
 if(NOT CMAKE_BUILD_TYPE AND DEFAULT_DEBUG)
     set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)

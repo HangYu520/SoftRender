@@ -1,5 +1,5 @@
 #pragma once
-#include "typedef.h"
+#include "shader.h"
 
 /*
 * ------------------------------------------
@@ -75,13 +75,13 @@ public:
 
     /*
     * ------------------------------------------
-    * 画三角形 (顶点属性插值)
+    * 光栅化画三角形到图像
     * ------------------------------------------
     * /inType: Image& image 图像对象
-    * /inType: const std::array<Image::PixelWAttrib, 3>& Trianlge 三角形顶点及属性
+    * /inType: Shader* Shader 着色器指针
     * ------------------------------------------
     */
-    void triangle(Image& image, const std::array<Image::PixelwAttrib, 3>& Trianlge); // 画指定顶点属性的三角形
+    void rasterize(Image& image, Shader* shader); // 画指定顶点属性的三角形
 
     /*
     * ------------------------------------------
@@ -89,9 +89,10 @@ public:
     * ------------------------------------------
     * /inType: Image& image 图像对象
     * /inType: Model& model 3D 模型对象
+    * /inType: Shader* shader 着色器指针
     * ------------------------------------------
     */
-    void render(Image& image, Model& model); // 渲染 3D 模型到图像
+    void render(Image& image, Model& model, Shader* shader); // 渲染 3D 模型到图像
 
     /*
     * ------------------------------------------
@@ -135,6 +136,21 @@ public:
     * ------------------------------------------
     */
     void getDepthImage(Image& image); // 获取深度图
+
+    /*
+    * ------------------------------------------
+    * 初始化深度缓冲区
+    * ------------------------------------------
+    * /inType: int zBufferSize 深度缓冲区大小
+    * /inType: float initZValue 深度缓冲区初始值
+    * ------------------------------------------
+    */
+    void initZBuffer(int zBufferSize, float initZValue)
+    {
+        m_zBufferSize = zBufferSize;
+        m_zBuffer = new float[m_zBufferSize]; // 初始化深度缓冲区
+        std::fill(m_zBuffer, m_zBuffer + m_zBufferSize, initZValue);
+    }
     
     /*
     * ------------------------------------------
@@ -169,28 +185,14 @@ private:
 
     /*
     * ------------------------------------------
-    * 对三角形进行 MVP 矩阵变换
-    * ------------------------------------------
-    * /inType: Model::attrib_t& v0 顶点0
-    * /inType: Model::attrib_t& v1 顶点1
-    * /inType: Model::attrib_t& v2 顶点2
-    * /outType: std::tuple<glm::vec4, glm::vec4, glm::vec4> 投影后的齐次坐标
-    * ------------------------------------------
-    */
-    std::tuple<glm::vec4, glm::vec4, glm::vec4> MVPTrans(const Model::attrib_t& v0, const Model::attrib_t& v1, const Model::attrib_t& v2);
-
-    /*
-    * ------------------------------------------
     * 对三角形进行视口变换到屏幕坐标
     * ------------------------------------------
-    * /inType: Image& image 屏幕对象
-    * /inType: const glm::vec4& pos0 齐次坐标0
-    * /inType: const glm::vec4& pos1 齐次坐标1
-    * /inType: const glm::vec4& pos2 齐次坐标2
-    * /outType: std::tuple<Image::Pixel, Image::Pixel, Image::Pixel> 屏幕坐标
+    * //inType: const Image& image 屏幕图像
+    * /inType: const std::array<glm::vec3, 3>& ndc 三角形 ndc 坐标
+    * /outType: std::array<Image::Pixel, 3> 三角形屏幕坐标
     * ------------------------------------------
     */
-    std::tuple<Image::Pixel, Image::Pixel, Image::Pixel> ViewportTrans(const Image& image, const glm::vec4& pos0, const glm::vec4& pos1, const glm::vec4& pos2);
+    std::array<Image::Pixel, 3> viewport(const Image& image, const std::array<glm::vec3, 3>& ndc);
 
     /*
     * ------------------------------------------
@@ -205,27 +207,47 @@ private:
 
     /*
     * ------------------------------------------
-    * 获取平面与线段相交点
+    * 判断一组顶点是否全部在平面内侧 (无需裁剪)
     * ------------------------------------------
-    * /inType: const glm::vec4& plane 平面方程
-    * /inType: const glm::vec4& pos0 线段起点
-    * /inType: const glm::vec4& pos1 线段终点
-    * /outType: glm::vec4 相交点
+    * /inType: const std::vector<V2F>& vertices 一组顶点列表
+    * /outType: bool 顶点是否全部在平面内侧
     * ------------------------------------------
     */
-    glm::vec4 interSect(const glm::vec4& plane, const glm::vec4& pos0, const glm::vec4& pos1);
+    bool allInside(const std::vector<V2F>& vertices);
+
+    /*
+    * ------------------------------------------
+    * 获取平面与裁剪线段的相交点
+    * ------------------------------------------
+    * /inType: const glm::vec4& plane 平面方程
+    * /inType: const V2F& vertex0 裁剪线段的起点
+    * /inType: const V2F& vertex1 裁剪线段的终点
+    * /outType: V2F 裁剪线段与平面的交点
+    * ------------------------------------------
+    */
+    V2F interSect(const glm::vec4& plane, const V2F& vertex0, const V2F& vertex1);
 
     /*
     * ------------------------------------------
     * 剪裁三角形 (Sutherland-Hodgeman裁剪算法)
     * ------------------------------------------
-    * /inType: const glm::vec4& pos0 顶点0
-    * /inType: const glm::vec4& pos1 顶点1
-    * /inType: const glm::vec4& pos2 顶点2
-    * /outType: std::vector<glm::vec4> 剪裁后的顶点
+    * /inType: const V2F& vertex0 顶点0
+    * /inType: const V2F& vertex1 顶点1
+    * /inType: const V2F& vertex2 顶点2
+    * /outType: std::vector<V2F> 剪裁后的顶点
     * ------------------------------------------
     */
-    std::vector<glm::vec4> clipTriangle(const glm::vec4& pos0, const glm::vec4& pos1, const glm::vec4& pos2);
+    std::vector<V2F> clipTriangle(const V2F& vertex0, const V2F& vertex1, const V2F& vertex2);
+
+    /*
+    * ------------------------------------------
+    * 获取三角形的NDC坐标
+    * ------------------------------------------
+    * /inType: const std::array<V2F, 3>& Triangle 三角形顶点列表
+    * /outType: std::array<glm::vec3, 3> 三角形的NDC坐标
+    * ------------------------------------------
+    */
+    std::array<glm::vec3, 3> NDC(const std::array<V2F, 3>& Triangle);
 
     /*
     * ------------------------------------------

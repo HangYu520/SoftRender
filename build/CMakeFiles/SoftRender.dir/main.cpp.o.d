@@ -1384,5 +1384,6 @@ CMakeFiles/SoftRender.dir/main.cpp.o: \
   /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/MemoryInputStream.hpp \
   /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Sleep.hpp \
   /Users/hangyu/Documents/GitHub/SoftRender/include/engine.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/include/shader.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/timer.h

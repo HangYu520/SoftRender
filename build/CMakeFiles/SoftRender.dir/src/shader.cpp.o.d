@@ -1,4 +1,4 @@
-CMakeFiles/SoftRender.dir/src/engine.cpp.o: \
+CMakeFiles/SoftRender.dir/src/shader.cpp.o: \
   /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.cxx \
   /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx \
   /Users/hangyu/Documents/GitHub/SoftRender/include/preheader.h \
@@ -1304,7 +1304,6 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/seed_seq.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
-  /Users/hangyu/Documents/GitHub/SoftRender/src/engine.cpp \
-  /Users/hangyu/Documents/GitHub/SoftRender/include/engine.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/src/shader.cpp \
   /Users/hangyu/Documents/GitHub/SoftRender/include/shader.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h

@@ -216,6 +216,30 @@ src/external_impl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/external_impl.cpp.s
 .PHONY : src/external_impl.cpp.s
 
+src/shader.o: src/shader.cpp.o
+.PHONY : src/shader.o
+
+# target to build an object file
+src/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/shader.cpp.o
+.PHONY : src/shader.cpp.o
+
+src/shader.i: src/shader.cpp.i
+.PHONY : src/shader.i
+
+# target to preprocess a source file
+src/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/shader.cpp.i
+.PHONY : src/shader.cpp.i
+
+src/shader.s: src/shader.cpp.s
+.PHONY : src/shader.s
+
+# target to generate assembly for a file
+src/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/src/shader.cpp.s
+.PHONY : src/shader.cpp.s
+
 src/typedef.o: src/typedef.cpp.o
 .PHONY : src/typedef.o
 
@@ -261,6 +285,9 @@ help:
 	@echo "... src/external_impl.o"
 	@echo "... src/external_impl.i"
 	@echo "... src/external_impl.s"
+	@echo "... src/shader.o"
+	@echo "... src/shader.i"
+	@echo "... src/shader.s"
 	@echo "... src/typedef.o"
 	@echo "... src/typedef.i"
 	@echo "... src/typedef.s"

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SoftRender.dir/src/engine.cpp.o.d"
   "CMakeFiles/SoftRender.dir/src/external_impl.cpp.o"
   "CMakeFiles/SoftRender.dir/src/external_impl.cpp.o.d"
+  "CMakeFiles/SoftRender.dir/src/shader.cpp.o"
+  "CMakeFiles/SoftRender.dir/src/shader.cpp.o.d"
   "CMakeFiles/SoftRender.dir/src/typedef.cpp.o"
   "CMakeFiles/SoftRender.dir/src/typedef.cpp.o.d"
 )
