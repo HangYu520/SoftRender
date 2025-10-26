@@ -28,8 +28,6 @@ static ARG parse_args(int argc, char** argv)
                 args.width = atoi(argv[++i]);
             else if(strcmp(argv[i], "-h") == 0 || strcmp(argv[i], "--height") == 0)
                 args.height = atoi(argv[++i]);
-            else if(strcmp(argv[i], "-c") == 0 || strcmp(argv[i], "--channel") == 0)
-                args.channel = static_cast<Image::Channel>(atoi(argv[++i]));
         }
     }
 
