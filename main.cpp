@@ -170,14 +170,14 @@ int main(int argc, char** argv)
             Engine::getInstance()->getTrans().mConfig.rotateAngle = rotation; // 旋转
             Engine::getInstance()->getTrans().vConfig.cameraPos.y = cameraHeight; // 升降
             Engine::getInstance()->getTrans().pConfig.fov = fov; // 视角
-            if (drawWireframe) Engine::getInstance()->wireframe(image, model, Image::Color::WHITE); // 绘制线框
+            if (drawWireframe) Engine::getInstance()->wireframe(image, model, Image::Color::RED); // 绘制线框
             else Engine::getInstance()->render(image, model, &shader); // 渲染
         }
 
         // 更新 texture 并绘制到 SFML 窗口
         image.flipVertical(); // 翻转图像
         texture.update(image.image_buffer); // 更新 texture
-        window.clear(sf::Color::Black);
+        window.clear(sf::Color::White);
         window.draw(sprite);
         window.display();
     }

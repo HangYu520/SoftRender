@@ -27,7 +27,7 @@ Image::Color Image::Color::randColor() // 生成随机颜色
 Image::Image(uint32_t w, uint32_t h, Channel c)
         : width(w), height(h), channel(c)
 {
-    image_buffer = new stbi_uc[w * h * c](); // 分配图像内存并初始化为0
+    image_buffer = new stbi_uc[w * h * c](255); // 分配图像内存并初始化为 255
 }
 
 void Image::setColor(const Pixel& pixel, const Color& color)
