@@ -32,34 +32,25 @@ struct Image
     {
         unsigned char R, G, B;
         static Color randColor(); // 生成随机颜色
+        // 预定义颜色
+        static const Color  RED;
+        static const Color  GREEN;
+        static const Color  BLUE;
+        static const Color  WHITE;
+        static const Color  BLACK;
+        static const Color  YELLOW;
     };
     struct Pixel // 像素结构体
     {
         int x, y;
     }; 
 
-    struct PixelwAttrib // 带属性的像素结构体
-    {
-        Pixel pixel; // 像素坐标
-        Color color; // 颜色值
-        float z; // 深度值
-    };
-    
-    // 预定义颜色
-    static const Color  RED;
-    static const Color  GREEN;
-    static const Color  BLUE;
-    static const Color  WHITE;
-    static const Color  BLACK;
-    static const Color  YELLOW;
-
     // 成员变量
     stbi_uc* image_buffer; // 图像数据
     uint32_t width, height; // 图像宽高
     Channel channel; // 图像通道数
 
-    Image(uint32_t w, uint32_t h, Channel c); // 分配图像内存并初始化为0
-
+    Image(uint32_t w, uint32_t h, Channel c); // 构造函数, 分配图像内存并初始化为0
     /*
     * ------------------------------------------
     * 设置指定像素的颜色
@@ -69,14 +60,12 @@ struct Image
     * ------------------------------------------
     */
     void setColor(const Pixel& pixel, const Color& color);
-
     /*
     * ------------------------------------------
     * 上下反转图像（垂直翻转）
     * ------------------------------------------
     */
     void flipVertical();
-
     /*
     * ------------------------------------------
     * 保存图像文件
@@ -85,22 +74,9 @@ struct Image
     * ------------------------------------------
     */
     void save(const char* filename); // 写入图像文件
-
-    void init() // 初始化图像内存
-    {
-        image_buffer = new stbi_uc[width * height * channel];
-    }
-
-    void clear() // 清空图像内存
-    {
-        memset(image_buffer, 0, width * height * channel);
-    }
-
-    ~Image()
-    {
-        if (image_buffer)
-            delete[] image_buffer; // 释放图像内存
-    }
+    void init() { image_buffer = new stbi_uc[width * height * channel];}// 初始化图像内存
+    void clear() { memset(image_buffer, 0, width * height * channel); }// 清空图像内存
+    ~Image() { if (image_buffer) delete[] image_buffer; }// 释放图像内存
 };
 
 /*
@@ -134,7 +110,6 @@ public:
         std::vector<attrib_t::normal>     _normals; // 法线列表
         std::vector<attrib_t::texcoord>   _texcoords; // 纹理坐标列表
     };
-
     struct point_t // 顶点结构体
     {
         int                     vertex_index;
@@ -142,20 +117,17 @@ public:
         int                     texcoord_index;
         const attrib_t          Get(const Attrib& attrib) const; // 获取 attrib 中对应的顶点属性 (常量版本)
     };
-
     struct line_t // 线段结构体
     {
         point_t                 start;
         point_t                 end;
         const line_attrib_t     Get(const Attrib& attrib) const; // 获取 attrib 中对应的线段顶点属性 (常量版本)
     };
-
     struct triface_t // 三角形面结构体
     {
         point_t                 vertex[3]; // 三个顶点索引
         const triface_attrib_t  Get(const Attrib& attrib) const; // 获取 attrib 中对应的三角形面顶点属性 (常量版本)
     };
-
     // TODO : 添加四边形面等其他面类型
     
     using Points    =   std::vector<point_t>; // 点列表类型定义
@@ -167,7 +139,6 @@ public:
         Trifaces trifaces;
         std::vector<int> material_ids;  // 材质ID列表，对应每个三角形面
     };
-
     struct shape_t // 形状结构体
     {
         std::string     name; // 形状名称
@@ -201,7 +172,6 @@ public:
     * ------------------------------------------
     */
     void setLoadConfig(bool triangulate = true, bool vertex_color = true, std::string triangulation_method = "Simple", std::string mtl_search_path = "");
-
     /*
     * ------------------------------------------
     * 从文件加载模型 (Load obj 文件)
@@ -210,7 +180,6 @@ public:
     * ------------------------------------------
     */
     void loadFrom(const std::string& filename); // 从文件加载模型
-    
     /*
     * ------------------------------------------
     * 获取模型包围盒 (最小点, 最大点)
@@ -219,7 +188,6 @@ public:
     * ------------------------------------------
     */
     bounding_box_t getBoundingBox() const; // 获取模型包围盒 (最小点, 最大点)
-    
     /*
     * ------------------------------------------
     * 平移模型
@@ -230,7 +198,6 @@ public:
     * ------------------------------------------
     */
     void translate(float x_offset, float y_offset, float z_offset); // 平移模型
-
     /*
     * ------------------------------------------
     * 按比例缩放模型
@@ -244,7 +211,7 @@ public:
 
     // 获取顶点属性
     Attrib& getAttrib() { return attrib; }
-    
+
     // 获取所有形状中的三角形面列表
     std::vector<Trifaces>  getTrifaces(); 
 
@@ -295,7 +262,7 @@ struct TransConfig
         glm::vec3 translate; // 模型平移
         glm::vec3 scale; // 模型缩放
         glm::vec3 rotateAxis; // 模型旋转轴
-        float rotateAngle; // 模型旋转角度
+        float     rotateAngle; // 模型旋转角度
     };
 
     struct ViewTransform // * 视图变换结构体

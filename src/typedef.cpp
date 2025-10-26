@@ -5,6 +5,15 @@
 * 1. 图像结构体 (封装 stb_image)
 * -----------------------------
 */
+
+// 初始化预定义静态颜色常量
+const Image::Color Image::Color::BLACK    =   {0, 0, 0};
+const Image::Color Image::Color::RED      =   {255, 0, 0};
+const Image::Color Image::Color::GREEN    =   {0, 255, 0};
+const Image::Color Image::Color::BLUE     =   {0, 0, 255};
+const Image::Color Image::Color::WHITE    =   {255, 255, 255};
+const Image::Color Image::Color::YELLOW   =   {255, 255, 0};
+
 Image::Color Image::Color::randColor() // 生成随机颜色
 {
     static thread_local std::mt19937 gen(std::random_device{}());
@@ -57,14 +66,6 @@ void Image::save(const char* filename)
     else
         spdlog::error("Failed to save image to {}", filename);
 }
-
-// 初始化预定义静态颜色常量
-const Image::Color Image::BLACK    =   {0, 0, 0};
-const Image::Color Image::RED      =   {255, 0, 0};
-const Image::Color Image::GREEN    =   {0, 255, 0};
-const Image::Color Image::BLUE     =   {0, 0, 255};
-const Image::Color Image::WHITE    =   {255, 255, 255};
-const Image::Color Image::YELLOW   =   {255, 255, 0};
 
 /*
 * ---------------------------------

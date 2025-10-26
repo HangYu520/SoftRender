@@ -7,7 +7,6 @@
 * -----------------------------
 */
 
-
 struct V2F // 顶点着色器输出 (封装的顶点属性)
 {
     glm::vec4 eyePosition; // 相机空间的位置 (经过 ModelView 变换)
@@ -88,10 +87,10 @@ public:
     virtual ~Shader() = default;
 
 protected:
-    std::array<V2F, 3> currentTriangle; // 要着色的三角形
-    glm::mat4 modelMatrix; // 模型矩阵
-    glm::mat4 viewMatrix; // 视图矩阵
-    glm::mat4 projectionMatrix; // 投影矩阵
+    std::array<V2F, 3>  currentTriangle; // 要着色的三角形
+    glm::mat4           modelMatrix; // 模型矩阵
+    glm::mat4           viewMatrix; // 视图矩阵
+    glm::mat4           projectionMatrix; // 投影矩阵
 };
 
 /*

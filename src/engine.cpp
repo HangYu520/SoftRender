@@ -144,23 +144,18 @@ void Engine::rasterize(Image& image, Shader* shader) // 光栅化画三角形
             // TODO : 4. 计算像素的重心坐标
             Image::Pixel p = {x, y};
             auto barycentric = getBarycentricCoord(screen[0], screen[1], screen[2], p);
-            float u = barycentric.u; 
-            float v = barycentric.v; 
-            float w = barycentric.w;
+            float u = barycentric.u, v = barycentric.v, w = barycentric.w;
             if (u >= 0 && v >= 0 && w >= 0) // 说明在三角形内
             {
                 // TODO : 5. 插值深度构造片元
                 float z = -1 * (u * Triangle[0].clipPosition.w + v * Triangle[1].clipPosition.w + w * Triangle[2].clipPosition.w);
-                if (m_zBuffer && z < m_zBuffer[x + y * image.width])
-                    continue; // 深度测试未通过，跳过该像素
+                if (m_zBuffer && z < m_zBuffer[x + y * image.width]) continue; // 深度测试未通过，跳过该像素
                 Fragment fragment = {Image::Pixel(x, y), z, barycentric};
                 // TODO : 6. 调用片元着色器
                 auto [isDiscard, color] = shader->fragmentShader(fragment);
-                if (!isDiscard)
-                    image.setColor(p, color);
+                if (!isDiscard) image.setColor(p, color);
                 // 更新深度缓冲区
-                if (m_zBuffer)
-                    m_zBuffer[x + y * image.width] = z; 
+                if (m_zBuffer) m_zBuffer[x + y * image.width] = z; 
             }
         }
     }
@@ -292,6 +287,30 @@ glm::mat4 Engine::getProjectMatrix() // 获取投影矩阵
     return projection;
 }
 
+std::array<glm::vec3, 3> Engine::NDC(const std::array<V2F, 3>& Triangle)
+{
+    // 裁剪坐标转 NDC : x/w, y/w, z/w
+    glm::vec3 ndc0 = {
+        Triangle[0].clipPosition.x / Triangle[0].clipPosition.w,
+        Triangle[0].clipPosition.y / Triangle[0].clipPosition.w,
+        Triangle[0].clipPosition.z / Triangle[0].clipPosition.w
+    };
+
+    glm::vec3 ndc1 = {
+        Triangle[1].clipPosition.x / Triangle[1].clipPosition.w,
+        Triangle[1].clipPosition.y / Triangle[1].clipPosition.w,
+        Triangle[1].clipPosition.z / Triangle[1].clipPosition.w
+    };
+
+    glm::vec3 ndc2 = {
+        Triangle[2].clipPosition.x / Triangle[2].clipPosition.w,
+        Triangle[2].clipPosition.y / Triangle[2].clipPosition.w,
+        Triangle[2].clipPosition.z / Triangle[2].clipPosition.w
+    };
+
+    return {ndc0, ndc1, ndc2};
+}
+
 std::array<Image::Pixel, 3> Engine::viewport(const Image& image, const std::array<glm::vec3, 3>& ndc)
 {
     Image::Pixel pixel0 = {static_cast<int>((ndc[0].x + 1) * image.width / 2), static_cast<int>((ndc[0].y + 1) * image.height / 2)};
@@ -313,8 +332,7 @@ bool Engine::allInside(const std::vector<V2F>& vertices)
     {
         bool outside = vertex.clipPosition.x > vertex.clipPosition.w || vertex.clipPosition.y > vertex.clipPosition.w || vertex.clipPosition.z > vertex.clipPosition.w;
         outside = outside || vertex.clipPosition.x < -vertex.clipPosition.w || vertex.clipPosition.y < -vertex.clipPosition.w || vertex.clipPosition.z < -vertex.clipPosition.w;
-        if (outside)
-            return false;
+        if (outside) return false;
     }
     return allInside;
 }
@@ -372,30 +390,6 @@ std::vector<V2F> Engine::clipTriangle(const V2F& vertex0, const V2F& vertex1, co
         }
     }
     return clipped;
-}
-
-std::array<glm::vec3, 3> Engine::NDC(const std::array<V2F, 3>& Triangle)
-{
-    // 裁剪坐标转 NDC : x/w, y/w, z/w
-    glm::vec3 ndc0 = {
-        Triangle[0].clipPosition.x / Triangle[0].clipPosition.w,
-        Triangle[0].clipPosition.y / Triangle[0].clipPosition.w,
-        Triangle[0].clipPosition.z / Triangle[0].clipPosition.w
-    };
-
-    glm::vec3 ndc1 = {
-        Triangle[1].clipPosition.x / Triangle[1].clipPosition.w,
-        Triangle[1].clipPosition.y / Triangle[1].clipPosition.w,
-        Triangle[1].clipPosition.z / Triangle[1].clipPosition.w
-    };
-
-    glm::vec3 ndc2 = {
-        Triangle[2].clipPosition.x / Triangle[2].clipPosition.w,
-        Triangle[2].clipPosition.y / Triangle[2].clipPosition.w,
-        Triangle[2].clipPosition.z / Triangle[2].clipPosition.w
-    };
-
-    return {ndc0, ndc1, ndc2};
 }
 
 #if defined(SCANLINE)

@@ -185,9 +185,19 @@ private:
 
     /*
     * ------------------------------------------
+    * 获取三角形的NDC坐标
+    * ------------------------------------------
+    * /inType: const std::array<V2F, 3>& Triangle 三角形顶点列表
+    * /outType: std::array<glm::vec3, 3> 三角形的NDC坐标
+    * ------------------------------------------
+    */
+    std::array<glm::vec3, 3> NDC(const std::array<V2F, 3>& Triangle);
+
+    /*
+    * ------------------------------------------
     * 对三角形进行视口变换到屏幕坐标
     * ------------------------------------------
-    * //inType: const Image& image 屏幕图像
+    * /inType: const Image& image 屏幕图像
     * /inType: const std::array<glm::vec3, 3>& ndc 三角形 ndc 坐标
     * /outType: std::array<Image::Pixel, 3> 三角形屏幕坐标
     * ------------------------------------------
@@ -238,16 +248,6 @@ private:
     * ------------------------------------------
     */
     std::vector<V2F> clipTriangle(const V2F& vertex0, const V2F& vertex1, const V2F& vertex2);
-
-    /*
-    * ------------------------------------------
-    * 获取三角形的NDC坐标
-    * ------------------------------------------
-    * /inType: const std::array<V2F, 3>& Triangle 三角形顶点列表
-    * /outType: std::array<glm::vec3, 3> 三角形的NDC坐标
-    * ------------------------------------------
-    */
-    std::array<glm::vec3, 3> NDC(const std::array<V2F, 3>& Triangle);
 
     /*
     * ------------------------------------------

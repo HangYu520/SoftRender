@@ -124,7 +124,6 @@ int main(int argc, char** argv)
                 {
                     saveImage(image, args.output_img_file);
                 }
-
                 // 检查是否按下了 'R' 键
                 if (keyPressed->scancode == sf::Keyboard::Scan::R)
                 {
@@ -134,7 +133,6 @@ int main(int argc, char** argv)
                     drawWireframe = false; // 重置绘制线框
                     spdlog::info("Reset rotation = {}, camera height = {}, and field of view = {}.", rotation, cameraHeight, fov);
                 }
-
                 // 检查是否按下了 'W' 键
                 if (keyPressed->scancode == sf::Keyboard::Scan::W)
                 {
@@ -148,14 +146,10 @@ int main(int argc, char** argv)
             {
                 // scrolled->delta 包含了滚动的幅度 (正值通常是向上/远离用户, 负值是向下/朝向用户)
                 fov += scrolled->delta * 0.1f; // 0.1f 是灵敏度因子
-                
                 // 防止缩放得太小
-                if (fov < 10.0f) 
-                    fov = 10.0f;
-                
+                if (fov < 10.0f) fov = 10.0f;
                 // 防止缩放得太大
-                if (fov > 120.0f) 
-                    fov = 120.0f;
+                if (fov > 120.0f) fov = 120.0f;
             }
         }
         
@@ -176,7 +170,7 @@ int main(int argc, char** argv)
             Engine::getInstance()->getTrans().mConfig.rotateAngle = rotation; // 旋转
             Engine::getInstance()->getTrans().vConfig.cameraPos.y = cameraHeight; // 升降
             Engine::getInstance()->getTrans().pConfig.fov = fov; // 视角
-            if (drawWireframe) Engine::getInstance()->wireframe(image, model, Image::WHITE); // 绘制线框
+            if (drawWireframe) Engine::getInstance()->wireframe(image, model, Image::Color::WHITE); // 绘制线框
             else Engine::getInstance()->render(image, model, &shader); // 渲染
         }
 
