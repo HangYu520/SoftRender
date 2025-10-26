@@ -74,7 +74,7 @@ struct Image
     * ------------------------------------------
     */
     void save(const char* filename); // 写入图像文件
-    void init() { image_buffer = new stbi_uc[width * height * channel](255);}// 初始化图像内存
+    void init() { image_buffer = new stbi_uc[width * height * channel](0);}// 初始化图像内存
     void clear() { memset(image_buffer, 0, width * height * channel); }// 清空图像内存
     ~Image() { if (image_buffer) delete[] image_buffer; }// 释放图像内存
 };

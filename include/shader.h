@@ -11,8 +11,8 @@ struct V2F // 顶点着色器输出 (封装的顶点属性)
 {
     glm::vec4 eyePosition; // 相机空间的位置 (经过 ModelView 变换)
     glm::vec4 clipPosition; // 裁剪空间的位置 (经过透视变换)
-    glm::vec3 color; // 顶点颜色
-    // glm::vec4 normal; // 法向量
+    glm::vec3 color = glm::vec3(255.f, 255.f, 255.f); // 顶点颜色
+    glm::vec4 normal = glm::vec4(0.0f, 0.0f, 0.0f, 0.0f); // 法向量
     // glm::vec2 texcoord; // 纹理坐标
     // TODO 更多的属性
 };
@@ -102,6 +102,32 @@ class RandomShader : public Shader
 { 
 public:
     RandomShader() = default;
+    V2F vertexShader(const Model::attrib_t& rawVertex) override; // 顶点着色器
+    std::pair<bool, Image::Color> fragmentShader(const Fragment& fragment) override;// 片元着色器
+};
+
+/*
+* -----------------------------
+* Blinn-Phong shader
+* -----------------------------
+*/
+class PhongShader : public Shader
+{
+public:
+    struct Config // 参数配置
+    {
+        float       I = 3.0f; // 光照强度
+        float       Ia = 0.5f; // 环境光强度
+        int         p = 64; // 镜面反射指数
+        float       kd = 0.65f; // 漫反射系数
+        float       ks = 0.35f; // 镜面反射系数
+        float       ka = 0.15f; // 环境反射系数
+        glm::vec4   light_position = glm::vec4(1.0f, 1.0f, 0.0f, 1.0f);
+        glm::vec4   camera_position = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
+    } config;
+
+public:
+    PhongShader() = default;
     V2F vertexShader(const Model::attrib_t& rawVertex) override; // 顶点着色器
     std::pair<bool, Image::Color> fragmentShader(const Fragment& fragment) override;// 片元着色器
 };

@@ -76,7 +76,7 @@ int main(int argc, char** argv)
     window.setFramerateLimit(60); // 限制帧率
 
     Image image(args.width, args.height, args.channel); // 创建图像对象
-    RandomShader shader; // 创建着色器对象
+    PhongShader shader; // 创建着色器对象
     
     // TODO 2. 载入 obj 模型
     Model model;
@@ -177,7 +177,7 @@ int main(int argc, char** argv)
         // 更新 texture 并绘制到 SFML 窗口
         image.flipVertical(); // 翻转图像
         texture.update(image.image_buffer); // 更新 texture
-        window.clear(sf::Color::White);
+        window.clear(sf::Color::Black);
         window.draw(sprite);
         window.display();
     }
