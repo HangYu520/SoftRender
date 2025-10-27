@@ -1,4 +1,6 @@
 #include <SFML/Graphics.hpp> // SFML 库显示窗口
+#include <imgui.h> // ImGui 库
+#include <imgui-SFML.h> // ImGui SFML 库
 #include "engine.h"
 #include "timer.h"
 
@@ -74,6 +76,7 @@ int main(int argc, char** argv)
     // TODO 1. 初始化 SFML 窗口 (使用 SFML 3.0 风格)
     sf::RenderWindow window(sf::VideoMode({args.width, args.height}), "Soft Renderer");
     window.setFramerateLimit(60); // 限制帧率
+    bool initImGui = ImGui::SFML::Init(window); // 初始化 ImGui
 
     Image image(args.width, args.height, args.channel); // 创建图像对象
     PhongShader shader; // 创建着色器对象
@@ -112,6 +115,7 @@ int main(int argc, char** argv)
         // 事件处理 使用 SFML (3.0 风格)
         while (const auto event = window.pollEvent())
         {
+            ImGui::SFML::ProcessEvent(window, *event); // 处理 ImGui 事件
             // 检查窗口关闭事件
             if (event->is<sf::Event::Closed>())
                 window.close();
@@ -177,8 +181,28 @@ int main(int argc, char** argv)
         // 更新 texture 并绘制到 SFML 窗口
         image.flipVertical(); // 翻转图像
         texture.update(image.image_buffer); // 更新 texture
+        // 创建 ImGui 窗口
+        ImGui::SFML::Update(window, sf::seconds(deltaTime));
+        // 控制面板
+        ImGui::Begin("Control Panel");
+        ImGui::Checkbox("Wireframe", &drawWireframe);
+        ImGui::SameLine();
+        if (ImGui::Button("Save")) saveImage(image, args.output_img_file);
+        ImGui::Text("Rotation: %.2f", rotation);
+        ImGui::Text("Camera Height: %.2f", cameraHeight);
+        ImGui::Text("Field of View: %.2f", fov);
+        ImGui::Separator();
+        ImGui::Text("Phong Shader");
+        ImGui::SliderFloat("I", &shader.config.I, 0.0f, 5.0f);
+        ImGui::SliderFloat("ka", &shader.config.ka, 0.0f, 1.0f);
+        ImGui::SliderFloat("kd", &shader.config.kd, 0.0f, 1.0f);
+        ImGui::SliderFloat("ks", &shader.config.ks, 0.0f, 1.0f);
+        ImGui::SliderInt("p", &shader.config.p, 0, 100);
+        ImGui::End();
+        
         window.clear(sf::Color::Black);
         window.draw(sprite);
+        ImGui::SFML::Render(window); // 绘制 ImGui
         window.display();
     }
     }

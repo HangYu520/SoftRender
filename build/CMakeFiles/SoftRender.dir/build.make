@@ -167,13 +167,115 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/src/typedef.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/src/typedef.cpp -o CMakeFiles/SoftRender.dir/src/typedef.cpp.s
 
+CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o: CMakeFiles/SoftRender.dir/flags.make
+CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o: /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.cpp
+CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx
+CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
+CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o: CMakeFiles/SoftRender.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -MD -MT CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o -MF CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o.d -o CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o -c /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.cpp
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -E /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.cpp > CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.i
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.cpp -o CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.s
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o: CMakeFiles/SoftRender.dir/flags.make
+CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o: /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_demo.cpp
+CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx
+CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
+CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o: CMakeFiles/SoftRender.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -MD -MT CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o -MF CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o.d -o CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o -c /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_demo.cpp
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -E /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_demo.cpp > CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.i
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_demo.cpp -o CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.s
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/SoftRender.dir/flags.make
+CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o: /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_draw.cpp
+CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx
+CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
+CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/SoftRender.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -MD -MT CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o -MF CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o.d -o CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o -c /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_draw.cpp
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -E /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_draw.cpp > CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.i
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_draw.cpp -o CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.s
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/SoftRender.dir/flags.make
+CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o: /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_tables.cpp
+CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx
+CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
+CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/SoftRender.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -MD -MT CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o -MF CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o.d -o CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o -c /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_tables.cpp
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -E /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_tables.cpp > CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.i
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_tables.cpp -o CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.s
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/SoftRender.dir/flags.make
+CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o: /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_widgets.cpp
+CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx
+CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
+CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/SoftRender.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -MD -MT CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o -MF CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o -c /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_widgets.cpp
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -E /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_widgets.cpp > CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.i
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_widgets.cpp -o CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.s
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o: CMakeFiles/SoftRender.dir/flags.make
+CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o: /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML.cpp
+CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx
+CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
+CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o: CMakeFiles/SoftRender.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -MD -MT CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o -MF CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o.d -o CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o -c /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML.cpp
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -E /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML.cpp > CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.i
+
+CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xclang -include-pch -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx -S /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML.cpp -o CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.s
+
 # Object files for target SoftRender
 SoftRender_OBJECTS = \
 "CMakeFiles/SoftRender.dir/main.cpp.o" \
 "CMakeFiles/SoftRender.dir/src/engine.cpp.o" \
 "CMakeFiles/SoftRender.dir/src/external_impl.cpp.o" \
 "CMakeFiles/SoftRender.dir/src/shader.cpp.o" \
-"CMakeFiles/SoftRender.dir/src/typedef.cpp.o"
+"CMakeFiles/SoftRender.dir/src/typedef.cpp.o" \
+"CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o" \
+"CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o" \
+"CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o" \
+"CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o" \
+"CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o" \
+"CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o"
 
 # External object files for target SoftRender
 SoftRender_EXTERNAL_OBJECTS =
@@ -184,12 +286,18 @@ SoftRender_EXTERNAL_OBJECTS =
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/src/shader.cpp.o
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/src/typedef.cpp.o
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
+/Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/build.make
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: /opt/homebrew/lib/libsfml-graphics.3.0.2.dylib
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: /opt/homebrew/lib/libsfml-window.3.0.2.dylib
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: /opt/homebrew/lib/libsfml-system.3.0.2.dylib
 /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender: CMakeFiles/SoftRender.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable /Users/hangyu/Documents/GitHub/SoftRender/bin/SoftRender"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SoftRender.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external -I/Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader -I/Users/hangyu/Documents/GitHub/SoftRender/include -I/opt/homebrew/Cellar/sfml/3.0.2/include -isystem /opt/homebrew/include
+CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external -I/Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader -I/Users/hangyu/Documents/GitHub/SoftRender/external/imgui -I/Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml -I/Users/hangyu/Documents/GitHub/SoftRender/include -I/opt/homebrew/Cellar/sfml/3.0.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -std=gnu++20 -arch arm64
 
@@ -21,4 +21,16 @@ CXX_FLAGS = -std=gnu++20 -arch arm64
 # PCH options: CMakeFiles/SoftRender.dir/src/shader.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
 
 # PCH options: CMakeFiles/SoftRender.dir/src/typedef.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
+
+# PCH options: CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
+
+# PCH options: CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
+
+# PCH options: CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
+
+# PCH options: CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
+
+# PCH options: CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
+
+# PCH options: CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o_OPTIONS = -Winvalid-pch;-Xclang;-include-pch;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch;-Xclang;-include;-Xclang;/Users/hangyu/Documents/GitHub/SoftRender/build/CMakeFiles/SoftRender.dir/cmake_pch.hxx
 

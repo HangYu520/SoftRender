@@ -1383,6 +1383,11 @@ CMakeFiles/SoftRender.dir/main.cpp.o: \
   /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/InputStream.hpp \
   /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/MemoryInputStream.hpp \
   /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/System/Sleep.hpp \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imconfig.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML_export.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stddef.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/engine.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/shader.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h \

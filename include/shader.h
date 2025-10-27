@@ -130,4 +130,8 @@ public:
     PhongShader() = default;
     V2F vertexShader(const Model::attrib_t& rawVertex) override; // 顶点着色器
     std::pair<bool, Image::Color> fragmentShader(const Fragment& fragment) override;// 片元着色器
+    void updateTriangle(const std::array<V2F, 3>& Triangle) override; // CPU 优化方案, 同一个三角形所有的片元画同一个颜色
+
+private:
+    Image::Color precomputedFlatColor; // 为同一个三角形的片元缓存 Color
 };

@@ -144,6 +144,150 @@ cmake_pch.hxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/cmake_pch.hxx.s
 .PHONY : cmake_pch.hxx.s
 
+external/imgui/imgui-sfml/imgui-SFML.o: external/imgui/imgui-sfml/imgui-SFML.cpp.o
+.PHONY : external/imgui/imgui-sfml/imgui-SFML.o
+
+# target to build an object file
+external/imgui/imgui-sfml/imgui-SFML.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
+.PHONY : external/imgui/imgui-sfml/imgui-SFML.cpp.o
+
+external/imgui/imgui-sfml/imgui-SFML.i: external/imgui/imgui-sfml/imgui-SFML.cpp.i
+.PHONY : external/imgui/imgui-sfml/imgui-SFML.i
+
+# target to preprocess a source file
+external/imgui/imgui-sfml/imgui-SFML.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.i
+.PHONY : external/imgui/imgui-sfml/imgui-SFML.cpp.i
+
+external/imgui/imgui-sfml/imgui-SFML.s: external/imgui/imgui-sfml/imgui-SFML.cpp.s
+.PHONY : external/imgui/imgui-sfml/imgui-SFML.s
+
+# target to generate assembly for a file
+external/imgui/imgui-sfml/imgui-SFML.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.s
+.PHONY : external/imgui/imgui-sfml/imgui-SFML.cpp.s
+
+external/imgui/imgui.o: external/imgui/imgui.cpp.o
+.PHONY : external/imgui/imgui.o
+
+# target to build an object file
+external/imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
+.PHONY : external/imgui/imgui.cpp.o
+
+external/imgui/imgui.i: external/imgui/imgui.cpp.i
+.PHONY : external/imgui/imgui.i
+
+# target to preprocess a source file
+external/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.i
+.PHONY : external/imgui/imgui.cpp.i
+
+external/imgui/imgui.s: external/imgui/imgui.cpp.s
+.PHONY : external/imgui/imgui.s
+
+# target to generate assembly for a file
+external/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.s
+.PHONY : external/imgui/imgui.cpp.s
+
+external/imgui/imgui_demo.o: external/imgui/imgui_demo.cpp.o
+.PHONY : external/imgui/imgui_demo.o
+
+# target to build an object file
+external/imgui/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
+.PHONY : external/imgui/imgui_demo.cpp.o
+
+external/imgui/imgui_demo.i: external/imgui/imgui_demo.cpp.i
+.PHONY : external/imgui/imgui_demo.i
+
+# target to preprocess a source file
+external/imgui/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.i
+.PHONY : external/imgui/imgui_demo.cpp.i
+
+external/imgui/imgui_demo.s: external/imgui/imgui_demo.cpp.s
+.PHONY : external/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+external/imgui/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.s
+.PHONY : external/imgui/imgui_demo.cpp.s
+
+external/imgui/imgui_draw.o: external/imgui/imgui_draw.cpp.o
+.PHONY : external/imgui/imgui_draw.o
+
+# target to build an object file
+external/imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
+.PHONY : external/imgui/imgui_draw.cpp.o
+
+external/imgui/imgui_draw.i: external/imgui/imgui_draw.cpp.i
+.PHONY : external/imgui/imgui_draw.i
+
+# target to preprocess a source file
+external/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.i
+.PHONY : external/imgui/imgui_draw.cpp.i
+
+external/imgui/imgui_draw.s: external/imgui/imgui_draw.cpp.s
+.PHONY : external/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+external/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.s
+.PHONY : external/imgui/imgui_draw.cpp.s
+
+external/imgui/imgui_tables.o: external/imgui/imgui_tables.cpp.o
+.PHONY : external/imgui/imgui_tables.o
+
+# target to build an object file
+external/imgui/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
+.PHONY : external/imgui/imgui_tables.cpp.o
+
+external/imgui/imgui_tables.i: external/imgui/imgui_tables.cpp.i
+.PHONY : external/imgui/imgui_tables.i
+
+# target to preprocess a source file
+external/imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.i
+.PHONY : external/imgui/imgui_tables.cpp.i
+
+external/imgui/imgui_tables.s: external/imgui/imgui_tables.cpp.s
+.PHONY : external/imgui/imgui_tables.s
+
+# target to generate assembly for a file
+external/imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.s
+.PHONY : external/imgui/imgui_tables.cpp.s
+
+external/imgui/imgui_widgets.o: external/imgui/imgui_widgets.cpp.o
+.PHONY : external/imgui/imgui_widgets.o
+
+# target to build an object file
+external/imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
+.PHONY : external/imgui/imgui_widgets.cpp.o
+
+external/imgui/imgui_widgets.i: external/imgui/imgui_widgets.cpp.i
+.PHONY : external/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+external/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.i
+.PHONY : external/imgui/imgui_widgets.cpp.i
+
+external/imgui/imgui_widgets.s: external/imgui/imgui_widgets.cpp.s
+.PHONY : external/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+external/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SoftRender.dir/build.make CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.s
+.PHONY : external/imgui/imgui_widgets.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -276,6 +420,24 @@ help:
 	@echo "... cmake_pch.hxx.pch"
 	@echo "... cmake_pch.hxx.i"
 	@echo "... cmake_pch.hxx.s"
+	@echo "... external/imgui/imgui-sfml/imgui-SFML.o"
+	@echo "... external/imgui/imgui-sfml/imgui-SFML.i"
+	@echo "... external/imgui/imgui-sfml/imgui-SFML.s"
+	@echo "... external/imgui/imgui.o"
+	@echo "... external/imgui/imgui.i"
+	@echo "... external/imgui/imgui.s"
+	@echo "... external/imgui/imgui_demo.o"
+	@echo "... external/imgui/imgui_demo.i"
+	@echo "... external/imgui/imgui_demo.s"
+	@echo "... external/imgui/imgui_draw.o"
+	@echo "... external/imgui/imgui_draw.i"
+	@echo "... external/imgui/imgui_draw.s"
+	@echo "... external/imgui/imgui_tables.o"
+	@echo "... external/imgui/imgui_tables.i"
+	@echo "... external/imgui/imgui_tables.s"
+	@echo "... external/imgui/imgui_widgets.o"
+	@echo "... external/imgui/imgui_widgets.i"
+	@echo "... external/imgui/imgui_widgets.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

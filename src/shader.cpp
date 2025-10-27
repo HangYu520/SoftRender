@@ -49,19 +49,33 @@ V2F PhongShader::vertexShader(const Model::attrib_t& rawVertex) // 顶点着色�
 
 std::pair<bool, Image::Color> PhongShader::fragmentShader(const Fragment& fragment)// 片元着色器
 {
+    return std::make_pair(false, this->precomputedFlatColor); // 片元着色器移动到 updateTriangle 中
+}
+
+void PhongShader::updateTriangle(const std::array<V2F, 3>& Triangle)
+{
+    this->currentTriangle = Triangle;
+    auto v0 = Triangle[0], v1 = Triangle[1], v2 = Triangle[2];
+    
     // TODO : 1. 漫反射颜色
-    glm::vec4 fragment_position = (currentTriangle[0].eyePosition + currentTriangle[1].eyePosition + currentTriangle[2].eyePosition) / 3.0f; // 片元的位置
-    glm::vec4 n = (currentTriangle[0].normal + currentTriangle[1].normal + currentTriangle[2].normal) / 3.0f; // 片元的法向量
-    glm::vec4 l = config.light_position - fragment_position; // 光源方向
+    // 片元的位置 (使用三角形中心)
+    glm::vec4 fragment_position = (v0.eyePosition + v1.eyePosition + v2.eyePosition) / 3.0f; 
+    
+    // 片元的法向量 (平均法向量)
+    // 优化：在VS中归一化后，这里平均完需要再次归一化
+    glm::vec4 n = glm::normalize((v0.normal + v1.normal + v2.normal)); 
+    
+    // 光源方向
+    glm::vec4 l = config.light_position - fragment_position; 
     float rr = glm::dot(l, l);
     l = glm::normalize(l); 
     float inv_light_distance_sq = config.I / rr;
-    float ndotl = std::max(glm::dot(n, l), 0.0f);// 漫反射
+    float ndotl = std::max(glm::dot(n, l), 0.0f);
     float Ld = config.kd * inv_light_distance_sq * ndotl;
 
     // TODO : 2. 镜面反射颜色
-    glm::vec4 v = glm::normalize(config.camera_position - fragment_position); // 视线方向
-    glm::vec4 h = glm::normalize(l + v); // 半向量
+    glm::vec4 v = glm::normalize(config.camera_position - fragment_position); 
+    glm::vec4 h = glm::normalize(l + v); 
     float ndoth = std::max(glm::dot(n, h), 0.0f);
     float Ls = config.ks * inv_light_distance_sq * std::pow(ndoth, config.p);
 
@@ -70,7 +84,8 @@ std::pair<bool, Image::Color> PhongShader::fragmentShader(const Fragment& fragme
 
     // * 片元的最终颜色
     float L = La + Ld + Ls;
-    glm::vec3 fragment_color = std::min(1.0f, L) * currentTriangle[0].color; // 片元颜色
-    Image::Color color(fragment_color.x, fragment_color.y, fragment_color.z);
-    return std::make_pair(false, color);
+    glm::vec3 fragment_color = std::min(1.0f, L) * v0.color; 
+    
+    // ! 将最终颜色存入成员变量
+    this->precomputedFlatColor = Image::Color(fragment_color.x, fragment_color.y, fragment_color.z);
 }
