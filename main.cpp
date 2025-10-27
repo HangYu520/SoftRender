@@ -205,5 +205,6 @@ int main(int argc, char** argv)
         ImGui::SFML::Render(window); // 绘制 ImGui
         window.display();
     }
+    ImGui::SFML::Shutdown(); // 销毁 ImGui
     }
 }
