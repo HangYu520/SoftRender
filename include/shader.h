@@ -13,7 +13,7 @@ struct V2F // 顶点着色器输出 (封装的顶点属性)
     glm::vec4 clipPosition; // 裁剪空间的位置 (经过透视变换)
     glm::vec3 color = glm::vec3(255.f, 255.f, 255.f); // 顶点颜色
     glm::vec4 normal = glm::vec4(0.0f, 0.0f, 0.0f, 0.0f); // 法向量
-    // glm::vec2 texcoord; // 纹理坐标
+    glm::vec2 texcoord; // 纹理坐标
     // TODO 更多的属性
 };
 
@@ -116,16 +116,18 @@ class PhongShader : public Shader
 public:
     struct Config // 参数配置
     {
-        float       I = 3.0f; // 光照强度
+        float       I = 4.0f; // 光照强度
         float       Ia = 0.5f; // 环境光强度
         int         p = 64; // 镜面反射指数
-        float       kd = 0.65f; // 漫反射系数
+        float       kd = 0.75f; // 漫反射系数
         float       ks = 0.35f; // 镜面反射系数
-        float       ka = 0.15f; // 环境反射系数
+        float       ka = 0.35f; // 环境反射系数
         glm::vec4   light_position = glm::vec4(1.0f, 1.0f, 0.0f, 1.0f);
         glm::vec4   camera_position = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
     } config;
     bool smooth = false; // 是否平滑 (逐片元着色 or 逐三角形着色)
+    bool use_texture = true; // 是否使用纹理贴图
+    Image texture_map; // 纹理贴图
 
 public:
     PhongShader() = default;
@@ -134,6 +136,6 @@ public:
     void updateTriangle(const std::array<V2F, 3>& Triangle) override; // CPU 优化方案, 同一个三角形所有的片元画同一个颜色
 
 private:
-    Image::Color precomputedFlatColor; // 为同一个三角形的片元缓存 Color
-    Image::Color _fragmentShader(glm::vec4& fragment_position, glm::vec4& fragment_normal); // 着色器主代码
+    float precomputedFlatCoeff; // 为同一个三角形的片元缓存颜色系数
+    float _fragmentShader(const glm::vec4& fragment_position, const glm::vec4& fragment_normal); // 着色器主代码
 };

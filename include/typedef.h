@@ -40,6 +40,8 @@ struct Image
         static const Color  BLACK;
         static const Color  YELLOW;
     };
+    using ColorAlpha = std::pair<Color, unsigned char>; // 颜色和透明度结构体
+    
     struct Pixel // 像素结构体
     {
         int x, y;
@@ -49,8 +51,19 @@ struct Image
     stbi_uc* image_buffer; // 图像数据
     uint32_t width, height; // 图像宽高
     Channel channel; // 图像通道数
-
+    Image() : image_buffer(nullptr), width(0), height(0), channel(RGBA) {};
     Image(uint32_t w, uint32_t h, Channel c); // 构造函数, 分配图像内存并初始化为0
+
+    /*
+    * ------------------------------------------
+    * 获取指定像素的颜色
+    * ------------------------------------------
+    * /inType: const Pixel& pixel 像素坐标
+    * /outType: ColorAlpha 颜色和透明度
+    * ------------------------------------------
+    */
+    ColorAlpha getColor(const Pixel& pixel) const;
+
     /*
     * ------------------------------------------
     * 设置指定像素的颜色
@@ -60,12 +73,33 @@ struct Image
     * ------------------------------------------
     */
     void setColor(const Pixel& pixel, const Color& color);
+
+    /*
+    * ------------------------------------------
+    * 设置指定像素的颜色和透明度
+    * ------------------------------------------
+    * /inType: const Pixel& pixel 像素坐标
+    * /inType: const ColorAlpha& color 颜色和透明度
+    * ------------------------------------------
+    */
+    void setColor(const Pixel& pixel, const ColorAlpha& color);
+
     /*
     * ------------------------------------------
     * 上下反转图像（垂直翻转）
     * ------------------------------------------
     */
     void flipVertical();
+
+    /*
+    * ------------------------------------------
+    * 加载图像文件
+    * ------------------------------------------
+    * /inType: const char* filename 文件名
+    * ------------------------------------------
+    */
+    void load(const char* filename); // 加载图像文件
+
     /*
     * ------------------------------------------
     * 保存图像文件
@@ -76,7 +110,6 @@ struct Image
     void save(const char* filename); // 写入图像文件
     void init() { image_buffer = new stbi_uc[width * height * channel](0);}// 初始化图像内存
     void clear() { memset(image_buffer, 0, width * height * channel); }// 清空图像内存
-    ~Image() { if (image_buffer) delete[] image_buffer; }// 释放图像内存
 };
 
 /*
@@ -231,6 +264,7 @@ struct ARG // * 命令行参数
 {
     const char* input_obj_file   =  " "; // 输入obj文件路径
     const char* output_img_file  =  "output.png"; // 输出图像文件路径
+    const char* texture_file     =  "MULL"; // 纹理文件路径
     uint32_t width               =  800; // 图像宽
     uint32_t height              =  800; // 图像宽
     Image::Channel channel       =  Image::Channel::RGBA; // 图像通道数

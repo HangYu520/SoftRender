@@ -7,6 +7,7 @@
             "program": "${fileDirname}/bin/SoftRender",
             "args": [
                 "-m", "asset/african_head/african_head.obj",
+                "-t", "asset/african_head/african_head_diffuse.tga",
                 "-o", "doc/output.png",
                 "-w", "800", 
                 "-h", "800"

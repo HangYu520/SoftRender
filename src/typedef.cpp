@@ -30,6 +30,12 @@ Image::Image(uint32_t w, uint32_t h, Channel c)
     image_buffer = new stbi_uc[w * h * c](0); // 分配图像内存并初始化为 0
 }
 
+Image::ColorAlpha Image::getColor(const Pixel& pixel) const // 获取指定像素的颜色和透明度
+{
+    stbi_uc* pixel_buffer = image_buffer + (pixel.y * width + pixel.x) * channel;
+    return std::make_pair(Image::Color{ pixel_buffer[0], pixel_buffer[1], pixel_buffer[2] }, pixel_buffer[3]);
+}
+
 void Image::setColor(const Pixel& pixel, const Color& color)
 {
     // 设置指定像素的颜色
@@ -38,6 +44,17 @@ void Image::setColor(const Pixel& pixel, const Color& color)
     pixel_buffer[1] = color.G;
     pixel_buffer[2] = color.B;
     pixel_buffer[3] = 255; // 透明度
+}
+
+void Image::setColor(const Pixel& pixel, const ColorAlpha& colorAlpha)
+{
+    auto [color, alpha] = colorAlpha;
+    // 设置指定像素的颜色和透明度
+    stbi_uc* pixel_buffer = image_buffer + (pixel.y * width + pixel.x) * channel;
+    pixel_buffer[0] = color.R;
+    pixel_buffer[1] = color.G;
+    pixel_buffer[2] = color.B;
+    pixel_buffer[3] = alpha;
 }
 
 void Image::flipVertical() {
@@ -55,6 +72,24 @@ void Image::flipVertical() {
     }
     
     delete[] tempRow;
+}
+
+void Image::load(const char* filename) // 加载图像文件
+{
+    int x, y, c;
+    image_buffer = stbi_load(filename, &x, &y, &c, 0);
+    if (image_buffer)
+    {
+        width = x;
+        height = y;
+        channel = Image::Channel(c);
+        spdlog::info("Loaded image from {}, width : {}, height : {}, Channel : {}", filename, width, height, (int) channel);
+    }
+    else
+    {
+        spdlog::error("Failed to load image from {}", filename);
+        exit(1);
+    }
 }
 
 void Image::save(const char* filename)
@@ -351,9 +386,11 @@ void ARG::log() const // 打印命令行参数
     spdlog::info(
         "terminal args : "
         "input_obj_file = {}, "
+        "texture_file = {}, "
         "output_img_file = {}, "
         "width = {}, height = {}, channel = {}",
         input_obj_file,
+        texture_file,
         output_img_file, 
         width, height, 
         (int) channel

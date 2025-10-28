@@ -24,6 +24,8 @@ static ARG parse_args(int argc, char** argv)
         {
             if (strcmp(argv[i], "-m") == 0 || strcmp(argv[i], "--model") == 0)
                 args.input_obj_file = argv[++i];
+            else if (strcmp(argv[i], "-t") == 0 || strcmp(argv[i], "--texture") == 0)
+                args.texture_file = argv[++i];
             else if (strcmp(argv[i], "-o") == 0 || strcmp(argv[i], "--output") == 0)
                 args.output_img_file = argv[++i];
             else if(strcmp(argv[i], "-w") == 0 || strcmp(argv[i], "--width") == 0)
@@ -78,8 +80,13 @@ int main(int argc, char** argv)
     window.setFramerateLimit(60); // 限制帧率
     bool initImGui = ImGui::SFML::Init(window); // 初始化 ImGui
 
-    Image image(args.width, args.height, args.channel); // 创建图像对象
+    Image image(args.width, args.height, args.channel); // 创建渲染图像对象
     PhongShader shader; // 创建着色器对象
+    if (strcmp(args.texture_file, "MULL")) 
+    {
+        shader.texture_map.load(args.texture_file);
+        shader.texture_map.flipVertical();
+    }
     
     // TODO 2. 载入 obj 模型
     Model model;
@@ -199,6 +206,7 @@ int main(int argc, char** argv)
         ImGui::SliderFloat("kd", &shader.config.kd, 0.0f, 1.0f);
         ImGui::SliderFloat("ks", &shader.config.ks, 0.0f, 1.0f);
         ImGui::SliderInt("p", &shader.config.p, 0, 100);
+        ImGui::Checkbox("Texture", &shader.use_texture);
         ImGui::End();
         
         window.clear(sf::Color::Black);

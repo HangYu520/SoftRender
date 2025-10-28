@@ -7,6 +7,7 @@ V2F lerp(const V2F& v1, const V2F& v2, float weight)
     v.clipPosition = glm::lerp(v1.clipPosition, v2.clipPosition, weight);
     v.color = glm::lerp(v1.color, v2.color, weight);
     v.normal = glm::lerp(v1.normal, v2.normal, weight);
+    v.texcoord = glm::lerp(v1.texcoord, v2.texcoord, weight);
     // TODO 其他属性插值
     return v;
 }
@@ -44,12 +45,13 @@ V2F PhongShader::vertexShader(const Model::attrib_t& rawVertex) // 顶点着色�
     v.clipPosition = projectionMatrix * v.eyePosition;
     v.normal = viewMatrix * modelMatrix * glm::vec4(rawVertex._normal.nx, rawVertex._normal.ny, rawVertex._normal.nz, 0.0f);
     v.normal = glm::normalize(v.normal);
+    v.texcoord = glm::vec2(rawVertex._texcoord.u, rawVertex._texcoord.v);
     return v;
 }
 
 std::pair<bool, Image::Color> PhongShader::fragmentShader(const Fragment& fragment)// 片元着色器
 {
-    Image::Color color = this->precomputedFlatColor;
+    float PhongCoeff = this->precomputedFlatCoeff;
     if (smooth) // 逐片元着色
     {   // ! CPU 上运行速度较慢
         auto v0 = currentTriangle[0].eyePosition, v1 = currentTriangle[1].eyePosition, v2 = currentTriangle[2].eyePosition;
@@ -58,8 +60,22 @@ std::pair<bool, Image::Color> PhongShader::fragmentShader(const Fragment& fragme
         glm::vec4 fragment_position = fragment.baryCoord.u * v0 + fragment.baryCoord.v * v1 + fragment.baryCoord.w * v2;
         // 片元的法向量 (重心坐标插值)
         glm::vec4 fragment_normal = fragment.baryCoord.u * n0 + fragment.baryCoord.v * n1 + fragment.baryCoord.w * n2;
-        color = _fragmentShader(fragment_position, fragment_normal);
+        PhongCoeff = _fragmentShader(fragment_position, fragment_normal);
     }
+    glm::vec3 color_vec = currentTriangle[0].color;
+    if (texture_map.image_buffer && use_texture)
+    {
+        // 片元纹理颜色
+        auto t0 = currentTriangle[0].texcoord, t1 = currentTriangle[1].texcoord, t2 = currentTriangle[2].texcoord;
+        auto fragment_textcoord = fragment.baryCoord.u * t0 + fragment.baryCoord.v * t1 + fragment.baryCoord.w * t2; // 片元纹理坐标
+        // 纹理坐标映射到图像
+        int x = fragment_textcoord.x * texture_map.width, y = fragment_textcoord.y * texture_map.height;
+        Image::Pixel pixel(x, y);
+        Image::ColorAlpha texture_color = texture_map.getColor(pixel);
+        color_vec = glm::vec3(texture_color.first.R, texture_color.first.G, texture_color.first.B);
+    }
+    color_vec = color_vec * PhongCoeff;
+    Image::Color color(color_vec.x, color_vec.y, color_vec.z);
     return std::make_pair(false, color); // 片元着色器移动到 updateTriangle 中
 }
 
@@ -74,11 +90,11 @@ void PhongShader::updateTriangle(const std::array<V2F, 3>& Triangle)
         // 片元的法向量 (平均法向量)
         glm::vec4 fragment_normal = v0.normal + v1.normal + v2.normal;
         // ! 将最终颜色存入成员变量
-        this->precomputedFlatColor = _fragmentShader(fragment_position, fragment_normal);
+        this->precomputedFlatCoeff = _fragmentShader(fragment_position, fragment_normal);
     }
 }
 
-Image::Color PhongShader::_fragmentShader(glm::vec4& fragment_position, glm::vec4& fragment_normal) // 着色器主代码
+float PhongShader::_fragmentShader(const glm::vec4& fragment_position, const glm::vec4& fragment_normal) // 着色器主代码
 {
     // TODO : 1. 漫反射颜色
     // 片元的法向量 (平均法向量)
@@ -103,7 +119,6 @@ Image::Color PhongShader::_fragmentShader(glm::vec4& fragment_position, glm::vec
 
     // * 片元的最终颜色
     float L = La + Ld + Ls;
-    glm::vec3 fragment_color = std::min(1.0f, L) * currentTriangle[0].color; 
     
-    return Image::Color(fragment_color.x, fragment_color.y, fragment_color.z);
+    return std::min(1.0f, L);
 }
