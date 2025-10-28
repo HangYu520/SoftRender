@@ -25,7 +25,9 @@ static ARG parse_args(int argc, char** argv)
             if (strcmp(argv[i], "-m") == 0 || strcmp(argv[i], "--model") == 0)
                 args.input_obj_file = argv[++i];
             else if (strcmp(argv[i], "-t") == 0 || strcmp(argv[i], "--texture") == 0)
-                args.texture_file = argv[++i];
+                args.texture_map_file = argv[++i];
+            else if (strcmp(argv[i], "-n") == 0 || strcmp(argv[i], "--normal") == 0)
+                args.normal_map_file = argv[++i];
             else if (strcmp(argv[i], "-o") == 0 || strcmp(argv[i], "--output") == 0)
                 args.output_img_file = argv[++i];
             else if(strcmp(argv[i], "-w") == 0 || strcmp(argv[i], "--width") == 0)
@@ -82,10 +84,15 @@ int main(int argc, char** argv)
 
     Image image(args.width, args.height, args.channel); // 创建渲染图像对象
     PhongShader shader; // 创建着色器对象
-    if (strcmp(args.texture_file, "MULL")) 
+    if (strcmp(args.texture_map_file, "MULL")) // 纹理映射
     {
-        shader.texture_map.load(args.texture_file);
+        shader.texture_map.load(args.texture_map_file);
         shader.texture_map.flipVertical();
+    }
+    if (strcmp(args.normal_map_file, "MULL")) // 法线映射
+    {
+        shader.normal_map.load(args.normal_map_file);
+        shader.normal_map.flipVertical();
     }
     
     // TODO 2. 载入 obj 模型
@@ -206,7 +213,9 @@ int main(int argc, char** argv)
         ImGui::SliderFloat("kd", &shader.config.kd, 0.0f, 1.0f);
         ImGui::SliderFloat("ks", &shader.config.ks, 0.0f, 1.0f);
         ImGui::SliderInt("p", &shader.config.p, 0, 100);
-        ImGui::Checkbox("Texture", &shader.use_texture);
+        ImGui::Checkbox("Texture", &shader.use_texture_map);
+        ImGui::SameLine();
+        ImGui::Checkbox("Normal", &shader.use_normal_map);
         ImGui::End();
         
         window.clear(sf::Color::Black);

@@ -386,11 +386,13 @@ void ARG::log() const // 打印命令行参数
     spdlog::info(
         "terminal args : "
         "input_obj_file = {}, "
-        "texture_file = {}, "
+        "texture_map_file = {}, "
+        "normal_map_file = {}, "
         "output_img_file = {}, "
         "width = {}, height = {}, channel = {}",
         input_obj_file,
-        texture_file,
+        texture_map_file,
+        normal_map_file,
         output_img_file, 
         width, height, 
         (int) channel

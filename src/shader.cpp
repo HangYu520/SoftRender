@@ -54,16 +54,36 @@ std::pair<bool, Image::Color> PhongShader::fragmentShader(const Fragment& fragme
     float PhongCoeff = this->precomputedFlatCoeff;
     if (smooth) // 逐片元着色
     {   // ! CPU 上运行速度较慢
-        auto v0 = currentTriangle[0].eyePosition, v1 = currentTriangle[1].eyePosition, v2 = currentTriangle[2].eyePosition;
-        auto n0 = currentTriangle[0].normal, n1 = currentTriangle[1].normal, n2 = currentTriangle[2].normal;
         // 片元位置 （重心坐标插值）
+        auto v0 = currentTriangle[0].eyePosition, v1 = currentTriangle[1].eyePosition, v2 = currentTriangle[2].eyePosition;
         glm::vec4 fragment_position = fragment.baryCoord.u * v0 + fragment.baryCoord.v * v1 + fragment.baryCoord.w * v2;
-        // 片元的法向量 (重心坐标插值)
-        glm::vec4 fragment_normal = fragment.baryCoord.u * n0 + fragment.baryCoord.v * n1 + fragment.baryCoord.w * n2;
+        // 片元法向量
+        glm::vec4 fragment_normal;
+        if (normal_map.image_buffer && use_normal_map)
+        {
+            // 法向贴图
+            auto t0 = currentTriangle[0].texcoord, t1 = currentTriangle[1].texcoord, t2 = currentTriangle[2].texcoord;
+            auto fragment_textcoord = fragment.baryCoord.u * t0 + fragment.baryCoord.v * t1 + fragment.baryCoord.w * t2; // 片元纹理坐标
+            // 纹理坐标映射到图像
+            int x = fragment_textcoord.x * normal_map.width, y = fragment_textcoord.y * normal_map.height;
+            Image::Pixel pixel(x, y);
+            Image::Color normal_color = normal_map.getColor(pixel).first;
+            // 颜色映射到法向
+            fragment_normal.x = float(normal_color.R) * 2.0 / 255.0f - 1.0f;
+            fragment_normal.y = float(normal_color.G) * 2.0 / 255.0f - 1.0f;
+            fragment_normal.z = float(normal_color.B) * 2.0 / 255.0f - 1.0f;
+        }
+        else
+        {
+            // 重心坐标插值
+            auto n0 = currentTriangle[0].normal, n1 = currentTriangle[1].normal, n2 = currentTriangle[2].normal;
+            fragment_normal = fragment.baryCoord.u * n0 + fragment.baryCoord.v * n1 + fragment.baryCoord.w * n2;
+        }
         PhongCoeff = _fragmentShader(fragment_position, fragment_normal);
     }
-    glm::vec3 color_vec = currentTriangle[0].color;
-    if (texture_map.image_buffer && use_texture)
+    // 片元颜色
+    glm::vec3 color_vec = currentTriangle[0].color; // 基础颜色
+    if (texture_map.image_buffer && use_texture_map)
     {
         // 片元纹理颜色
         auto t0 = currentTriangle[0].texcoord, t1 = currentTriangle[1].texcoord, t2 = currentTriangle[2].texcoord;

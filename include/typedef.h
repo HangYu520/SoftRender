@@ -264,7 +264,8 @@ struct ARG // * 命令行参数
 {
     const char* input_obj_file   =  " "; // 输入obj文件路径
     const char* output_img_file  =  "output.png"; // 输出图像文件路径
-    const char* texture_file     =  "MULL"; // 纹理文件路径
+    const char* texture_map_file =  "MULL"; // 纹理贴图路径
+    const char* normal_map_file  =  "MULL"; // 法线贴图路径
     uint32_t width               =  800; // 图像宽
     uint32_t height              =  800; // 图像宽
     Image::Channel channel       =  Image::Channel::RGBA; // 图像通道数

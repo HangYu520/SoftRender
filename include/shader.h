@@ -116,9 +116,9 @@ class PhongShader : public Shader
 public:
     struct Config // 参数配置
     {
-        float       I = 4.0f; // 光照强度
+        float       I  = 4.0f; // 光照强度
         float       Ia = 0.5f; // 环境光强度
-        int         p = 64; // 镜面反射指数
+        int         p  = 64; // 镜面反射指数
         float       kd = 0.75f; // 漫反射系数
         float       ks = 0.35f; // 镜面反射系数
         float       ka = 0.35f; // 环境反射系数
@@ -126,8 +126,10 @@ public:
         glm::vec4   camera_position = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
     } config;
     bool smooth = false; // 是否平滑 (逐片元着色 or 逐三角形着色)
-    bool use_texture = true; // 是否使用纹理贴图
+    bool use_texture_map = true; // 是否使用纹理贴图
+    bool use_normal_map = true; // 是否使用法向贴图
     Image texture_map; // 纹理贴图
+    Image normal_map; // 法向贴图
 
 public:
     PhongShader() = default;
