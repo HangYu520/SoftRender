@@ -1,6 +1,6 @@
 # 从零开始搭建软渲染器
 
-[demo](doc/demo.png)
+![demo](doc/demo.png)
 
 ## 依赖
 
