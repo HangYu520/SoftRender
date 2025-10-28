@@ -49,21 +49,40 @@ V2F PhongShader::vertexShader(const Model::attrib_t& rawVertex) // 顶点着色�
 
 std::pair<bool, Image::Color> PhongShader::fragmentShader(const Fragment& fragment)// 片元着色器
 {
-    return std::make_pair(false, this->precomputedFlatColor); // 片元着色器移动到 updateTriangle 中
+    Image::Color color = this->precomputedFlatColor;
+    if (smooth) // 逐片元着色
+    {   // ! CPU 上运行速度较慢
+        auto v0 = currentTriangle[0].eyePosition, v1 = currentTriangle[1].eyePosition, v2 = currentTriangle[2].eyePosition;
+        auto n0 = currentTriangle[0].normal, n1 = currentTriangle[1].normal, n2 = currentTriangle[2].normal;
+        // 片元位置 （重心坐标插值）
+        glm::vec4 fragment_position = fragment.baryCoord.u * v0 + fragment.baryCoord.v * v1 + fragment.baryCoord.w * v2;
+        // 片元的法向量 (重心坐标插值)
+        glm::vec4 fragment_normal = fragment.baryCoord.u * n0 + fragment.baryCoord.v * n1 + fragment.baryCoord.w * n2;
+        color = _fragmentShader(fragment_position, fragment_normal);
+    }
+    return std::make_pair(false, color); // 片元着色器移动到 updateTriangle 中
 }
 
 void PhongShader::updateTriangle(const std::array<V2F, 3>& Triangle)
 {
     this->currentTriangle = Triangle;
-    auto v0 = Triangle[0], v1 = Triangle[1], v2 = Triangle[2];
-    
+    if (!smooth) // 逐三角形着色
+    {
+        auto v0 = Triangle[0], v1 = Triangle[1], v2 = Triangle[2];
+        // 片元的位置 (使用三角形中心)
+        glm::vec4 fragment_position = (v0.eyePosition + v1.eyePosition + v2.eyePosition) / 3.0f; 
+        // 片元的法向量 (平均法向量)
+        glm::vec4 fragment_normal = v0.normal + v1.normal + v2.normal;
+        // ! 将最终颜色存入成员变量
+        this->precomputedFlatColor = _fragmentShader(fragment_position, fragment_normal);
+    }
+}
+
+Image::Color PhongShader::_fragmentShader(glm::vec4& fragment_position, glm::vec4& fragment_normal) // 着色器主代码
+{
     // TODO : 1. 漫反射颜色
-    // 片元的位置 (使用三角形中心)
-    glm::vec4 fragment_position = (v0.eyePosition + v1.eyePosition + v2.eyePosition) / 3.0f; 
-    
     // 片元的法向量 (平均法向量)
-    // 优化：在VS中归一化后，这里平均完需要再次归一化
-    glm::vec4 n = glm::normalize((v0.normal + v1.normal + v2.normal)); 
+    glm::vec4 n = glm::normalize(fragment_normal); 
     
     // 光源方向
     glm::vec4 l = config.light_position - fragment_position; 
@@ -84,8 +103,7 @@ void PhongShader::updateTriangle(const std::array<V2F, 3>& Triangle)
 
     // * 片元的最终颜色
     float L = La + Ld + Ls;
-    glm::vec3 fragment_color = std::min(1.0f, L) * v0.color; 
+    glm::vec3 fragment_color = std::min(1.0f, L) * currentTriangle[0].color; 
     
-    // ! 将最终颜色存入成员变量
-    this->precomputedFlatColor = Image::Color(fragment_color.x, fragment_color.y, fragment_color.z);
+    return Image::Color(fragment_color.x, fragment_color.y, fragment_color.z);
 }

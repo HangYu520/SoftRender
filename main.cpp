@@ -193,6 +193,7 @@ int main(int argc, char** argv)
         ImGui::Text("Field of View: %.2f", fov);
         ImGui::Separator();
         ImGui::Text("Phong Shader");
+        ImGui::Checkbox("Smooth", &shader.smooth);
         ImGui::SliderFloat("I", &shader.config.I, 0.0f, 5.0f);
         ImGui::SliderFloat("ka", &shader.config.ka, 0.0f, 1.0f);
         ImGui::SliderFloat("kd", &shader.config.kd, 0.0f, 1.0f);

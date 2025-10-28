@@ -125,6 +125,7 @@ public:
         glm::vec4   light_position = glm::vec4(1.0f, 1.0f, 0.0f, 1.0f);
         glm::vec4   camera_position = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
     } config;
+    bool smooth = false; // 是否平滑 (逐片元着色 or 逐三角形着色)
 
 public:
     PhongShader() = default;
@@ -134,4 +135,5 @@ public:
 
 private:
     Image::Color precomputedFlatColor; // 为同一个三角形的片元缓存 Color
+    Image::Color _fragmentShader(glm::vec4& fragment_position, glm::vec4& fragment_normal); // 着色器主代码
 };
