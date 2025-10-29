@@ -128,6 +128,7 @@ public:
     bool smooth = false; // 是否平滑 (逐片元着色 or 逐三角形着色)
     bool use_texture_map = true; // 是否使用纹理贴图
     bool use_normal_map = true; // 是否使用法向贴图
+    bool use_tangent_map = true; // 是否使用切线空间法向贴图
     Image texture_map; // 纹理贴图
     Image normal_map; // 法向贴图
 
@@ -139,5 +140,6 @@ public:
 
 private:
     float precomputedFlatCoeff; // 为同一个三角形的片元缓存颜色系数
+    glm::mat4 getTBN(const Fragment& fragment); // 获取 TBN 矩阵
     float _fragmentShader(const glm::vec4& fragment_position, const glm::vec4& fragment_normal); // 着色器主代码
 };

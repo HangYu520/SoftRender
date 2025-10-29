@@ -8,6 +8,7 @@
             "args": [
                 "-m", "asset/african_head/african_head.obj",
                 "-t", "asset/african_head/african_head_diffuse.tga",
+                "-n", "asset/african_head/african_head_nm_tangent.tga",
                 "-o", "doc/output.png",
                 "-w", "800", 
                 "-h", "800"

@@ -207,7 +207,6 @@ int main(int argc, char** argv)
         ImGui::Text("Field of View: %.2f", fov);
         ImGui::Separator();
         ImGui::Text("Phong Shader");
-        ImGui::Checkbox("Smooth", &shader.smooth);
         ImGui::SliderFloat("I", &shader.config.I, 0.0f, 5.0f);
         ImGui::SliderFloat("ka", &shader.config.ka, 0.0f, 1.0f);
         ImGui::SliderFloat("kd", &shader.config.kd, 0.0f, 1.0f);
@@ -215,7 +214,10 @@ int main(int argc, char** argv)
         ImGui::SliderInt("p", &shader.config.p, 0, 100);
         ImGui::Checkbox("Texture", &shader.use_texture_map);
         ImGui::SameLine();
-        ImGui::Checkbox("Normal", &shader.use_normal_map);
+        ImGui::Checkbox("Smooth", &shader.smooth);
+        ImGui::Checkbox("NormalMap", &shader.use_normal_map);
+        ImGui::SameLine();
+        ImGui::Checkbox("TangentMap", &shader.use_tangent_map);
         ImGui::End();
         
         window.clear(sf::Color::Black);
