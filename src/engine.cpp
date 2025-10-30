@@ -185,7 +185,7 @@ void Engine::render(Image& image, Model& model, Shader* shader) // 渲染 3D 模
             for (int i = 0; i < clippedVertices.size() - 3 + 1; i++) // 裁剪完三角形的个数 : 1 or 2, 顶点个数: 3 or 4
             {
                 // 获取裁剪后的顶点
-                V2F v0 = clippedVertices[i+0];
+                V2F v0 = clippedVertices[0];
                 V2F v1 = clippedVertices[i+1];
                 V2F v2 = clippedVertices[i+2];
                 // TODO : 4. 光栅化三角形

@@ -11398,6 +11398,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch.hxx \
   /Users/hangyu/Documents/GitHub/SoftRender/include/shader.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/timer.h \
   /Users/hangyu/Documents/GitHub/SoftRender/include/typedef.h \
+  /Users/hangyu/Documents/GitHub/SoftRender/include/utils.h \
   /Users/hangyu/Documents/GitHub/SoftRender/main.cpp \
   /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Config.hpp \
   /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics.hpp \
@@ -17052,6 +17053,8 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o: CMakeFiles/SoftRender.dir/cmake_pch
 /opt/homebrew/Cellar/sfml/3.0.2/include/SFML/Graphics/ConvexShape.hpp:
 
 /Users/hangyu/Documents/GitHub/SoftRender/main.cpp:
+
+/Users/hangyu/Documents/GitHub/SoftRender/include/utils.h:
 
 /Users/hangyu/Documents/GitHub/SoftRender/include/timer.h:
 
