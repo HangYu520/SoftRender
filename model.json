@@ -1,13 +1,6 @@
 {
     "model" : [
         {
-            "load" : false,
-            "name" : "floor",
-            "obj" : "asset/floor.obj",
-            "texture" : "asset/floor_diffuse.tga",
-            "normal" : "asset/floor_nm_tangent.tga"
-        },
-        {
             "load" : true,
             "name" : "african_head",
             "obj" : "asset/african_head/african_head.obj",
@@ -41,6 +34,13 @@
             "obj" : "asset/diablo3_pose/diablo3_pose.obj",
             "texture" : "asset/diablo3_pose/diablo3_pose_diffuse.tga",
             "normal" : "asset/diablo3_pose/diablo3_pose_nm_tangent.tga"
+        },
+        {
+            "load" : true,
+            "name" : "floor",
+            "obj" : "asset/floor.obj",
+            "texture" : "asset/floor_diffuse.tga",
+            "normal" : "asset/floor_nm_tangent.tga"
         }
     ]
 }
