@@ -10,6 +10,7 @@
 - stb_image (图片处理， 头文件已包含)
 - tinyobjloader (模型加载， 头文件已包含)
 - spdlog (日志库， 头文件已包含)
+- json (json 解析， 头文件已包含)
 
 ## 编译
 
