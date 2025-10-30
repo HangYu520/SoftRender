@@ -18,9 +18,8 @@
 
 ```bash
 mkdir build
-cd build
-cmake ..
-make
+cmake -B build
+cmake --build build
 ```
 
 ## 参考
