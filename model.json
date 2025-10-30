@@ -1,11 +1,46 @@
 {
     "model" : [
         {
+            "load" : false,
+            "name" : "floor",
+            "obj" : "asset/floor.obj",
+            "texture" : "asset/floor_diffuse.tga",
+            "normal" : "asset/floor_nm_tangent.tga"
+        },
+        {
             "load" : true,
             "name" : "african_head",
             "obj" : "asset/african_head/african_head.obj",
             "texture" : "asset/african_head/african_head_diffuse.tga",
             "normal" : "asset/african_head/african_head_nm_tangent.tga"
+        },
+        {
+            "load" : false,
+            "name" : "boggie_body",
+            "obj" : "asset/boggie/body.obj",
+            "texture" : "asset/boggie/body_diffuse.tga",
+            "normal" : "asset/boggie/body_nm_tangent.tga"
+        },
+        {
+            "load" : false,
+            "name" : "boggie_eyes",
+            "obj" : "asset/boggie/eyes.obj",
+            "texture" : "asset/boggie/eyes_diffuse.tga",
+            "normal" : "asset/boggie/eyes_nm_tangent.tga"
+        },
+        {
+            "load" : false,
+            "name" : "boggie_head",
+            "obj" : "asset/boggie/head.obj",
+            "texture" : "asset/boggie/head_diffuse.tga",
+            "normal" : "asset/boggie/head_nm_tangent.tga"
+        },
+        {
+            "load" : false,
+            "name" : "diablo3_pose",
+            "obj" : "asset/diablo3_pose/diablo3_pose.obj",
+            "texture" : "asset/diablo3_pose/diablo3_pose_diffuse.tga",
+            "normal" : "asset/diablo3_pose/diablo3_pose_nm_tangent.tga"
         }
     ]
 }
