@@ -22,12 +22,8 @@ static ARG parse_args(int argc, char** argv)
     {
         for (size_t i = 1; i < argc; i++)
         {
-            if (strcmp(argv[i], "-m") == 0 || strcmp(argv[i], "--model") == 0)
-                args.input_obj_file = argv[++i];
-            else if (strcmp(argv[i], "-t") == 0 || strcmp(argv[i], "--texture") == 0)
-                args.texture_map_file = argv[++i];
-            else if (strcmp(argv[i], "-n") == 0 || strcmp(argv[i], "--normal") == 0)
-                args.normal_map_file = argv[++i];
+            if (strcmp(argv[i], "-i") == 0 || strcmp(argv[i], "--input") == 0)
+                args.input_obj_json = argv[++i];
             else if (strcmp(argv[i], "-o") == 0 || strcmp(argv[i], "--output") == 0)
                 args.output_img_file = argv[++i];
             else if(strcmp(argv[i], "-w") == 0 || strcmp(argv[i], "--width") == 0)
@@ -69,6 +65,66 @@ void saveImage(Image& image, const char* filePath, bool saveDepth = true)
 
 /*
 * ------------------------------------------
+* 加载多个模型及对应的纹理、法向贴图
+* ------------------------------------------
+*/
+void loadAsset(const char* input_json, std::vector<std::tuple<Model, Image, Image>>& loadmodels)
+{
+    Timer timer("Load Asset");
+    // 使用 json 文件多个模型
+    using json = nlohmann::json;
+    json data = json::parse(std::ifstream(input_json));
+    for (auto& model: data["model"])
+    {
+        bool load = model.value("load", true);
+        if (load)
+        {
+            Model objmodel;
+            Image texture, normal;
+            const std::string name = model.value("name", "");
+            const std::string obj_file = model.value("obj", "");
+            const std::string texture_file = model.value("texture", "");
+            const std::string normal_file = model.value("normal", "");
+            objmodel.loadFrom(obj_file.c_str());
+            if (!texture_file.empty())
+            {
+                texture.load(texture_file.c_str());
+                texture.flipVertical();
+            }
+            if (!normal_file.empty())
+            {
+                normal.load(normal_file.c_str());
+                normal.flipVertical();
+            }
+            loadmodels.emplace_back(objmodel, texture, normal);
+        }
+    }
+}
+
+/*
+* ------------------------------------------
+* 渲染载入的所有模型
+* ------------------------------------------
+*/
+void renderAll(Image& image, Shader* shader, std::vector<std::tuple<Model, Image, Image>>& loadmodels, bool drawWireframe)
+{
+    for (auto& [model, texture_map, normal_map]: loadmodels)
+    {
+        if (drawWireframe)
+        {
+            Engine::getInstance()->wireframe(image, model, Image::Color::RED);
+        }
+        else
+        {
+            if (texture_map.image_buffer) shader->texture_map = texture_map;
+            if (normal_map.image_buffer) shader->normal_map = normal_map;
+            Engine::getInstance()->render(image, model, shader);
+        }
+    }
+}
+
+/*
+* ------------------------------------------
 * 主函数入口
 * ------------------------------------------
 */
@@ -84,22 +140,16 @@ int main(int argc, char** argv)
 
     Image image(args.width, args.height, args.channel); // 创建渲染图像对象
     PhongShader shader; // 创建着色器对象
-    if (strcmp(args.texture_map_file, "MULL")) // 纹理映射
-    {
-        shader.texture_map.load(args.texture_map_file);
-        shader.texture_map.flipVertical();
-    }
-    if (strcmp(args.normal_map_file, "MULL")) // 法线映射
-    {
-        shader.normal_map.load(args.normal_map_file);
-        shader.normal_map.flipVertical();
-    }
     
     // TODO 2. 载入 obj 模型
-    Model model;
-    {   Timer timer("Load Model"); // 计时器开始
-    model.loadFrom(args.input_obj_file); // 加载模型文件
+    std::vector<std::tuple<Model, Image, Image>> loadmodels;
+    loadAsset(args.input_obj_json, loadmodels);
+    if (loadmodels.empty())
+    {
+        spdlog::error("No model found.");
+        return -1;
     }
+    auto [model, texture_map, normal_map] = loadmodels[0]; // 获取第一个模型进行 center
 
     // TODO 3. 初始化 texture 用以和 image 交流
     sf::Texture texture(sf::Vector2u(args.width, args.height)); 
@@ -188,8 +238,7 @@ int main(int argc, char** argv)
             Engine::getInstance()->getTrans().mConfig.rotateAngle = rotation; // 旋转
             Engine::getInstance()->getTrans().vConfig.cameraPos.y = cameraHeight; // 升降
             Engine::getInstance()->getTrans().pConfig.fov = fov; // 视角
-            if (drawWireframe) Engine::getInstance()->wireframe(image, model, Image::Color::RED); // 绘制线框
-            else Engine::getInstance()->render(image, model, &shader); // 渲染
+            renderAll(image, &shader, loadmodels, drawWireframe); // 渲染
         }
 
         // 更新 texture 并绘制到 SFML 窗口

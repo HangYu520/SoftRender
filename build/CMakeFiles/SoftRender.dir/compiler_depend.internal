@@ -431,6 +431,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -464,6 +465,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -497,6 +499,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -632,19 +635,44 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -677,6 +705,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -801,6 +830,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -827,6 +857,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -884,7 +915,9 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -903,6 +936,7 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -1423,6 +1457,52 @@ CMakeFiles/SoftRender.dir/cmake_pch.hxx.pch
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vector_relational.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -1899,6 +1979,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -1932,6 +2013,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -1965,6 +2047,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -2100,19 +2183,44 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -2145,6 +2253,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -2269,6 +2378,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -2295,6 +2405,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -2352,7 +2463,9 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -2371,6 +2484,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -2741,6 +2855,52 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui-sfml/imgui-SFML.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML_export.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -3269,6 +3429,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -3302,6 +3463,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -3335,6 +3497,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -3470,19 +3633,44 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -3515,6 +3703,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -3639,6 +3828,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -3665,6 +3855,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -3722,7 +3913,9 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -3741,6 +3934,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -4110,6 +4304,52 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.cpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_internal.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -4591,6 +4831,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -4624,6 +4865,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -4657,6 +4899,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -4792,19 +5035,44 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -4837,6 +5105,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -4961,6 +5230,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -4987,6 +5257,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -5045,7 +5316,9 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -5064,6 +5337,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -5435,6 +5709,52 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_demo.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML_export.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_demo.cpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -5915,6 +6235,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -5948,6 +6269,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -5981,6 +6303,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -6116,19 +6439,44 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -6161,6 +6509,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -6285,6 +6634,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -6311,6 +6661,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -6368,7 +6719,9 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -6387,6 +6740,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -6758,6 +7112,52 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_draw.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_internal.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imstb_rectpack.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imstb_truetype.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -7238,6 +7638,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -7271,6 +7672,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -7304,6 +7706,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -7439,19 +7842,44 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -7484,6 +7912,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -7608,6 +8037,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -7634,6 +8064,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -7691,7 +8122,9 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -7710,6 +8143,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -8079,6 +8513,52 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_tables.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_internal.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_tables.cpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -8559,6 +9039,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -8592,6 +9073,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -8625,6 +9107,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -8760,19 +9243,44 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -8805,6 +9313,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -8929,6 +9438,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -8955,6 +9465,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -9012,7 +9523,9 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -9031,6 +9544,7 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -9401,6 +9915,52 @@ CMakeFiles/SoftRender.dir/external/imgui/imgui_widgets.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_internal.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui_widgets.cpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imstb_textedit.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -9881,6 +10441,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -9914,6 +10475,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -9947,6 +10509,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -10082,19 +10645,44 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -10127,6 +10715,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -10251,6 +10840,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -10277,6 +10867,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -10334,7 +10925,9 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -10353,6 +10946,7 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -10721,6 +11315,52 @@ CMakeFiles/SoftRender.dir/main.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml/imgui-SFML_export.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui.h
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -11276,6 +11916,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -11309,6 +11950,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -11342,6 +11984,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -11477,19 +12120,44 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -11522,6 +12190,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -11646,6 +12315,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -11672,6 +12342,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -11729,7 +12400,9 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -11748,6 +12421,7 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -12111,6 +12785,52 @@ CMakeFiles/SoftRender.dir/src/engine.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -12587,6 +13307,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -12620,6 +13341,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -12653,6 +13375,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -12788,19 +13511,44 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -12833,6 +13581,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -12957,6 +13706,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -12983,6 +13733,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -13040,8 +13791,10 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -13060,6 +13813,7 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -13424,6 +14178,52 @@ CMakeFiles/SoftRender.dir/src/external_impl.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -13897,6 +14697,7 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -13930,6 +14731,7 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -13963,6 +14765,7 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -14098,19 +14901,44 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -14143,6 +14971,7 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -14267,6 +15096,7 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -14293,6 +15123,7 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -14350,7 +15181,9 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -14369,6 +15202,7 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -14732,6 +15566,52 @@ CMakeFiles/SoftRender.dir/src/shader.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h
@@ -15207,6 +16087,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/hash.h
@@ -15240,6 +16121,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
@@ -15273,6 +16155,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -15408,19 +16291,44 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h
@@ -15453,6 +16361,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_ext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h
@@ -15577,6 +16486,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_lvalue.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/auto_cast.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/cmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h
@@ -15603,6 +16513,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit
@@ -15660,7 +16571,9 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
@@ -15679,6 +16592,7 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version
@@ -16042,6 +16956,52 @@ CMakeFiles/SoftRender.dir/src/typedef.cpp.o
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec2.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec3.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/glm/vec4.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/adl_serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/byte_container_with_subtype.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/abi_macros.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/from_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_chars.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/conversions/to_json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/exceptions.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/hash.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/binary_reader.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/input_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/json_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/lexer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/parser.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/input/position_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/internal_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iter_impl.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iteration_proxy.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/iterator_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/iterators/primitive_iterator.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_custom_base_class.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_pointer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/json_ref.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_scope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/macro_unscope.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/begin.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/call_std/end.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/cpp_future.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/detected.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/identity_tag.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/is_sax.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/std_fs.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/type_traits.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/meta/void_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/binary_writer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/output_adapters.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/output/serializer.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_concat.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_escape.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/string_utils.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/detail/value_t.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/json_fwd.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/ordered_map.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley.hpp
+ /Users/hangyu/Documents/GitHub/SoftRender/external/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common-inl.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/common.h
  /Users/hangyu/Documents/GitHub/SoftRender/external/spdlog/details/backtracer-inl.h

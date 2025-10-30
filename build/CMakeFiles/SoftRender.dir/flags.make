@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external -I/Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader -I/Users/hangyu/Documents/GitHub/SoftRender/external/imgui -I/Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml -I/Users/hangyu/Documents/GitHub/SoftRender/include -I/opt/homebrew/Cellar/sfml/3.0.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/include
+CXX_INCLUDES = -I/Users/hangyu/Documents/GitHub/SoftRender/external -I/Users/hangyu/Documents/GitHub/SoftRender/external/json/include -I/Users/hangyu/Documents/GitHub/SoftRender/external/tinyobjloader -I/Users/hangyu/Documents/GitHub/SoftRender/external/imgui -I/Users/hangyu/Documents/GitHub/SoftRender/external/imgui/imgui-sfml -I/Users/hangyu/Documents/GitHub/SoftRender/include -I/opt/homebrew/Cellar/sfml/3.0.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64
 

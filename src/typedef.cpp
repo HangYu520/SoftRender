@@ -30,6 +30,21 @@ Image::Image(uint32_t w, uint32_t h, Channel c)
     image_buffer = new stbi_uc[w * h * c](0); // 分配图像内存并初始化为 0
 }
 
+Image& Image::operator=(const Image& other)
+{
+    if (this != &other)
+    {
+        this->width = other.width;
+        this->height = other.height;
+        this->channel = other.channel;
+        stbi_uc* new_buffer = new stbi_uc[other.width * other.height * other.channel](0);
+        memcpy(new_buffer, other.image_buffer, other.width * other.height * other.channel);
+        if (this->image_buffer) delete[] this->image_buffer;
+        this->image_buffer = new_buffer;
+    }
+    return *this;
+}
+
 Image::ColorAlpha Image::getColor(const Pixel& pixel) const // 获取指定像素的颜色和透明度
 {
     stbi_uc* pixel_buffer = image_buffer + (pixel.y * width + pixel.x) * channel;
@@ -385,14 +400,10 @@ void ARG::log() const // 打印命令行参数
 {
     spdlog::info(
         "terminal args : "
-        "input_obj_file = {}, "
-        "texture_map_file = {}, "
-        "normal_map_file = {}, "
+        "input_obj_json = {}, "
         "output_img_file = {}, "
         "width = {}, height = {}, channel = {}",
-        input_obj_file,
-        texture_map_file,
-        normal_map_file,
+        input_obj_json,
         output_img_file, 
         width, height, 
         (int) channel

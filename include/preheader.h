@@ -13,6 +13,7 @@
 #include <stb/stb_image_write.h>
 #include <tiny_obj_loader.h> // 3D 模型加载采用 tinyobjloader 库
 #include <spdlog/spdlog.h> // 日志打印采用 spdlog 库
+#include <nlohmann/json.hpp> // json 处理采用 nlohmann/json 库
 #include <cmath>
 #include <iostream>
 #include <fstream>

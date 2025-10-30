@@ -54,6 +54,8 @@ struct Image
     Image() : image_buffer(nullptr), width(0), height(0), channel(RGBA) {};
     Image(uint32_t w, uint32_t h, Channel c); // 构造函数, 分配图像内存并初始化为0
 
+    Image& operator=(const Image& other); // 赋值运算符重载
+
     /*
     * ------------------------------------------
     * 获取指定像素的颜色
@@ -262,10 +264,8 @@ public:
 */
 struct ARG // * 命令行参数
 {
-    const char* input_obj_file   =  " "; // 输入obj文件路径
+    const char* input_obj_json   =  "model.json"; // 输入obj文件的 json 路径
     const char* output_img_file  =  "output.png"; // 输出图像文件路径
-    const char* texture_map_file =  "MULL"; // 纹理贴图路径
-    const char* normal_map_file  =  "MULL"; // 法线贴图路径
     uint32_t width               =  800; // 图像宽
     uint32_t height              =  800; // 图像宽
     Image::Channel channel       =  Image::Channel::RGBA; // 图像通道数

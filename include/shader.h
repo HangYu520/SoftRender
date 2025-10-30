@@ -91,6 +91,14 @@ protected:
     glm::mat4           modelMatrix; // 模型矩阵
     glm::mat4           viewMatrix; // 视图矩阵
     glm::mat4           projectionMatrix; // 投影矩阵
+
+public:
+    bool smooth = false; // 是否平滑 (逐片元着色 or 逐三角形着色)
+    bool use_texture_map = true; // 是否使用纹理贴图
+    bool use_normal_map = true; // 是否使用法向贴图
+    bool use_tangent_map = true; // 是否使用切线空间法向贴图
+    Image texture_map; // 纹理贴图
+    Image normal_map; // 法向贴图
 };
 
 /*
@@ -125,12 +133,6 @@ public:
         glm::vec4   light_position = glm::vec4(1.0f, 1.0f, 0.0f, 1.0f);
         glm::vec4   camera_position = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
     } config;
-    bool smooth = false; // 是否平滑 (逐片元着色 or 逐三角形着色)
-    bool use_texture_map = true; // 是否使用纹理贴图
-    bool use_normal_map = true; // 是否使用法向贴图
-    bool use_tangent_map = true; // 是否使用切线空间法向贴图
-    Image texture_map; // 纹理贴图
-    Image normal_map; // 法向贴图
 
 public:
     PhongShader() = default;

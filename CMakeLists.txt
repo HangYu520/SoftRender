@@ -16,6 +16,7 @@ find_package(SFML 3.0 COMPONENTS Graphics Window System REQUIRED)
 find_library(OPENGL_FRAMEWORK OpenGL) # OpenGL 用来绘制 Imgui
 
 include_directories(${PROJECT_SOURCE_DIR}/external)
+include_directories(${PROJECT_SOURCE_DIR}/external/json/include)
 include_directories(${PROJECT_SOURCE_DIR}/external/tinyobjloader)
 include_directories(${PROJECT_SOURCE_DIR}/external/imgui)
 include_directories(${PROJECT_SOURCE_DIR}/external/imgui/imgui-sfml)

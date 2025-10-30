@@ -1,0 +1,11 @@
+{
+    "model" : [
+        {
+            "load" : true,
+            "name" : "african_head",
+            "obj" : "asset/african_head/african_head.obj",
+            "texture" : "asset/african_head/african_head_diffuse.tga",
+            "normal" : "asset/african_head/african_head_nm_tangent.tga"
+        }
+    ]
+}
