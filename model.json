@@ -8,28 +8,28 @@
             "normal" : "asset/african_head/african_head_nm_tangent.tga"
         },
         {
-            "load" : true,
+            "load" : false,
             "name" : "boggie_body",
             "obj" : "asset/boggie/body.obj",
             "texture" : "asset/boggie/body_diffuse.tga",
             "normal" : "asset/boggie/body_nm_tangent.tga"
         },
         {
-            "load" : true,
+            "load" : false,
             "name" : "boggie_eyes",
             "obj" : "asset/boggie/eyes.obj",
             "texture" : "asset/boggie/eyes_diffuse.tga",
             "normal" : "asset/boggie/eyes_nm_tangent.tga"
         },
         {
-            "load" : true,
+            "load" : false,
             "name" : "boggie_head",
             "obj" : "asset/boggie/head.obj",
             "texture" : "asset/boggie/head_diffuse.tga",
             "normal" : "asset/boggie/head_nm_tangent.tga"
         },
         {
-            "load" : false,
+            "load" : true,
             "name" : "diablo3_pose",
             "obj" : "asset/diablo3_pose/diablo3_pose.obj",
             "texture" : "asset/diablo3_pose/diablo3_pose_diffuse.tga",
